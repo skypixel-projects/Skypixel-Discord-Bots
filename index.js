@@ -160,12 +160,20 @@ bot.on('message', (message) => {
 
         //Voice channel leave command
         if(cmd == 'leave') {
+            if(message.member.voice.channel) return;
             message.member.voice.channel.leave();
         }
 
         //Voice channel join command
         if(cmd == 'play') {
+            if(message.member.voice.channel) return;
             message.member.voice.channel.join();
+            const broadcast = client.voice.createBroadcast();
+            broadcast.play('./music.mp3');
+            // Play "music.mp3" in all voice connections that the client is in!
+            for (const connection of client.voice.connections.values()) {
+                connection.play(broadcast);
+            }
         }
     }
 });
