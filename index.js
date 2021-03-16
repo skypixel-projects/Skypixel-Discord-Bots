@@ -30,6 +30,16 @@ bot.on('ready', () => {
     })
 });
 
+bot.on('ready', () => {
+    let totalSeconds = (client.uptime / 1000);
+    let days = Math.floor(totalSeconds / 86400);
+    totalSeconds %= 86400;
+    let hours = Math.floor(totalSeconds / 3600);
+    totalSeconds %= 3600;
+    let minutes = Math.floor(totalSeconds / 60);
+    let seconds = Math.floor(totalSeconds % 60);
+});
+
 //Message swear checker!
 bot.on("message", async message => {
 console.log(`(${message.author.username}) said: (${message.content}) on channel (${message.channel.name}) at server (${message.guild})`);
@@ -140,6 +150,10 @@ bot.on('message', (message) => {
 
         if(cmd == 'play') {
             message.member.voice.channel.join();
+        }
+
+        if(cmd == 'uptime') {
+            let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
         }
     }
 });
