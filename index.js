@@ -63,6 +63,13 @@ bot.on('message', message => {
     }
 });
 
+bot.on("ready", () => {
+    const Channel = bot.channels.cache.get("820599071987204096");
+    if (!Channel) return console.log("Invalid channel.");
+
+    Channel.send("Bot startup.");
+});
+
 //AutoGG
 bot.on("message", message => {
     if(message.content.includes('gg')) {
