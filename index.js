@@ -20,7 +20,6 @@ const exampleEmbed = new Discord.MessageEmbed()
     .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
 bot.on('ready', () => {
-    console.log('The discord bot is online! ' + bot.user)
     bot.user.setPresence({
         activity: {
           name: 'MaxWasTaked',
@@ -63,14 +62,25 @@ bot.on('message', message => {
     }
 });
 
+//The bot will send a message to the official discord development server!
 bot.on("ready", () => {
     const Channel = bot.channels.cache.get("820599071987204096");
-    if (!Channel) return console.log("Invalid channel.");
-
-    Channel.send("Bot startup.");
+    if (!Channel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
+    Channel.send(`Hello I'm online! With the user: ` + bot.user);
 });
 
-//AutoGG
+bot.on('shardError', error => {
+    const Channel = bot.channels.cache.get("820599071987204096");
+    if (!Channel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
+    Channel.send(`The discord bot has been sended an error! Please check the console!`);
+});
+
+//New members join to the discord server
+bot.on('guildMemberAdd', member => {
+    channel.send(`Welcome to the server, ${member}`);
+});
+
+//AutoGG for funny things
 bot.on("message", message => {
     if(message.content.includes('gg')) {
         message.react('😄');
@@ -110,41 +120,50 @@ bot.on('message', (message) => {
 
 
 
+
+
     //Main development server!
     if(message.guild.id == '672018546125045760') {
+        //Hello command
         if(cmd == 'hello') {
             if(message.author.bot) return;
             message.channel.send('Hi there ' + message.author.username + ` my name is ${bot.user} the bot! The official creator and developer is Yonaga678!`);
             console.log('The command' + cmd + ' has been executed!')   
         }
 
+        //Youtube command
         if(cmd == 'youtube') {
             if(message.author.bot) return;
             message.channel.send('Hi there ' + message.author.username + ' the official youtube of MaxWasTaked is (https://www.youtube.com/maxwastaked)');
             console.log('The command' + cmd + ' has been executed!')
         }
 
+        //In development command
         if(cmd == 'dev') {
             if(message.author.bot) return;
             message.channel.send(exampleEmbed);
         }
 
+        //Avatar command
         if(cmd == 'avatar') {
             if(message.author.bot) return;
             message.reply(message.author.displayAvatarURL());
             message.delete();
         }
 
+        //Broadcast command
         if(cmd == 'broadcast', args) {
             if(message.author.bot) return;
             //message.channel.send('```' + args + '```');
             message.author.send(args);
         }
 
+        //Voice channel leave command
         if(cmd == 'leave') {
             message.member.voice.channel.leave();
         }
 
+        //Voice channel join command
         if(cmd == 'play') {
             message.member.voice.channel.join();
         }
