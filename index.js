@@ -19,6 +19,7 @@ const exampleEmbed = new Discord.MessageEmbed()
     .setTimestamp()
     .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
+//Set the bot activity and Presence!
 bot.on('ready', () => {
     bot.user.setPresence({
         activity: {
@@ -160,13 +161,11 @@ bot.on('message', (message) => {
 
         //Voice channel leave command
         if(cmd == 'leave') {
-            if(message.member.voice.channel) return;
             message.member.voice.channel.leave();
         }
 
         //Voice channel join command
         if(cmd == 'play') {
-            if(message.member.voice.channel) return;
             message.member.voice.channel.join();
             const broadcast = client.voice.createBroadcast();
             broadcast.play('./music.mp3');
