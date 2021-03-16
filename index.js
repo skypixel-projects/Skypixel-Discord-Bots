@@ -65,15 +65,15 @@ bot.on('message', message => {
 
 //The bot will send a message to the official discord development server!
 bot.on("ready", () => {
-    const Channel = bot.channels.cache.get("820599071987204096");
-    if (!Channel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
-    Channel.send(`Hello I'm online! With the id: ` + bot.user + ` Please do not share this id!`);
+    const readyChannel = bot.channels.cache.get("820599071987204096");
+    if (!readyChannel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
+    readyChannel.send(`Hello I'm online! With the id: ` + bot.user + ` Please do not share this id!`);
 });
 
 bot.on('shardError', error => {
-    const Channel = bot.channels.cache.get("820599071987204096");
-    if (!Channel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
-    Channel.send(`The discord bot has been sended an error! Please check the console!`);
+    const errorChannel = bot.channels.cache.get("820599071987204096");
+    if (!errorChannel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
+    errorChannel.send(`The discord bot has been sended an error! Please check the console!`);
 });
 
 //New members join to the discord server
