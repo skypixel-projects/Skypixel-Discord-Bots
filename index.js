@@ -21,6 +21,7 @@ const exampleEmbed = new Discord.MessageEmbed()
 
 bot.on('ready', () => {
     console.log('The discord bot is online! ' + bot.user)
+    bot.guilds.get("672018546125045760").bot.channels.get("820599071987204096").message.channel.send('The bot send a test packet');
     bot.user.setPresence({
         activity: {
           name: 'MaxWasTaked',
@@ -30,16 +31,11 @@ bot.on('ready', () => {
     })
 });
 
-bot.on('ready', () => {
-    let totalSeconds = (client.uptime / 1000);
-    let days = Math.floor(totalSeconds / 86400);
-    totalSeconds %= 86400;
-    let hours = Math.floor(totalSeconds / 3600);
-    totalSeconds %= 3600;
-    let minutes = Math.floor(totalSeconds / 60);
-    let seconds = Math.floor(totalSeconds % 60);
+bot.on('disconnect', () => {
+    //
 });
 
+//Error sender -> Discord development channel!
 client.on('shardError', error => {
     bot.channel.get('820599071987204096').send(`${console.error()}`);
 });
@@ -154,10 +150,6 @@ bot.on('message', (message) => {
 
         if(cmd == 'play') {
             message.member.voice.channel.join();
-        }
-
-        if(cmd == 'uptime') {
-            let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
         }
     }
 });
