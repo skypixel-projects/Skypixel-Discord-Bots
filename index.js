@@ -141,6 +141,10 @@ bot.on('message', (message) => {
         if(cmd == 'play') {
             message.member.voice.channel.join();
         }
+
+        if(cmd == 'github') {
+            message.channel.send(`Official github project (null)`);
+        }
     }
 });
 
