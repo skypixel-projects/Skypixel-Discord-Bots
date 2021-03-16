@@ -66,7 +66,7 @@ bot.on('message', message => {
 bot.on("ready", () => {
     const Channel = bot.channels.cache.get("820599071987204096");
     if (!Channel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
-    Channel.send(`Hello I'm online! With the user: ` + bot.username);
+    Channel.send(`Hello I'm online! With the user: ` + message.bot.username);
 });
 
 bot.on('shardError', error => {
