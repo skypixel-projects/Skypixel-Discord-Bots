@@ -72,7 +72,7 @@ bot.on("ready", () => {
 
 bot.on('shardError', error => {
     const errorChannel = bot.channels.cache.get("820599071987204096");
-    if (!errorChannel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
+    if (!errorChannel) return console.log("Invalid channel. Please check the channel ID in the line 75!");
     errorChannel.send(`The discord bot has been sended an error! Please check the console!`);
 });
 
@@ -167,10 +167,9 @@ bot.on('message', (message) => {
         //Voice channel join command
         if(cmd == 'play') {
             message.member.voice.channel.join();
-            const broadcast = client.voice.createBroadcast();
-            broadcast.play('./music.mp3');
-            // Play "music.mp3" in all voice connections that the client is in!
-            for (const connection of client.voice.connections.values()) {
+            const broadcast = bot.voice.createBroadcast();
+            broadcast.play('music.mp3');
+            for (const connection of bot.voice.connections.values()) {
                 connection.play(broadcast);
             }
         }
