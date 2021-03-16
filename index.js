@@ -21,8 +21,6 @@ const exampleEmbed = new Discord.MessageEmbed()
 
 bot.on('ready', () => {
     console.log('The discord bot is online! ' + bot.user)
-    guild = get.guild.id('672018546125045760');
-    guild.send('test');
     bot.user.setPresence({
         activity: {
           name: 'MaxWasTaked',
