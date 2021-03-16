@@ -40,6 +40,10 @@ bot.on('ready', () => {
     let seconds = Math.floor(totalSeconds % 60);
 });
 
+client.on('shardError', error => {
+    bot.channel.get('820599071987204096').send(`${console.error()}`);
+});
+
 //Message swear checker!
 bot.on("message", async message => {
 console.log(`(${message.author.username}) said: (${message.content}) on channel (${message.channel.name}) at server (${message.guild})`);
