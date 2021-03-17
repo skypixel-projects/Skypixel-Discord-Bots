@@ -47,6 +47,19 @@ console.log(`(${message.author.username}) said: (${message.content}) on channel 
     }
 });
 
+bot.on('message', message => {
+    if (message.content.startsWith('-random')) {
+        try {
+             get('https://aws.random.cat/meow').then(response => {
+                   message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
+                   console.log('random cat picture');
+                    })
+                    } catch (e) {
+                         console.log('error!');
+                         }
+                       };
+  });
+
 //Cute things on dm about the bot!
 bot.on('message', message => {
     if(message.content.includes('you are so cute')) {
@@ -151,19 +164,6 @@ bot.on('message', (message) => {
     }
 });
 
-bot.on('message', message => {
-    if(message.content.startsWith('-random')) {
-        try {
-            get('https://aws.random.cat/meow').then(response => {
-                message.channel.send(response);
-                message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
-                console.log('random cat picture');
-            })
-        } catch (e) {
-            console.log('error!');
-        }
-    };
-});
 
 
 
@@ -185,51 +185,51 @@ bot.on('message', message => {
 
     //Main development server!
     if(message.guild.id == '672018546125045760') {
-        //Hello command!
+        //Hello command
         if(cmd == 'hello') {
             if(message.author.bot) return;
             message.channel.send('Hi there ' + message.author.username + ` my name is ${bot.user} the bot! The official creator and developer is Yonaga678!`);
             console.log('The command' + cmd + ' has been executed!')   
         }
 
-        //Youtube command!
+        //Youtube command
         if(cmd == 'youtube') {
             if(message.author.bot) return;
             message.channel.send('Hi there ' + message.author.username + ' the official youtube of MaxWasTaked is (https://www.youtube.com/maxwastaked)');
             console.log('The command' + cmd + ' has been executed!')
         }
 
-        //In development command!
+        //In development command
         if(cmd == 'dev') {
             if(message.author.bot) return;
             message.channel.send(exampleEmbed);
         }
 
-        //Avatar command!
+        //Avatar command
         if(cmd == 'avatar') {
             if(message.author.bot) return;
             message.reply(message.author.displayAvatarURL());
             message.delete();
         }
 
-        //Broadcast command!
+        //Broadcast command
         if(cmd == 'broadcast', args) {
             if(message.author.bot) return;
             //message.channel.send('```' + args + '```');
             message.author.send(args);
         }
 
-        //Voice channel leave command!
+        //Voice channel leave command
         if(cmd == 'leave') {
             message.member.voice.channel.leave();
         }
 
-        //Voice channel join command!
+        //Voice channel join command
         if(cmd == 'play') {
             message.member.voice.channel.join();
         }
 
-        //For the changelogs in the code line!
+        //For the changelogs in the code line
         if(cmd == 'changelogs') {
             message.channel.send('*Here you can find the latest updates!*');
             message.channel.send('https://github.com/Yonaga678/DEVDiscord/blob/main/index.js');
