@@ -218,11 +218,9 @@ bot.on('message', (message) => {
 
         //Random cats photo!
         if(cmd == 'random') {
-            try {
-                get('https://aws.random.cat/meow').then(response => {
-                    message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
-                });
-            }
+            get('https://aws.random.cat/meow').then(response => {
+                message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
+            });
         }
 
         //For the changelogs in the code line!
