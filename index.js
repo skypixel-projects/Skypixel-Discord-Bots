@@ -155,6 +155,7 @@ bot.on('message', message => {
     if(message.content.startsWith('-random')) {
         try {
             get('https://aws.random.cat/meow').then(response => {
+                message.channel.send(response);
                 message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
                 console.log('random cat picture');
             })
