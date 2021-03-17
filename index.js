@@ -16,7 +16,7 @@ bot.on('message', message => {
 
     switch (args[0]) {
         case "dev":
-            
+            bot.commands.get('dev').execute(message, args);
         break;
     }
 });
