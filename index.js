@@ -218,12 +218,12 @@ bot.on('message', (message) => {
 
         //Random cats photo!
         if(cmd == 'random') {
-            var images = ["Image1"]; //"Image2", "Image3", "Image4"
+            var images = ["Image1.png"]; //"Image2", "Image3", "Image4"
             var image = Math.floor(Math.random() * images.length);
 
             let random = new Discord.MessageEmbed()
             .setAuthor('Here is your random pic')
-            .setImage('Image1.png') //+images[image]
+            .setImage(+images[image]) //+images[image]
 
             message.channel.send(random);
         }
