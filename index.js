@@ -107,6 +107,15 @@ bot.on('message', (message) => {
 
 
 
+bot.on('message', (message) => {
+    if(message.content('-kick')) {
+        message.author('kick method is running' + args);
+    }
+});
+
+
+
+
     //Help command for the development server!
     if(cmd == 'help') {
         if(message.guild.id == '672018546125045760') {
