@@ -218,9 +218,7 @@ bot.on('message', (message) => {
 
         //Random cats photo!
         if(cmd == 'random') {
-            get('https://aws.random.cat/meow').then(response => {
-                message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
-            });
+            message.channel.send("http://thecatapi.com/api/images/get?format=src&type=png");
         }
 
         //For the changelogs in the code line!
