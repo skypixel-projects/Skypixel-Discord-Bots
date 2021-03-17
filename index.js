@@ -1,5 +1,6 @@
 const Discord = require('discord.js'); 
 const bot = new Discord.Client();
+const {get} = require("snekfetch");
 
 const exampleEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
