@@ -125,6 +125,8 @@ bot.on('message', (message) => {
         } else {
             message.reply("You didn't mention the user to kick!");
         }
+    } else {
+        message.reply("You need to specify a username!")
     }
 });
 
