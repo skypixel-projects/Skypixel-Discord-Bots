@@ -68,7 +68,7 @@ bot.on("ready", () => {
     const readyChannel = bot.channels.cache.get("820599071987204096");
     if (!readyChannel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
     readyChannel.send("A new update was found!")
-    readyChannel.send(`Hello I'm online! With the id: ` + bot.user + ` Please do not share this id!`);
+    //readyChannel.send(`Hello I'm online! With the id: ` + bot.user + ` Please do not share this id!`);
 });
 
 bot.on('shardError', error => {
@@ -126,8 +126,6 @@ bot.on('message', (message) => {
         } else {
             message.reply("You didn't mention the user to kick!");
         }
-    } else {
-        message.reply("You need to specify a username!")
     }
 });
 
