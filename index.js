@@ -151,6 +151,18 @@ bot.on('message', (message) => {
     }
 });
 
+bot.on('message', message => {
+    if(message.content.startsWith('-random')) {
+        try {
+            get('https://aws.random.cat/meow').then(response => {
+                message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
+                console.log('random cat picture');
+            })
+        } catch (e) {
+            console.log('error!');
+        }
+    };
+});
 
 
 
@@ -214,18 +226,6 @@ bot.on('message', (message) => {
         //Voice channel join command!
         if(cmd == 'play') {
             message.member.voice.channel.join();
-        }
-
-        //Random cats photo!
-        if(cmd == 'random') {
-            var images = ["Image1.png"]; //"Image2", "Image3", "Image4"
-            var image = Math.floor(Math.random() * images.length);
-
-            let random = new Discord.MessageEmbed()
-            .setAuthor('Here is your random pic')
-            .setImage(+images[image]) //+images[image]
-
-            message.channel.send(random);
         }
 
         //For the changelogs in the code line!
