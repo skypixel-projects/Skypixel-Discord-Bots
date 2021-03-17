@@ -1,6 +1,37 @@
 const Discord = require('discord.js'); 
 const bot = new Discord.Client();
 const {get} = require("snekfetch");
+const PREFIX = "-";
+const fs = require('fs');
+
+const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+for(const file of commandFiles){
+    const command = require(`./commands/${file}`);
+
+    bot.commands.set(command.name, command);
+}
+
+bot.on('message', message => {
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+    switch (args[0]) {
+        case "dev":
+            
+        break;
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 const exampleEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
@@ -48,18 +79,19 @@ console.log(`(${message.author.username}) said: (${message.content}) on channel 
     }
 });
 
+//Random cat image sender!
 bot.on('message', message => {
-    if (message.content.startsWith('-random')) {
+    if (message.content.startsWith(PREFIX + 'random')) {
         try {
-             get('https://aws.random.cat/meow').then(response => {
-                   message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
-                   console.log('random cat picture');
-                    })
-                    } catch (e) {
-                         console.log('error!');
-                         }
-                       };
-  });
+            get('https://aws.random.cat/meow').then(response => {
+                message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
+                console.log('random cat picture');
+            })
+        } catch (e) {
+            console.log('error!');
+        }
+    };
+});
 
 //Cute things on dm about the bot!
 bot.on('message', message => {
