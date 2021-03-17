@@ -214,11 +214,11 @@ bot.on('message', (message) => {
         //Voice channel join command
         if(cmd == 'play') {
             message.member.voice.channel.join();
-            const broadcast = bot.voice.createBroadcast();
-            broadcast.play('music.mp3');
-            for (const connection of bot.voice.connections.values()) {
-                connection.play(broadcast);
             }
+        }
+
+        if(cmd == 'changelogs') {
+            message.channel.send('Here you can find the latest updates! https://github.com/Yonaga678/DEVDiscord')
         }
     }
 });
