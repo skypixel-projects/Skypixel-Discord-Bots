@@ -223,7 +223,7 @@ bot.on('message', (message) => {
 
             let random = new Discord.MessageEmbed()
             .setAuthor('Here is your random pic')
-            .setImage(+images[image])
+            .setImage('Image1.png') //+images[image]
 
             message.channel.send(random);
         }
