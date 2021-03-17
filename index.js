@@ -67,7 +67,7 @@ bot.on('message', message => {
 bot.on("ready", () => {
     const readyChannel = bot.channels.cache.get("820599071987204096");
     if (!readyChannel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
-    readyChannel.send("A new update was found!")
+    readyChannel.send("```A new update was found!```")
     //readyChannel.send(`Hello I'm online! With the id: ` + bot.user + ` Please do not share this id!`);
 });
 
@@ -107,7 +107,7 @@ bot.on('message', (message) => {
 
 
 
-
+//Kick command for all servers!
 bot.on('message', (message) => {
     if(!message.guild) return;
     if(message.content.startsWith('-kick')) {
@@ -116,7 +116,29 @@ bot.on('message', (message) => {
             const member = message.guild.member(user);
             if(member) {
                 member
-                    .kick('Optional reason that will display in the audit logs')
+                    .kick(`This ${user.tag} has been kicked by ${message.author}`)
+                    .then(() => {
+                    message.reply(`Successfully kicked ${user.tag}!`);
+                });
+            } else {
+                message.reply("That user isn't in this guild!");
+            }
+        } else {
+            message.reply("You didn't mention the user to kick!");
+        }
+    }
+});
+
+//Ban command for all servers!
+bot.on('message', (message) => {
+    if(!message.guild) return;
+    if(message.content.startsWith('-ban')) {
+        const user = message.mentions.users.first();
+        if(user) {
+            const member = message.guild.member(user);
+            if(member) {
+                member
+                    .ban(`This ${user.tag} has been banned by ${message.author}`)
                     .then(() => {
                     message.reply(`Successfully kicked ${user.tag}!`);
                 });
