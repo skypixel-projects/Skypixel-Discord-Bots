@@ -214,7 +214,6 @@ bot.on('message', (message) => {
         //Voice channel join command
         if(cmd == 'play') {
             message.member.voice.channel.join();
-            }
         }
 
         if(cmd == 'changelogs') {
