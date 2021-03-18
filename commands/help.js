@@ -1,3 +1,4 @@
+const Discord = require('discord.js'); 
 module.exports = {
     name: "help",
     description: "",
@@ -18,7 +19,8 @@ module.exports = {
                 .addField('``!music``-',"Command for playing music on the server")
                 .addField('``!random``-',"Command for sending random cats pictures")
                 .addField('``!socialmedia``-',"Command for sending the socialmedia for (MaxWasTaked)")
-        }
+            message.channel.send(helpEmbed);
+        }  
         else {
             message.delete();
             message.author.send(`I'm so sorry but you need to be on the official discord development! (https://discord.gg/tJutM8p)`);
