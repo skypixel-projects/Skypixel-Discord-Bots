@@ -18,7 +18,7 @@ const exampleEmbed = new Discord.MessageEmbed()
     .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
 module.exports = {
-    name: "dev",
+    name: "development",
     description: "",
     execute(message, args){
         if(message.guild.id == '672018546125045760') {

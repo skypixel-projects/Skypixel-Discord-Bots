@@ -43,7 +43,7 @@ bot.on('message', message => {
             bot.commands.get('socialmedia').execute(message, args);
         break;
         case "development":
-            bot.commands.get('dev').execute(message, args);
+            bot.commands.get('development').execute(message, args);
         break;
         case "play":
             bot.commands.get('music').execute(message, args);
