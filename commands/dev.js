@@ -7,6 +7,8 @@ module.exports = {
     execute(message, args){
         const path = "./language/lang_en.yml";
         const content = fs.readFileSync(path, 'utf-8');
-        message.channel.send(content);
+        if(FileList.length == 1) {
+            message.channel.send(content);
+        }
     }
 }
