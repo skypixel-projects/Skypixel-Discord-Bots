@@ -5,6 +5,7 @@ module.exports = {
     description: "This command is for helping the members",
     execute(message, args){
         if(message.guild.id == '672018546125045760') {
+            message.channel.send('Working...')
             try {
                 get('https://aws.random.cat/meow').then(response => {
                     message.channel.send({files: [{attachment: response.body.file, name: `cat.${response.body.file.split('.')[4]}`}]});
@@ -13,6 +14,7 @@ module.exports = {
             } catch (e) {
                 console.log('error!');
             }
+            message.delete();
         }
     }
 }
