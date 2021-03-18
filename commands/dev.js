@@ -1,7 +1,7 @@
 const Discord = require('discord.js'); 
 const fs = require('fs');
 const readline = require('readline');
-var getline = global.get('nthline');
+var getline = require('nthline');
 
 module.exports = {
     name: "dev",
