@@ -8,8 +8,8 @@ module.exports = {
     execute(message, args){
         const path = "./language/lang_en.yml";
         const content = fs.readFileSync(path, 'utf-8');
-        if(!content.length == 0) {
-            message.channel.send(content);   
-        }
+        let debug = content.content.substring(length(1)).split(" ");
+
+        message.channel.send(debug);   
     }
 }
