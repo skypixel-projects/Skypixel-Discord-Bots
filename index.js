@@ -24,7 +24,7 @@ bot.on('message', message => {
             bot.commands.get('ban').execute(message, args);
         break;
         case "broadcast":
-            bot.commands.get('broadcast').execute(args);
+            bot.commands.get('broadcast').execute(message, args);
         break;
         case "changelogs":
             bot.commands.get('changelogs').execute(message, args);
@@ -43,6 +43,11 @@ bot.on('message', message => {
         break;
         case "play":
             bot.commands.get('music').execute(message, args);
+        break;
+        
+        //Development command!
+        case "dev":
+            bot.commands.get('dev').execute(message, args);
         break;
     }
 });
