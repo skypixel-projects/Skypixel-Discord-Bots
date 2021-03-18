@@ -7,18 +7,18 @@ module.exports = {
             message.delete();
             //message.channel.send(`List of all commands: "Help", "Avatar", "Broadcast", "Hello", "youtube", "dev" or "revive"`);
             const helpEmbed = new Discord.MessageEmbed()
-                .setColor('#0099ff')
-                .setTitle('List for all commands')
-                .addField('``!avatar``-',"Command for show the member avatar")
-                .addField('``!ban``-',"Command for baning the member")
-                .addField('``!broadcast``-',"Command for broadcasting the message")
-                .addField('``!changelogs``-',"Command for show the changelogs for the bot")
-                .addField('``!development``-',"Command for developers members")
-                .addField('``!help``-',"Command for helping the member to understand")
-                .addField('``!kick``-',"Command for kicking the member from the discord")
-                .addField('``!music``-',"Command for playing music on the server")
-                .addField('``!random``-',"Command for sending random cats pictures")
-                .addField('``!socialmedia``-',"Command for sending the socialmedia for (MaxWasTaked)")
+                .setColor('#fcba03')
+                .setTitle('LIST OF ALL COMMAND FOR PURO BOT')
+                .addField('``!avatar``',"Command for show the member avatar")
+                .addField('``!ban``',"Command for baning the member")
+                .addField('``!broadcast``',"Command for broadcasting the message")
+                .addField('``!changelogs``',"Command for show the changelogs for the bot")
+                .addField('``!development``',"Command for developers members")
+                .addField('``!help``',"Command for helping the member to understand")
+                .addField('``!kick``',"Command for kicking the member from the discord")
+                .addField('``!music``',"Command for playing music on the server")
+                .addField('``!random``',"Command for sending random cats pictures")
+                .addField('``!socialmedia``',"Command for sending the socialmedia for (MaxWasTaked)")
             message.channel.send(helpEmbed);
         }  
         else {
