@@ -12,7 +12,6 @@ module.exports = {
                 .addField('``!ban``',"Command for baning the member")
                 .addField('``!broadcast``',"Command for broadcasting the message")
                 .addField('``!changelogs``',"Command for show the changelogs for the bot")
-                .addField('``!development``',"Command for developers members")
                 .addField('``!help``',"Command for helping the member to understand")
                 .addField('``!kick``',"Command for kicking the member from the discord")
                 .addField('``!music``',"Command for playing music on the server")
