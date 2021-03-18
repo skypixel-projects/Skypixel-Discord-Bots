@@ -1,3 +1,16 @@
+const Discord = require('discord.js'); 
+
+module.exports = {
+    name: "dev",
+    description: "The development commands!",
+    execute(message, args){
+        if(message.guild.id == '672018546125045760') {
+            if(message.author.bot) return;
+            message.channel.send(exampleEmbed);
+        }
+    }
+}
+
 const exampleEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
     .setTitle('Development')
@@ -15,14 +28,3 @@ const exampleEmbed = new Discord.MessageEmbed()
     .setImage('https://i.imgur.com/wSTFkRM.png')
     .setTimestamp()
     .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-
-module.exports = {
-    name: "dev",
-    description: "The development commands!",
-    execute(message, args){
-        if(message.guild.id == '672018546125045760') {
-            if(message.author.bot) return;
-            message.channel.send(exampleEmbed);
-        }
-    }
-}
