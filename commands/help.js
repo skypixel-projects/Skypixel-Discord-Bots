@@ -5,7 +5,6 @@ module.exports = {
     execute(message, args){
         if(message.guild.id == '672018546125045760') {
             message.delete();
-            //message.channel.send(`List of all commands: "Help", "Avatar", "Broadcast", "Hello", "youtube", "dev" or "revive"`);
             const helpEmbed = new Discord.MessageEmbed()
                 .setColor('#fcba03')
                 .setTitle('LIST OF ALL COMMAND FOR PURO BOT')
