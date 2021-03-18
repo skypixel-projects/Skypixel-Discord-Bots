@@ -3,7 +3,7 @@ const fs = require('fs');
 const readline = require('readline');
 
 module.exports = {
-    name: "test",
+    name: "development",
     description: "",
     execute(message, args){
         const path = "./language/lang_en.yml";

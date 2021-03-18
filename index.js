@@ -47,7 +47,7 @@ bot.on('message', message => {
         
         //Development command!
         case "dev":
-            bot.commands.get('test').execute(message, args);
+            bot.commands.get('development').execute(message, args);
         break;
     }
 });
@@ -100,7 +100,7 @@ bot.on('message', message => {
 bot.on("ready", () => {
     const readyChannel = bot.channels.cache.get("820599071987204096");
     if (!readyChannel) return console.log("Invalid channel. Please check the channel ID in the line 68!");
-    readyChannel.send("```A new update was found!```")
+    readyChannel.send("```A new update was found!```" + message.createdAt)
     //readyChannel.send(`Hello I'm online! With the id: ` + bot.user + ` Please do not share this id!`);
 });
 
