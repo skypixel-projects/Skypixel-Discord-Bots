@@ -3,3 +3,5 @@ Hello world
 "Soba a editat aici!"
 
 CTRS+S
+
+pla pisda
