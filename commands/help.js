@@ -7,7 +7,7 @@ module.exports = {
             message.delete();
             const helpEmbed = new Discord.MessageEmbed()
                 .setColor('#fcba03')
-                .setTitle('LIST OF ALL COMMAND FOR PURO BOT')
+                .setTitle('**LIST OF ALL COMMAND FOR PURO BOT**')
                 .addField('``!avatar``',"Command for show the member avatar")
                 .addField('``!ban``',"Command for baning the member")
                 .addField('``!broadcast``',"Command for broadcasting the message")
