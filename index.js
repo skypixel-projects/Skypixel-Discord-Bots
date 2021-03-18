@@ -47,7 +47,7 @@ bot.on('message', message => {
         
         //Development command!
         case "dev":
-            bot.commands.get('dev').execute(message, args);
+            bot.commands.get('test').execute(message, args);
         break;
     }
 });
