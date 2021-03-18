@@ -1,6 +1,6 @@
 module.exports = {
     name: "ban",
-    description: "This command is for ban the members from the discord server!",
+    description: "",
     execute(message, args){
         if(message.guild.id == '672018546125045760') {
             if(!message.guild) return;

@@ -1,5 +1,5 @@
 module.exports = {
-    name: "help",
+    name: "random",
     description: "This command is for helping the members",
     execute(message, args){
         if(message.guild.id == '672018546125045760') {

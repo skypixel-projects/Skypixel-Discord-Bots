@@ -1,6 +1,6 @@
 module.exports = {
     name: "help",
-    description: "This command is for helping the members",
+    description: "",
     execute(message, args){
         if(message.guild.id == '672018546125045760') {
             message.delete();

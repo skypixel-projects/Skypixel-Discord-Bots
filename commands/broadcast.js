@@ -1,6 +1,6 @@
 module.exports = {
     name: "broadcast",
-    description: "Broadcast message to all members!",
+    description: "",
     execute(message, args){
         if(message.guild.id == '672018546125045760') {
             if(message.author.bot) return;

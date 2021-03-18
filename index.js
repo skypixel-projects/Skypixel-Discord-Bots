@@ -4,11 +4,10 @@ const {get} = require("snekfetch");
 const PREFIX = "-";
 
 
+//Command handler line
 const fs = require('fs');
 bot.commands = new Discord.Collection();
 
-
-//Command handler line
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
@@ -18,7 +17,6 @@ for(const file of commandFiles){
 
 bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
-
     switch (args[0]) {
         case "avatar":
             bot.commands.get('avatar').execute(message, args);
@@ -28,6 +26,9 @@ bot.on('message', message => {
         break;
         case "broadcast":
             bot.commands.get('broadcast').execute(message, args);
+        break;
+        case "changelogs":
+            bot.commands.get('changelogs').execute(message, args);
         break;
         case "help":
             bot.commands.get('help').execute(message, args);
@@ -41,7 +42,7 @@ bot.on('message', message => {
         case "socialmedia":
             bot.commands.get('socialmedia').execute(message, args);
         break;
-        case "development":
+        case "dev":
             bot.commands.get('development').execute(message, args);
         break;
         case "play":
