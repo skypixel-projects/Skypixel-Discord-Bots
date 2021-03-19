@@ -16,6 +16,7 @@ for(const file of commandFiles){
 
 bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
+    if(message.author.bot) return;
     switch (args[0]) {
         case "avatar":
             bot.commands.get('avatar').execute(message, args);
