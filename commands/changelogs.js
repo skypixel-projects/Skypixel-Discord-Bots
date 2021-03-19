@@ -7,11 +7,11 @@ module.exports = {
             message.channel.send('*Here you can find the latest updates!*');
             message.channel.send('https://github.com/Yonaga678/DEVDiscord');
 
-            const helpEmbed = new Discord.MessageEmbed()
+            const changelogsEmbed = new Discord.MessageEmbed()
                 .setColor('#038cfc')
                 //.setTitle('**LIST OF ALL COMMAND FOR PURO BOT**')
                 .addField('``All the updates you can find here!``',"https://github.com/Yonaga678/DEVDiscord")
-            message.channel.send(helpEmbed);
+            message.channel.send(changelogsEmbed);
         }
     }
 }
