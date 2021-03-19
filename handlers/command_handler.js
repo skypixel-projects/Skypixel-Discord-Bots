@@ -3,17 +3,35 @@ const Discord = require('discord.js');
 const bot = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 const fs = require('fs');
 
-const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
-for(const file of commandFiles){
-    const command = require(`../commands/${file}`);
-    if(command.name) {
-        bot.commands.set(command.name, command);
-    } else {
-        continue;
-    }
 
-    //bot.commands.set(command.name, command);
+
+
+
+module.exports = (bot, Discord) => {
+    const command_files - fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+
+    for(const file of command_files){
+        const command = require(`../commands/${file}`);
+        if(command.name){
+            bot.command.set(command.name, command);
+        } else {
+            continue;
+        }
+    }
 }
+
+
+
+
+
+
+
+// const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+// for(const file of commandFiles){
+//     const command = require(`../commands/${file}`);
+    
+//     bot.commands.set(command.name, command);
+// }
 
 // bot.on('message', message => {
 //     let args = message.content.substring(PREFIX.length).split(" ");
@@ -52,4 +70,4 @@ for(const file of commandFiles){
 //             bot.commands.get('development').execute(message, args);
 //         break;
 //     }
-//});
+// });
