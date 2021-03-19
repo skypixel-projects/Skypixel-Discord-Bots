@@ -1,9 +1,10 @@
 const Discord = require('discord.js'); 
 
 module.exports = {
-    name: "help",
+    name: 'help',
     description: "",
-    execute(message, args){
+    execute(client, message, args) {
+        console.log('"-help" command has executed!')
         if(message.guild.id == '672018546125045760') {
             message.delete();
             const helpEmbed = new Discord.MessageEmbed()
