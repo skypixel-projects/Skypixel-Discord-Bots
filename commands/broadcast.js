@@ -6,10 +6,11 @@ module.exports = {
     execute(message, args){
         if(message.guild.id == '672018546125045760') {
             if(message.author.bot) return;
-            message.author.send(args);
-            
-            //Debug line!
-            message.channel.send(`[DEBUG] (${message}) / (${args})`);
+            if(message.content.startsWith('-kick')) {
+                message.author.send(args);
+                //Debug line!
+                message.channel.send(`[DEBUG] (${message}) / (${args})`);
+            }
         }
     }
 }
