@@ -1,4 +1,5 @@
 const Discord = require('discord.js'); 
+const PREFIX = "-";
 
 module.exports = {
     name: "help",

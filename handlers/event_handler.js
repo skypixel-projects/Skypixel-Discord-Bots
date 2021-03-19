@@ -1,3 +1,7 @@
+const Discord = require('discord.js'); 
+const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
+const fs = require('fs');
+
 //Discord client ready ans set presence!
 client.on('ready', () => {
     client.user.setPresence({
