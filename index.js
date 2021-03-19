@@ -1,12 +1,12 @@
 const Discord = require('discord.js'); 
-const bot = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
+const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 const fs = require('fs');
 
-bot.commands = new Discord.Collection();
-bot.events = new Discord.Collection();
+client.commands = new Discord.Collection();
+client.events = new Discord.Collection();
 
 ['command_handler', 'event_handler'].forEach(handler => {
-    require(`./handlers/${handler}`)(bot, Discord);
+    require(`./handlers/${handler}`)(client, Discord);
 })
 
-bot.login(process.env.token);
+client.login(process.env.token);
