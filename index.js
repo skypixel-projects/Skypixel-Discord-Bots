@@ -23,7 +23,7 @@ bot.on('message', message => {
         case "ban":
             bot.commands.get('ban').execute(message, args);
         break;
-        case "broadcast":
+        case "send":
             bot.commands.get('broadcast').execute(message, args);
         break;
         case "changelogs":
