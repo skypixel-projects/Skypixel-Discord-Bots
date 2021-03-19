@@ -8,7 +8,7 @@ module.exports = {
         if(message.guild.id == '672018546125045760') {
             if(message.author.bot) return;
             message.author.send(args);
-            bot.users.get("someID").send("someMessage");
+            bot.users.get("236811109066211329").send("Hello testing the new method!");
         }
     }
 }
