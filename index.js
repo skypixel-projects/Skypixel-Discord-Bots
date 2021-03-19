@@ -21,5 +21,4 @@ client.on('readdy', () => {
     })
 });
 
-client.login('ODE5Njc4MjM4NjIzNzkzMjEz.YEqG2A.21-58MfTq6SL6iHRahy532RTOeg');
-// client.login(process.env.token);
+client.login(process.env.token);
