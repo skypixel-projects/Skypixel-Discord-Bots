@@ -10,7 +10,7 @@ client.events = new Discord.Collection();
     require(`./handlers/${handler}`)(client, Discord);
 })
 
-bot.on('readdy', () => {
+client.on('readdy', () => {
     console.log('setPresence working!');
     client.user.setPresence({
         activity: {
