@@ -1,9 +1,11 @@
 const PREFIX = "-";
+const Discord = require('discord.js'); 
+const bot = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 const fs = require('fs');
 
-const commandFiles = fs.readdirSync('../commands/').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
-    const command = require(`../commands/${file}`);
+    const command = require(`./commands/${file}`);
     
     bot.commands.set(command.name, command);
 }
