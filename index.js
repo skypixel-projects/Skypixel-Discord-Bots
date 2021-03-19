@@ -24,7 +24,7 @@ bot.on('message', message => {
             bot.commands.get('ban').execute(message, args);
         break;
         case "broadcast":
-            bot.commands.get('broadcast').execute(message, args);
+            bot.commands.get('broadcast').execute(message);
         break;
         case "changelogs":
             bot.commands.get('changelogs').execute(message, args);
