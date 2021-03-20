@@ -1,0 +1,3 @@
+{
+    "ready" : "${bot.user.username} is up to running! Please be note this bot is not stable yet!"
+}

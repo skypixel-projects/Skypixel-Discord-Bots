@@ -1,6 +1,7 @@
 const Discord = require("discord.js")
+const lang_en = require('../languages/lang_en.json');
 
 module.exports = bot => { 
-    console.log(`${bot.user.username} is up to running! Please be note this bot is not stable yet!`)
+    console.log(lang_en.ready)
     bot.user.setActivity("MaxWasTaked", {type: 'WATCHING'});
 }
