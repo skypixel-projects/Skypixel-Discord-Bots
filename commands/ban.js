@@ -1,26 +1,25 @@
-module.exports = {
-    name: "ban",
-    description: "",
-    execute(message, args){
-        if(message.guild.id == '672018546125045760') {
-            if(!message.guild) return;
-            if(message.content.startsWith('-ban')) {
-                const user = message.mentions.users.first();
-                if(user) {
-                    const member = message.guild.member(user);
-                    if(member) {
-                        member
-                            .ban(`This ${user.tag} has been banned by ${message.author}`)
-                            .then(() => {
-                            message.reply(`Successfully kicked ${user.tag}!`);
-                        });
-                    } else {
-                        message.reply("That user isn't in this guild!");
-                    }
-                } else {
-                    message.reply("You didn't mention the user to kick!");
-                }
-            }
+module.exports.run = async (bot, message, args) => {
+    if(!message.member.hasPermission('BAN_MEMBERS')) 
+        message.channel.send("No tienes permiso para ejecutar el comando.");
+    else {
+        let bannedMember = await message.guild.members.ban(args);
+        if(bannedMember){
+
+        try {
+            console.log(bannedMember.tag + " Fue baneado.");
+            message.channel.send (`${bannedMember} Fue baneado del servidor!`)
+        }
+            catch(err) {
+            console.log(err);
         }
     }
+}
+}
+
+module.exports.config = {
+    name: "ban",
+    description: "Bans a Users",
+    usage: "?ban",
+    accessableby: "Admins",
+    aliases: []
 }
