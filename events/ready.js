@@ -7,7 +7,7 @@ module.exports = bot => {
     // bot.user.setActivity(botsettings.discord_profile_activity, {type: 'WATCHING'});
 
     bot.user.setPresence({
-        status: discord_profile_status,  // You can show online, idle... Do not disturb is dnd
+        status: botsettings.discord_profile_status,  // You can show online, idle... Do not disturb is dnd
         game: {
             name: botsettings.discord_profile_activity,  // The message shown
             type: "WATCHING" // PLAYING, WATCHING, LISTENING, STREAMING,
