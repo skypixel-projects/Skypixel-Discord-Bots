@@ -1,6 +1,6 @@
 {
     "console_ready" : "The bot is up to running! Please be note this bot is not stable yet!",
-    "commands_help_description" : "```avatar | ban | cooldown | help | kick```",
+    "commands_help_description" : "```avatar | cooldown | help | kick```",
     "commands_help_author" : "Here is the Avaible Commands to use:",
     "commands_kick_permission" : "You do not have permission to run the command.",
     "commands_kick_successfully" : "He was kicked.",
