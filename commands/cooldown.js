@@ -1,10 +1,13 @@
 const usedCommand = new Set();
 
+const botsettings = require('../botsettings.json');
+const lang_en = require('../languages/lang_en.json');
+
 module.exports.run = async (bot, message, args) => {
     if(usedCommand.has(message.author.id)){
-        message.reply('You cannot use the command beacuse of the cooldown.')
+        message.reply(lang_en.commands_cooldown_unsuccessfully)
     } else {
-        message.reply('Your not in a cooldown anymore.')
+        message.reply(lang_en.commands_cooldown_successfully)
         
         
         usedCommand.add(message.author.id);
@@ -16,8 +19,8 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "cooldown",
-    description: "a Simple test of the Cooldown Command.",
-    usage: "?cooldown",
+    description: "",
+    usage: "",
     accessableby: "Members",
     aliases: []
 }

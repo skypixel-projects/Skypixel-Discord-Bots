@@ -1,3 +1,6 @@
+const botsettings = require('../botsettings.json');
+const lang_en = require('../languages/lang_en.json');
+
 module.exports.run = async (bot, message, args) => {
     if(message.guild.id == '672018546125045760') {
         if(message.author.bot) return;
