@@ -1,3 +1,4 @@
 {
-    "ready" : "${bot.user.username} is up to running! Please be note this bot is not stable yet!"
+    "console_ready" : "The bot is up to running! Please be note this bot is not stable yet!",
+    "commands_help" : "```hi | hello | mute | unmute | addrole | removerole | embed | kick | ban```"
 }
