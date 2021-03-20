@@ -11,8 +11,8 @@ module.exports.run = async (bot, message, args) => {
     //Normal usage of (prefix)help without any args. (Shows all of the commands and you should set the commands yourself)
     if(!helpArgs[0]) {
         var embed = new Discord.MessageEmbed()
-            .setAuthor(`Here is the Avaible Commands to use:`)
-            .setDescription(lang_en.commands_help)
+            .setAuthor(commands_help_author)
+            .setDescription(lang_en.commands_help_description)
             .addFields({ name: 'Prefix', value: `${botsettings.prefix}`, inline: true})
             .setColor('#00FFF3')
             
@@ -22,8 +22,8 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "help",
-    description: "",
-    usage: "?help",
+    description: "The help command",
+    usage: "",
     accessableby: "Members",
     aliases: []
 }

@@ -1,4 +1,5 @@
 {
     "console_ready" : "The bot is up to running! Please be note this bot is not stable yet!",
-    "commands_help" : "```hi | hello | mute | unmute | addrole | removerole | embed | kick | ban```"
+    "commands_help_description" : "```hi | hello | mute | unmute | addrole | removerole | embed | kick | ban```",
+    "commands_help_author" : "Here is the Avaible Commands to use:"
 }
