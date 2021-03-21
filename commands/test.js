@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     message.delete();
 
 
-    const DevChannel = member.guild.channels.cache.find(channel => channel.name === 'developing')
+    const DevChannel = guild.channels.cache.find(channel => channel.name === 'developing')
     DevChannel.send('The testing packet has been sended!')
 
 
