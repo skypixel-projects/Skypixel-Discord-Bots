@@ -2,9 +2,8 @@ const Discord = require("discord.js")
 
 const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
-const ready = require("./ready");
 
-module.exports = ready => { 
+module.exports = bot => { 
     console.log("Activity is working")
     bot.user.setActivity(botsettings.discord_profile_activity, { type: 'LISTENING' });
 }
