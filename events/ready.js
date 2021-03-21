@@ -5,4 +5,7 @@ const lang_en = require('../languages/lang_en.json');
 
 module.exports = bot => { 
     console.log(lang_en.console_ready)
+
+    const runningDiscordBot = member.guild.channels.cache.find(channel => channel.name === 'developing')
+    runningDiscordBot.send(lang_en.console_ready)
 }
