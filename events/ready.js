@@ -8,9 +8,9 @@ module.exports = bot => {
 
     bot.user.setPresence({
         status: "idle",  // You can show online, idle... Do not disturb is dnd
-        game: {
+        acti: {
             name: "MaxWasTaked",  // The message shown
-            type: "LISTENING" // PLAYING, WATCHING, LISTENING, STREAMING,
+            type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING,
         }
     });
 }
