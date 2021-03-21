@@ -7,9 +7,10 @@ module.exports.run = async (bot, message, args) => {
     let member = message.mentions.members.first() || message.guild.members.cache.get(userArgs[0]) || message.guild.members.cache.find(x => x.user.username.toLowerCase() === userArgs.slice(0).join(" ") || x.user.username === userArgs[0]) || message.member;
 
     if(member.user.bot) return;
+    if(!userArgs) return;
     const img = await member.user.displayAvatarURL();
     const embed = new Discord.MessageEmbed()
-    .setColor('YELLOW')
+    .setColor('RED')
     .setImage(img)
     .setTitle(`${member.user.username} ` + lang_en.commands_avatar_title)
 
