@@ -1,5 +1,5 @@
 module.exports.run = async (bot, message, args) => {
-    let epicRole = message.guild.roles.cache.get('ROLE_ID_HERE');
+    let epicRole = message.guild.roles.cache.get('677939383038640199');
     const member = message.mentions.members.first();
 
     member.roles.remove(epicRole);
@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "removerole",
     description: "",
-    usage: "?removerole",
+    usage: "",
     accessableby: "Members",
     aliases: []
 }
