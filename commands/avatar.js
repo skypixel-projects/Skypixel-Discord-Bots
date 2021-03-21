@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
     const img = await message.author.displayAvatarURL();
     const embed = new Discord.MessageEmbed()
     .setImage(img)
-    .setTitle(`${message.author.username} ` + botsettings.commands_avatar_title)
+    .setTitle(`${message.author.username} ` + lang_en.commands_avatar_title)
 
     message.channel.send(embed);
 }
