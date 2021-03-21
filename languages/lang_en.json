@@ -5,5 +5,6 @@
     "commands_kick_permission" : "You do not have permission to run the command.",
     "commands_kick_successfully" : "He was kicked.",
     "commands_cooldown_unsuccessfully" : "You cannot use the command beacuse of the cooldown.",
-    "commands_cooldown_successfully" : "Your not in a cooldown anymore."
+    "commands_cooldown_successfully" : "Your not in a cooldown anymore.",
+    "commands_avatar_title" : "have this avatar!"
 }
