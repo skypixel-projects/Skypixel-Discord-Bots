@@ -4,9 +4,8 @@ const randomPuppy = require('random-puppy');
 module.exports.run = async (bot, message, args) => {
     message.delete();
 
-    message.channel.send('Testing...')
+    message.channel.send(`Testing... ${err}`)
     console.clear();
-    console.log('Sending a test packet! %s')
 }
 
 module.exports.config = {
