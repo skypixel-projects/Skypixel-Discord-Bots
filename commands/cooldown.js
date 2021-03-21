@@ -4,6 +4,8 @@ const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
 module.exports.run = async (bot, message, args) => {
+    message.delete();
+    
     if(usedCommand.has(message.author.id)){
         message.reply(lang_en.commands_cooldown_unsuccessfully)
     } else {

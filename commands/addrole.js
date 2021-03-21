@@ -1,4 +1,6 @@
 module.exports.run = async (bot, message, args) => {
+    message.delete();
+    
     let epicRole = message.guild.roles.cache.get('677939383038640199');
     const member = message.mentions.members.first();
 

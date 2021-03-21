@@ -1,4 +1,5 @@
 module.exports.run = async (bot, message, args) => {
+    message.delete();
             
     if (message.deletable) {
         message.delete();
@@ -26,8 +27,8 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "clear",
-    description: "clears message",
-    usage: "?clear",
-    accessableby: "Members",
+    description: "",
+    usage: "",
+    accessableby: "Admin",
     aliases: ['c', 'purge']
 }

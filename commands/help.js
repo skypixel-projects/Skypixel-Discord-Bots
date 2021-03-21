@@ -5,6 +5,8 @@ const lang_en = require('../languages/lang_en.json');
 
 
 module.exports.run = async (bot, message, args) => {
+    message.delete();
+
     let helpArray = message.content.split(" ");
     let helpArgs = helpArray.slice(1);
 

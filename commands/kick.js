@@ -2,6 +2,8 @@ const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
 module.exports.run = async (bot, message, args) => {
+    message.delete();
+
     if(!message.member.hasPermission('KICK_MEMBERS'))
         message.channel.send(lang_en.commands_kick_permission);
     else {

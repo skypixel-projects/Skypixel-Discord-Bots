@@ -4,6 +4,8 @@ const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
 module.exports.run = async (bot, message, args) => {
+    message.delete();
+
     let member = message.mentions.members.first() || message.guild.members.cache.get(userArgs[0]) || message.guild.members.cache.find(x => x.user.username.toLowerCase() === userArgs.slice(0).join(" ") || x.user.username === userArgs[0]) || message.member;
 
     if(member.user.bot) return;
