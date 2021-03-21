@@ -7,9 +7,9 @@ module.exports = bot => {
     console.log(lang_en.console_ready)
 
     bot.user.setPresence({
-        status: "idle",  // You can show online, idle... Do not disturb is dnd
-        acti: {
-            name: "MaxWasTaked",  // The message shown
+        status: botsettings.discord_profile_status,  // You can show online, idle... Do not disturb is dnd
+        game: {
+            name: botsettings.discord_profile_activity,  // The message shown
             type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING,
         }
     });
