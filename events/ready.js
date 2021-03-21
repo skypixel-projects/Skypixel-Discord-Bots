@@ -5,7 +5,9 @@ const lang_en = require('../languages/lang_en.json');
 
 module.exports = bot => { 
     console.log(lang_en.console_ready)
+}
 
+bot.on('ready', () => {
     bot.user.setPresence({
         status: botsettings.discord_profile_status,  // You can show online, idle... Do not disturb is dnd
         game: {
@@ -13,4 +15,4 @@ module.exports = bot => {
             type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING,
         }
     });
-}
+});
