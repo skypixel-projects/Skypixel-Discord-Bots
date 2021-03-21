@@ -20,5 +20,5 @@ module.exports.config = {
     description: "",
     usage: "",
     accessableby: "Admin",
-    aliases: []
+    aliases: ['dev', 'changelogs', 'developer']
 }
