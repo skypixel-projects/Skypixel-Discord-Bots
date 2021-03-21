@@ -6,7 +6,7 @@ const lang_en = require('../languages/lang_en.json');
 module.exports = bot => { 
     console.log(lang_en.console_ready)
 
-    bot.status.setPresence({
+    bot.user.setPresence({
         status: "idle",  // You can show online, idle... Do not disturb is dnd
         game: {
             name: "MaxWasTaked",  // The message shown
