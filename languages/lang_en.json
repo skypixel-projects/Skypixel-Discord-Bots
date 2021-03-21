@@ -1,10 +1,15 @@
 {
+
     "console_ready" : "The bot is up to running! Please be note this bot is not stable yet!",
-    "commands_help_description" : "```avatar | cooldown | help | kick```",
+
+    "commands_help_description" : "```addrole | avatar | clear | cooldown | help | kick | memberinfo | meme | removerole```",
     "commands_help_author" : "Here is the Avaible Commands to use:",
+
     "commands_kick_permission" : "You do not have permission to run the command.",
     "commands_kick_successfully" : "He was kicked.",
+
     "commands_cooldown_unsuccessfully" : "You cannot use the command beacuse of the cooldown.",
     "commands_cooldown_successfully" : "Your not in a cooldown anymore.",
+
     "commands_avatar_title" : "have this avatar!"
 }

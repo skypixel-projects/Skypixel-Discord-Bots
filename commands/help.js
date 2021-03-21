@@ -12,8 +12,8 @@ module.exports.run = async (bot, message, args) => {
         var embed = new Discord.MessageEmbed()
             .setAuthor(lang_en.commands_help_author)
             .setDescription(lang_en.commands_help_description)
-            .addFields({ name: 'Prefix', value: `${botsettings.prefix}`, inline: true})
-            .setColor('#00FFF3')
+            .addFields({ name: 'Prefix:', value: `${botsettings.prefix}`, inline: true})
+            .setColor('RED')
             
         message.channel.send(embed);
     }

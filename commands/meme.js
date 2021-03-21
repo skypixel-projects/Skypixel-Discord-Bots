@@ -8,6 +8,7 @@ module.exports.run = async (bot, message, args) => {
 
     const embed = new Discord.MessageEmbed()
     .setImage(img)
+    .setColor('RED')
     .setTitle(`From /r/${random}`)
     .setURL(`http://reddit.com/${random}`)
 

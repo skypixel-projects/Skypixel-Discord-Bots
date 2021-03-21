@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
     const userEmbed = new Discord.MessageEmbed()
     .setAuthor(member.user.tag, member.user.displayAvatarURL())
     .setTimestamp()
-    .setColor('BLUE')
+    .setColor('RED')
     .setImage(member.user.displayAvatarURL())
     .addField("Member ID", member.id)
     .addField('Roles', `<@&${member._roles.join('> <@&')}>`)
