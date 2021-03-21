@@ -8,6 +8,10 @@ bot.on("guildMemberAdd", member => {
     welcomeChannel.send (`Welcome! ${member}`)
 })
 
+bot.on('ready', () => {
+    bot.user.setPresence({status: botsettings.discord_profile_status});
+})
+
 require("./util/eventHandler")(bot)
 
 const fs = require("fs");
