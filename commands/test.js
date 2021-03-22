@@ -8,6 +8,7 @@ module.exports.run = async (bot, message, args) => {
     const embed = new Discord.MessageEmbed()
     .setColor('RED')
     .setTitle('Sended a ping packet!')
+    message.channel.send(embed);
 }
 
 module.exports.config = {
