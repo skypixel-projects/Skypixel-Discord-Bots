@@ -4,7 +4,7 @@ const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
 
 module.exports = bot => {
-    fs.readdir("./commands/", (err, files) => {
+    fs.readdir("../commands/", (err, files) => {
 
         if(err) console.log(err)
     
@@ -14,7 +14,7 @@ module.exports = bot => {
         }
     
         jsfile.forEach((f, i) => {
-            let pull = require(`./commands/${f}`);
+            let pull = require(`../commands/${f}`);
             bot.commands.set(pull.config.name, pull);  
             pull.config.aliases.forEach(alias => {
                 bot.aliases.set(alias, pull.config.name)
