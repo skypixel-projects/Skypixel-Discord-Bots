@@ -4,8 +4,8 @@ const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
 module.exports = bot => { 
-    console.log('The event announce is working!')
-    
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome')
+    const guildChannel = guild.get("672018546125045760");
+
+    const welcomeChannel = guildChannel.channels.cache.find(channel => channel.name === 'welcome')
     welcomeChannel.send (`Welcome! ${member}`)
 }
