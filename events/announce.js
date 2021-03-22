@@ -4,7 +4,8 @@ const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
 module.exports = bot => { 
-    const guild = bot.channels.get("672018546125045760");
+    //Aici bot-ul va afla pe care server sa trimita mesajul!
+    const guild = bot.guilds.get("672018546125045760");
 
     //Bot-ul va trimite un mesaj pe ori ce canal denumit "Welcome"!
     const welcomeChannel = guild.channels.cache.find(channel => channel.name === 'welcome')
