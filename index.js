@@ -8,7 +8,7 @@ bot.on("guildMemberAdd", member => {
     welcomeChannel.send (`Welcome! ${member}`)
 })
 
-require("./util/eventHandler")(bot)
+require("./util/eventHandler")(bot)  
 
 const fs = require("fs");
 bot.commands = new Discord.Collection();
