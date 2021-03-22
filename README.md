@@ -1,7 +1,7 @@
 # Discord bot development
-Small team for developing and creating projects!
+Small team for developing and creating new projects!
 
-# List of projects developing:
+# List of current projects in development:
     Running projects!
         - Minecraft plugins (AntiCheat)
         - Minecraft clients (SkyPixel Launcher, SkyPixel Client)
@@ -19,15 +19,15 @@ Small team for developing and creating projects!
 # Official discord, youtube, twitter, twitch:
     Main developer and creator of (Skypixel projects)
         - Yonaga678 (aka MaxWasTaked) 
-            - Youtube: n/a
-            - Discord: n/a
-            - Twitter: n/a
-            - Twitch: n/a
+            - Youtube: https://www.youtube.com/channel/UC-oHURG8mFfv_pfmnX0IZOw
+            - Discord: MaxWasTaked#0001
+            - Twitter: https://twitter.com/maxwastaked
+            - Twitch: https://www.twitch.tv/maxwastaked
         - xSober_Chris
-            - Youtube: n/a
-            - Discord: n/a
-            - Twitter: n/a
-            - Twitch: n/a
+            - Youtube: https://www.youtube.com/channel/UC8cmvKbs1r58i_ItjWTbuQA
+            - Discord: xSober_Chris#6969
+            - Twitter: https://twitter.com/Chrisz87569223
+            - Twitch: https://www.twitch.tv/xsober_chris
     Main socialmedia for Skypixel (Projects)
-        - Youtube: n/a
-        - Discord: n/a
+        - Youtube: https://www.youtube.com/channel/UCh_AsMBKSOjMHfqGLe_dorg
+        - Discord: (Currently under construction!)

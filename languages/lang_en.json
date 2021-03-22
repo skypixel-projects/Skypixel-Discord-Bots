@@ -8,8 +8,8 @@
     "commands_kick_permission" : "You do not have permission to run the command.",
     "commands_kick_successfully" : "The member was kicked.",
 
-    "commands_cooldown_unsuccessfully" : "You cannot use the command beacuse of the cooldown.",
+    "commands_cooldown_unsuccessfully" : "You cannot use the command beacuse of your cooldown.",
     "commands_cooldown_successfully" : "Your cooldown ran off.",
 
-    "commands_avatar_title" : "have this avatar!"
+    "commands_avatar_title" : "Here's the member avatar!"
 }
