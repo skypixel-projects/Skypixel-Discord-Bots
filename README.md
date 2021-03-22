@@ -1,14 +1,14 @@
 # Discord bot development
-Small team for developting and creating projects!
+Small team for developing and creating projects!
 
-# List of projects developeing:
+# List of projects developing:
     Running projects!
         - Minecraft plugins (AntiCheat)
         - Minecraft clients (SkyPixel Launcher, SkyPixel Client)
         - Minecraft full spigot jar
         - Discord bot project
-        - Software (Dakota AV, Designes)
-        - App fot android and ios
+        - Software (Dakota AV, Designs)
+        - App for android and ios
     Future projects!
         - Full website
         - Full VPN
@@ -16,7 +16,7 @@ Small team for developting and creating projects!
         - Full open source OS
         - and more...
 
-# Official discord, youtube, twitter, twicth:
+# Official discord, youtube, twitter, twitch:
     Main developer and creator of (Skypixel projects)
         - Yonaga678 (aka MaxWasTaked) 
             - Youtube: n/a
