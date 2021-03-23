@@ -1,5 +1,8 @@
 {
 
+    "maintenance" : "This command is under development!",
+
+
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
 
     "commands_help_description" : "```addrole | avatar | clear | cooldown | help | kick | memberinfo | meme | removerole | ping```",
