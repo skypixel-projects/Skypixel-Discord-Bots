@@ -4,8 +4,12 @@ const randomPuppy = require('random-puppy');
 module.exports.run = async (bot, message, args) => {
     message.delete();
 
-    message.channel.send(`Testing... `).catch(err => message.reply(`Something went wrong... ${err}`));
-    console.clear();
+    message.channel.send('React whit 825398283215700009 for free rank!')
+        .then(msg=> { 
+            msg.react("👍")
+            msg.react("👎")
+        })
+        .catch(() => console.error('One of the emojis failed to react.'));
 }
 
 module.exports.config = {
