@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.0",
+    "discord": "^0.8.2",
     "discord.js": "^12.4.1",
     "moment": "^2.29.1",
     "ms": "^2.1.3",

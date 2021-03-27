@@ -3,12 +3,14 @@ const botsettings = require('./botsettings.json');
 
 const bot = new Discord.Client({disableEveryone: true});
 
-bot.on("guildMemberAdd", member => {
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome')
-    welcomeChannel.send (`Welcome! ${member}`)
-})
+// bot.on("guildMemberAdd", member => {
+//     const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome')
+//     welcomeChannel.send (`Welcome! ${member}`)
+// })
 
 require("./util/eventHandler")(bot)
+// require("./util/commandHandler")(bot)
+
 
 const fs = require("fs");
 bot.commands = new Discord.Collection();
@@ -46,5 +48,5 @@ bot.on("message", async message => {
 
 })
 
-// bot.login(process.env.token);
-bot.login(botsettings.token);
+bot.login(process.env.token);
+// bot.login(botsettings.token);
