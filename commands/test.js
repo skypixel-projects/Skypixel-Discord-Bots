@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
-const randomPuppy = require('random-puppy');
+const lang_en = require('../languages/lang_en.json');
 
 module.exports.run = async (bot, message, args) => {
     message.delete();
 
-    message.channel.send('React whit 825398283215700009 for free rank!')
+    message.channel.send(lang_en.maintenance)
         .then(msg=> { 
             msg.react("👍")
             msg.react("👎")

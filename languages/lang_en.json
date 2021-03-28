@@ -1,6 +1,6 @@
 {
 
-    "maintenance" : "This command is under development!",
+    "maintenance" : "```This command is under development!```",
 
 
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",

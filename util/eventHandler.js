@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 const reqEvent = (event) => require(`../events/${event}`)
 
 module.exports = bot => {
@@ -8,5 +9,7 @@ module.exports = bot => {
 
     bot.on("ready", function() {reqEvent("ready") (bot) })
     bot.on("ready", function() {reqEvent("activity") (bot) })
+    bot.on("message", function() {reqEvent("dakota") (bot) })
     bot.on("messageReactionAdd", function() {reqEvent("react") (bot) })
+    bot.on("guildMemberAdd", function() {reqEvent("announce") (bot) })
 }
