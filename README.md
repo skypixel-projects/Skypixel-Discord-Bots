@@ -1,4 +1,4 @@
-# Discord bot development
+# Skypixel development
 Small team for developing and creating new projects!
 
 # List of current projects in development:
