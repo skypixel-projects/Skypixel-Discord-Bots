@@ -6,7 +6,9 @@ const bot = new Discord.Client({disableEveryone: true});
 // New member join to an guild send welcome message!
 bot.on("guildMemberAdd", member => {
     const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome')
-    welcomeChannel.send (`Welcome! ${member}`)
+    if(welcomeChannel) {
+        welcomeChannel.send (`Welcome! ${member}`)
+    }
 })
 
 require("./util/eventHandler")(bot)
