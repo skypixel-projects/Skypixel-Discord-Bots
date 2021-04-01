@@ -5,7 +5,7 @@
 
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
 
-    "commands_help_description" : "```addrole | avatar | clear | cooldown | help | kick | memberinfo | meme | removerole | ping```",
+    "commands_help_description" : "addrole, avatar, clear, cooldown, help, kick, memberinfo, meme, nsfw, removerole, test.",
     "commands_help_author" : "Here is the list of available commands:",
 
     "commands_kick_permission" : "You do not have permission to run this command.",
