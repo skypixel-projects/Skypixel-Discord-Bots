@@ -1,31 +1,25 @@
 const Discord = require('discord.js');
 const botsettings = require('./botsettings.json');
+const lang_en = require('./languages/lang_en.json');
 
-const bot = new Discord.Client({disableEveryone: true});
+const bot = new Discord.Client({ disableMentions: 'everyone' });
 
-// New member join to an guild send welcome message!
-bot.on("guildMemberAdd", member => {
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome')
-    if(welcomeChannel) {
-        welcomeChannel.send (`Welcome! ${member}`)
-    }
-})
-
+// In replica aceasta functioneaza toate eventele!
 require("./util/eventHandler")(bot)
-// require("./util/commandHandler")(bot)
 
-
+// --
 const fs = require("fs");
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
+// In replica aceasta functioneaza toate messajele pe care botul le vede si le poate folosi ca o commanda!
 fs.readdir("./commands/", (err, files) => {
 
     if(err) console.log(err)
 
     let jsfile = files.filter(f => f.split(".").pop() === "js") 
     if(jsfile.length <= 0) {
-        return console.log("[LOGS] Couldn't Find Commands!");
+        return console.log("[DEBUG] Couldn't Find Commands!");
     }
 
     jsfile.forEach((f, i) => {
@@ -37,6 +31,7 @@ fs.readdir("./commands/", (err, files) => {
     });
 });
 
+// In replica aceasta botul poate diferentia mesajele "DM" sau "GUILD"!
 bot.on("message", async message => {
     if(message.author.bot || message.channel.type === "dm") return;
 
@@ -51,5 +46,25 @@ bot.on("message", async message => {
 
 })
 
+
+
+// Developer test command with code!
+// Atentie aceasta commanda nu are voie sa fie mult timp aici pentru ca poate provoca errori false!
+// In timpul in care se va fixa bugul cu event handler trebuie mutat cat mai curand!
+bot.on('message', function(msg){
+    if(msg.author.bot || msg.channel.type === "dm") return;
+
+    if(msg.content === '-devcode /}qs9SH#tC-knTr~'){
+        msg.reply(lang_en.developer_code_error_message)
+            .then(msg => {
+                msg.delete({ timeout: 10000 /*time unitl delete in milliseconds*/});
+            })
+            .catch('error...');
+    }
+});
+
+
+
+// In replica aceasta botul se poate loga la discord api pentru a folosi botul!
 // bot.login(process.env.token);
 bot.login(botsettings.token);

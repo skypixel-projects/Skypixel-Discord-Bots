@@ -1,12 +1,14 @@
 {
+    "developer_code_error_message" : "this code is not valid!",
 
     "maintenance" : "```This command is under development!```",
 
-
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
+    "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
 
-    "commands_help_description" : "addrole, avatar, clear, cooldown, help, kick, memberinfo, meme, nsfw, removerole, test.",
+    "commands_help_description" : "```addrole, avatar, clear, cooldown, help, kick, memberinfo, meme, nsfw, removerole, test```",
     "commands_help_author" : "Here is the list of available commands:",
+    "commands_help_prefix" : "Prefix:",
 
     "commands_kick_permission" : "You do not have permission to run this command.",
     "commands_kick_successfully" : "The member was kicked.",
