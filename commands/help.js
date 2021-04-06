@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(lang_en.commands_help_description)
             .addFields({ name: lang_en.commands_help_prefix, value: '```' + `${botsettings.prefix}` + '```', inline: true})
             .setColor('RED')
-            
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed);
     }
 }

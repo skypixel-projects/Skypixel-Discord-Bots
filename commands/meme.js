@@ -13,6 +13,7 @@ module.exports.run = async (bot, message, args) => {
     .setColor('RED')
     .setTitle(`From /r/${random}`)
     .setURL(`http://reddit.com/${random}`)
+    .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
 
     message.channel.send(embed);
 

@@ -4,18 +4,14 @@ const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
 module.exports.run = async (bot, message, args) => {
+    const user = message.mentions.users.first() || message.author;
+    	const avatarEmbed = new Discord.MessageEmbed()
+            .setColor('RED')
+            .setAuthor(`${user.username} ` + lang_en.commands_avatar_title)
+            .setImage(user.displayAvatarURL())
+	        .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+    message.channel.send(avatarEmbed);
     message.delete();
-
-    let member = message.mentions.members.first() || message.guild.members.cache.get(userArgs[0]) || message.guild.members.cache.find(x => x.user.username.toLowerCase() === userArgs.slice(0).join(" ") || x.user.username === userArgs[0]) || message.member;
-
-    if(member.user.bot) return;
-    const img = await member.user.displayAvatarURL();
-    const embed = new Discord.MessageEmbed()
-    .setColor('RED')
-    .setImage(img)
-    .setTitle(`${member.user.username} ` + lang_en.commands_avatar_title)
-
-    message.channel.send(embed);
 }
 
 module.exports.config = {
@@ -23,5 +19,5 @@ module.exports.config = {
     description: "",
     usage: "",
     accessableby: "Members",
-    aliases: []
+    aliases: ['pic', 'picture']
 }
