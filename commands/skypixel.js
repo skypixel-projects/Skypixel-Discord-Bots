@@ -5,7 +5,7 @@ const hook = new Discord.WebhookClient('828735435332517990', 'QQh6rSiyRsejSU5rpd
 
 module.exports.run = async (bot, message, args) => {
     message.delete();
-    hook.send('**Official link: **' + lang_en.skypixel_official_website_link);
+    hook.send('**Official link: *' + lang_en.skypixel_official_website_link);
 }
 
 module.exports.config = {
