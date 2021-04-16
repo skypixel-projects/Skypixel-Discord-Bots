@@ -65,6 +65,11 @@ bot.on('message', function(msg){
 
 
 
+
+// Aici va fii comenzile pentru muzica!
+
+
+
 // In replica aceasta botul se poate loga la discord api pentru a folosi botul!
 // bot.login(process.env.token);
 bot.login(botsettings.token);
