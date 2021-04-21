@@ -48,15 +48,15 @@ bot.on("message", async message => {
 
 
 //Aici este special event pentru bot!
-bot.on("ready", () => {
-    const MIN_INTERVAL = 1000 * 60
-    setInterval(function(){
-        if(currentdate.getMinutes() == currentdate.getHours())
-        {
-            bot.channels.get('820599071987204096').send(':)');
-        }
-    }, MIN_INTERVAL)
-});
+// bot.on("ready", () => {
+//     const MIN_INTERVAL = 1000 * 60
+//     setInterval(function(){
+//         if(currentdate.getMinutes() == currentdate.getHours())
+//         {
+//             bot.channels.get('820599071987204096').send(':)');
+//         }
+//     }, MIN_INTERVAL)
+// });
 
 // Developer test command with code!
 // Atentie aceasta commanda nu are voie sa fie mult timp aici pentru ca poate provoca errori false!
