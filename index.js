@@ -49,13 +49,9 @@ bot.on("message", async message => {
 
 //Aici este special event pentru bot!
 // bot.on("ready", () => {
-//     const MIN_INTERVAL = 1000 * 60
-//     setInterval(function(){
-//         if(currentdate.getMinutes() == currentdate.getHours())
-//         {
-//             bot.channels.get('820599071987204096').send(':)');
-//         }
-//     }, MIN_INTERVAL)
+//   setInterval(function(){ 
+//     bot.channels.cache.get("820599071987204096").send("1");
+//   }, 1000);
 // });
 
 // Developer test command with code!
