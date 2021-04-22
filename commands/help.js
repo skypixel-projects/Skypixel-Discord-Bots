@@ -15,9 +15,50 @@ module.exports.run = async (bot, message, args) => {
             .setAuthor(lang_en.commands_help_author)
             .setDescription(lang_en.commands_help_description)
             .addFields({ name: lang_en.commands_help_prefix, value: '```' + `${botsettings.prefix}` + '```', inline: true})
+            .addFields({ name: 'More help', value: '```' + `-help <commands>` + '```', inline: true})
             .setColor('RED')
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed);
+    }
+
+    if(args === "music"){
+        message.reply('Hello the music command is comming soon!')
+        message.channel.send('```**-play** - **null**```')
+        message.channel.send('```**-stop** - **null**```')
+        message.channel.send('```**-skip* - **null**```')
+        message.channel.send('```**-pause** - **null**```')
+    }
+
+    if(args === "avatar"){
+        message.reply('Hello the avatar command is comming soon!')
+    }
+
+    if(args === "meme"){
+        message.reply('Hello the meme command is comming soon!')
+    }
+
+    if(args === "memberinfo"){
+        message.reply('Hello the memberinfo command is comming soon!')
+    }
+
+    if(args === "clear"){
+        message.reply('Hello the clear command is comming soon!')
+    }
+
+    if(args === "cooldown"){
+        message.reply('Hello the cooldown command is comming soon!')
+    }
+
+    if(args === "help"){
+        message.reply('Hello the help command is comming soon!')
+    }
+
+    if(args === "kick"){
+        message.reply('Hello the kick command is comming soon!')
+    }
+
+    if(args === "ban"){
+        message.reply('Hello the ban command is comming soon!')
     }
 }
 

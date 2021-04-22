@@ -7,7 +7,7 @@
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
     "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
 
-    "commands_help_description" : "```addrole, avatar, clear, cooldown, help, kick, memberinfo, meme, nsfw, removerole, play, stop, skip```",
+    "commands_help_description" : "```addrole, avatar, clear, cooldown, help, kick, memberinfo, meme, nsfw, removerole, music```",
     "commands_help_author" : "Here is the list of available commands:",
     "commands_help_prefix" : "Prefix:",
 
