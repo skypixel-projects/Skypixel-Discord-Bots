@@ -72,7 +72,12 @@ bot.on('message', function(msg){
 
 
 
-// Aici va fii comenzile pentru muzica!
+// Aici este dakota AV!
+bot.on('message', msg => {
+    if (msg.content === 'hi puro' || msg.content === 'hello puro') {
+        msg.lineReplyNoMention(`Hello! My name is ${bot.user.username}`);
+    }
+});
 
 
 

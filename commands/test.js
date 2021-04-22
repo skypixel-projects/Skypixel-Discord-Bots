@@ -1,16 +1,28 @@
-const Discord = require('discord.js');
+const discord = require('discord.js');
+require('discord-reply'); //⚠️ IMPORTANT: put this before your discord.Client()
+const bot = new discord.Client();
+
 const lang_en = require('../languages/lang_en.json');
 
 module.exports.run = async (bot, message, args) => {
     // message.delete();
 
-    message.channel.send('This message will been deleted after 10000 milliseconds!')
-        .then(msg => {
-            msg.delete({ timeout: 10000 /*time unitl delete in milliseconds*/});
-            msg.react("👎")
-            msg.react("👍")
-        })
-        .catch('error...');
+
+    if (message.content === 'hi puro') {
+        message.lineReplyNoMention(`My name is ${bot.user.username}`);
+    }
+
+    //
+    //Aici este linia de code unde botul reactioneaza si sterge mesajul
+    //
+
+    // message.channel.send('This message will been deleted after 10000 milliseconds!')
+    //     .then(msg => {
+    //         msg.delete({ timeout: 10000 /*time unitl delete in milliseconds*/});
+    //         msg.react("👎")
+    //         msg.react("👍")
+    //     })
+    //     .catch('error...');
 }
 
 module.exports.config = {
