@@ -18,8 +18,8 @@ module.exports.run = async (bot, message, args) => {
         message.channel.send('Skip command has been executed!')
     }
 
-    if(message.content === '-stop'){
-        message.channel.send('Stop command has been executed!')
+    if(message.content === '-leave'){
+        message.channel.send('Leave command has been executed!')
 
         if (message.member.voice.channel) {
             const connection = await message.member.voice.channel.join();
@@ -43,5 +43,5 @@ module.exports.config = {
     description: "",
     usage: "",
     accessableby: "Members",
-    aliases: ["play", "skip", "stop", "pause", "volume"]
+    aliases: ["play", "skip", "leave", "pause", "volume"]
 }
