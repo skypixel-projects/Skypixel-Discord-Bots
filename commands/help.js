@@ -10,6 +10,7 @@ module.exports.run = async (bot, message, args) => {
     let helpArray = message.content.split(" ");
     let helpArgs = helpArray.slice(1);
 
+    // The main command handler
     if(!helpArgs[0]) {
         var embed = new Discord.MessageEmbed()
             .setAuthor(lang_en.commands_help_author)
@@ -21,44 +22,40 @@ module.exports.run = async (bot, message, args) => {
         message.channel.send(embed);
     }
 
+    // The music command handler
     if(args === "music"){
-        message.reply('Hello the music command is comming soon!')
-        message.channel.send('```**-play** - **null**```')
-        message.channel.send('```**-stop** - **null**```')
-        message.channel.send('```**-skip* - **null**```')
-        message.channel.send('```**-pause** - **null**```')
+        var embed = new Discord.MessageEmbed()
+            .addFields({ name: "Music commands", value: '```' + `-play, -stop, -skip, -leave, -volume` + '```', inline: true})
+            .setColor('RED')
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+        message.channel.send(embed);
     }
 
-    if(args === "avatar"){
-        message.reply('Hello the avatar command is comming soon!')
+    // The fun command handler
+    if(args === "fun"){
+        var embed = new Discord.MessageEmbed()
+            .addFields({ name: "Fun commands", value: '```' + `-avatar, -nsfw, -meme, -memberinfo` + '```', inline: true})
+            .setColor('RED')
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+        message.channel.send(embed);
     }
 
-    if(args === "meme"){
-        message.reply('Hello the meme command is comming soon!')
+    // The admin command handler
+    if(args === "admin"){
+        var embed = new Discord.MessageEmbed()
+            .addFields({ name: "Admin commands", value: '```' + `-kick, -clear, -ban, -removerole, -addrole, -cooldown` + '```', inline: true})
+            .setColor('RED')
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+        message.channel.send(embed);
     }
 
-    if(args === "memberinfo"){
-        message.reply('Hello the memberinfo command is comming soon!')
-    }
-
-    if(args === "clear"){
-        message.reply('Hello the clear command is comming soon!')
-    }
-
-    if(args === "cooldown"){
-        message.reply('Hello the cooldown command is comming soon!')
-    }
-
-    if(args === "help"){
-        message.reply('Hello the help command is comming soon!')
-    }
-
-    if(args === "kick"){
-        message.reply('Hello the kick command is comming soon!')
-    }
-
-    if(args === "ban"){
-        message.reply('Hello the ban command is comming soon!')
+    // The random command handler
+    if(args === "random"){
+        var embed = new Discord.MessageEmbed()
+            .addFields({ name: "Random commands", value: '```' + `-test, -skypixel` + '```', inline: true})
+            .setColor('RED')
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+        message.channel.send(embed);
     }
 }
 
@@ -67,5 +64,5 @@ module.exports.config = {
     description: "",
     usage: "",
     accessableby: "Members",
-    aliases: []
+    aliases: ["help", "?"]
 }

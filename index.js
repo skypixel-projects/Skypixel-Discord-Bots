@@ -75,7 +75,7 @@ bot.on('message', function(msg){
 // Aici este dakota AV!
 bot.on('message', msg => {
     if (msg.content === 'hi puro' || msg.content === 'hello puro') {
-        msg.lineReplyNoMention(`Hello! My name is ${bot.user.username}`);
+        msg.lineReplyNoMention(lang_en.ai_replay_command_message);
     }
 });
 
