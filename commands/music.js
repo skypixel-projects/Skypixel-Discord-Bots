@@ -4,11 +4,25 @@ module.exports.run = async (bot, message, args) => {
     message.delete();
 
     if(message.content.includes("-play")){
-        message.channel.send('Play command has been executed! ' + 'The request music is ' + args)
+        if(!message.content.includes('https://www.')) {
+            return message.channel.send(`You need to specify the URL of the music!`)
+        } else {
+            message.channel.send(`Playing now: ` + args)
+        }
+
+        if(message.content.includes('soundcloud')) {
+            console.log('Soundcloud has been detected!')
+            return message.channel.send(`I'm sorry the soundcloud music is not working yet!`)
+        }
+
+        if(message.content.includes('spotify')) {
+            console.log('Spotify has been detected!')
+            return message.channel.send(`I'm sorry the spotify music is not working yet!`)
+        }
 
         if (message.member.voice.channel) {
             const connection = await message.member.voice.channel.join();
-            connection.play(ytdl(`${args}`, { filter: 'audioonly' }, { volume: 100 }, { type: 'opus' }));
+            connection.play(ytdl(`${args}`, { filter: 'audioonly' }, { volume: 100.0 }, { type: 'opus' }));
         } else {
             message.reply('You need to join a voice channel first!');
         }
@@ -34,7 +48,7 @@ module.exports.run = async (bot, message, args) => {
     }
 
     if(message.content === '-volume'){
-        message.channel.send('Pause command has been executed!')
+        message.channel.send('Volume command has been executed!')
     }
 }
 
