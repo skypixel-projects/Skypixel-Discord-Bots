@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
     message.delete();
 
     if(message.content.includes("-play")){
-        if(!message.content.includes('https://www.')) {
+        if(!message.content.includes('https://')) {
             return message.channel.send(`You need to specify the URL of the music!`)
         } else {
             message.channel.send(`Playing now: ` + args)
