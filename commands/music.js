@@ -1,39 +1,45 @@
 const ytdl = require('ytdl-core');
+const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    message.delete();
+    // message.delete();
 
     if(message.content.includes("-play")){
         if(!message.content.includes('https://')) {
-            return message.channel.send(`You need to specify the URL of the music!`)
+            return message.lineReplyNoMention(`You need to specify the URL of the music!`);
         } else {
-            message.channel.send(`Playing now: ` + args)
+            message.delete();
+
+            var embed = new Discord.MessageEmbed()
+                .addFields({ name: "Playing now:", value: '```' + args + '```', inline: true})
+                .setColor('RED')
+                .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+            message.channel.send(embed);
         }
 
         if(message.content.includes('soundcloud')) {
-            console.log('Soundcloud has been detected!')
-            return message.channel.send(`I'm sorry the soundcloud music is not working yet!`)
+            return message.lineReplyNoMention(`I'm sorry the soundcloud music is not working yet!`);
         }
 
         if(message.content.includes('spotify')) {
-            console.log('Spotify has been detected!')
-            return message.channel.send(`I'm sorry the spotify music is not working yet!`)
+            return message.lineReplyNoMention(`I'm sorry the spotify music is not working yet!`);
         }
 
         if (message.member.voice.channel) {
             const connection = await message.member.voice.channel.join();
+            // Aici este youtube search!
             connection.play(ytdl(`${args}`, { filter: 'audioonly' }, { volume: 100.0 }, { type: 'opus' }));
         } else {
-            message.reply('You need to join a voice channel first!');
+            message.lineReplyNoMention('You need to join a voice channel first!');
         }
     }
 
     if(message.content === '-skip'){
-        message.channel.send('Skip command has been executed!')
+        message.lineReplyNoMention('Skip command has been executed!');
     }
 
     if(message.content === '-leave'){
-        message.channel.send('Leave command has been executed!')
+        message.lineReplyNoMention('Leave command has been executed!');
 
         if (message.member.voice.channel) {
             const connection = await message.member.voice.channel.join();
@@ -44,16 +50,16 @@ module.exports.run = async (bot, message, args) => {
     }
 
     if(message.content === '-pause'){
-        message.channel.send('Pause command has been executed!')
+        message.lineReplyNoMention('Pause command has been executed!');
     }
 
     if(message.content === '-volume'){
-        message.channel.send('Volume command has been executed!')
+        message.lineReplyNoMention('Volume command has been executed!');
     }
 }
 
 module.exports.config = {
-    name: "",
+    name: "play",
     description: "",
     usage: "",
     accessableby: "Members",
