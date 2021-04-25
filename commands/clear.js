@@ -20,8 +20,7 @@ module.exports.run = async (bot, message, args) => {
         deleteAmount = parseInt(args[0]);
     }
 
-    message.channel.bulkDelete(deleteAmount, true)
-    .catch(err => message.reply(`Something went wrong... ${err}`));
+    message.channel.bulkDelete(deleteAmount, true);
 
 }
 

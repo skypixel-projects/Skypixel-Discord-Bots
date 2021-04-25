@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const readline = require('readline');
 const botsettings = require('./botsettings.json');
 const lang_en = require('./languages/lang_en.json');
 
@@ -47,12 +48,22 @@ bot.on("message", async message => {
 })
 
 
+
+
+
+
 //Aici este special event pentru bot!
 // bot.on("ready", () => {
 //   setInterval(function(){ 
-//     bot.channels.cache.get("820599071987204096").send("1");
+//     bot.channels.cache.get("835600980892319834").send("<@762368975094022155> <@351664932271685632> <@726678975501303809> <@819678238623793213> <@764884863668846592> <@236811109066211329>");
 //   }, 1000);
 // });
+
+
+
+
+
+
 
 // Developer test command with code!
 // Atentie aceasta commanda nu are voie sa fie mult timp aici pentru ca poate provoca errori false!
@@ -69,11 +80,17 @@ bot.on('message', function(msg){
     }
 });
 
-
+// Aici este linia de code unde poti face debug la dm messages!
+bot.on('message', async message => {
+    if(message.bot) return;
+    if (message.channel.type === 'dm'){ 
+        console.log("[" + message.author.username + "]: " + message.content)
+    }
+});
 
 
 // Aici este dakota AV!
-bot.on('message', msg => {
+bot.on('message', (msg) => {
     if (msg.content === 'hi puro' || msg.content === 'hello puro') {
         msg.lineReplyNoMention(lang_en.ai_replay_command_message);
     }

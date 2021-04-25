@@ -8,21 +8,24 @@ module.exports.run = async (bot, message, args) => {
     // message.delete();
 
 
-    if (message.content === 'hi puro') {
-        message.lineReplyNoMention(`My name is ${bot.user.username}`);
-    }
+    // if (message.content === 'hi puro') {
+    //     message.lineReplyNoMention(`My name is ${bot.user.username}`);
+    // }
 
     //
     //Aici este linia de code unde botul reactioneaza si sterge mesajul
     //
 
-    // message.channel.send('This message will been deleted after 10000 milliseconds!')
-    //     .then(msg => {
-    //         msg.delete({ timeout: 10000 /*time unitl delete in milliseconds*/});
-    //         msg.react("👎")
-    //         msg.react("👍")
-    //     })
-    //     .catch('error...');
+    message.channel.send('```This message will been deleted after 25000 milliseconds!```')
+        .then(msg => {
+            msg.delete({ timeout: 25000 /*time unitl delete in milliseconds*/});
+            msg.react("👎"),
+            msg.react("👍"),
+            msg.react('🍎'),
+            msg.react('🍊'),
+            msg.react('🍇')
+        })
+        .catch('error...');
 }
 
 module.exports.config = {
