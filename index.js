@@ -99,5 +99,4 @@ bot.on('message', (msg) => {
 
 
 // In replica aceasta botul se poate loga la discord api pentru a folosi botul!
-// bot.login(process.env.token);
 bot.login(botsettings.token);
