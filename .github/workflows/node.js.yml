@@ -28,3 +28,4 @@ jobs:
     - run: npm install discord.js
     - run: npm install discord-reply
     - run: node index
+    - uses: actions/setup-node@v2
