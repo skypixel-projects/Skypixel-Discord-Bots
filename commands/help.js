@@ -43,7 +43,7 @@ module.exports.run = async (bot, message, args) => {
     // The admin command handler
     if(args === "admin"){
         var embed = new Discord.MessageEmbed()
-            .addFields({ name: "Admin commands", value: '```' + `-kick, -clear, -ban, -removerole, -addrole, -cooldown` + '```', inline: true})
+            .addFields({ name: "Admin commands", value: '```' + `-kick, -clear, -ban, -removerole, -addrole, -cooldown, -send, -announcement` + '```', inline: true})
             .setColor('RED')
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed);
