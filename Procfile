@@ -1,1 +1,0 @@
-Wroker: node index.js
