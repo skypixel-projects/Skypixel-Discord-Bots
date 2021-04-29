@@ -3,7 +3,7 @@ const readline = require('readline');
 const botsettings = require('./botsettings.json');
 const lang_en = require('./languages/lang_en.json');
 
-const bot = new Discord.Client({ disableMentions: 'everyone' });
+const bot = new Discord.Client();
 
 // In replica aceasta functioneaza toate eventele!
 require("./util/eventHandler")(bot)
