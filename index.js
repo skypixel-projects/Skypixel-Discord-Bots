@@ -10,6 +10,7 @@ require("./util/eventHandler")(bot)
 
 // --
 const fs = require("fs");
+const { error } = require('console');
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
