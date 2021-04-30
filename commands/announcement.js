@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
+const botsettings = require('../botsettings.json');
+
 module.exports.run = async (bot, message, args) => {
     message.lineReplyNoMention('Ok i will send the message to the announcement channel!');
     let channel = message.channel.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `announcement`)

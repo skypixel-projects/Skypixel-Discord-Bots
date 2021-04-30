@@ -1,6 +1,8 @@
 const ytdl = require('ytdl-core');
 const Discord = require("discord.js");
 
+const botsettings = require('../botsettings.json');
+
 module.exports.run = async (bot, message, args) => {
     // message.delete();
 

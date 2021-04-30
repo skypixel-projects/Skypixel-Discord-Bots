@@ -3,6 +3,7 @@ require('discord-reply'); //⚠️ IMPORTANT: put this before your discord.Clien
 const bot = new discord.Client();
 
 const lang_en = require('../languages/lang_en.json');
+const botsettings = require('../botsettings.json');
 
 module.exports.run = async (bot, message, args) => {
     // message.delete();

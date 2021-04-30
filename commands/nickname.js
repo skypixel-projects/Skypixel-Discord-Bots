@@ -1,3 +1,5 @@
+const botsettings = require('../botsettings.json');
+
 module.exports.run = async (bot, message, args) => {
     if(message.content.includes('add')) {
         message.channel.send('The add command has been executed! ')

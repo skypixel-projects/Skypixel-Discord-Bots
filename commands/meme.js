@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const randomPuppy = require('random-puppy');
 
+const botsettings = require('../botsettings.json');
+
 module.exports.run = async (bot, message, args) => {
     message.delete();
 
