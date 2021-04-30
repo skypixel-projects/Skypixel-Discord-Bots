@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const moment = require('moment');
 
+const botsettings = require('../botsettings.json');
+
 module.exports.run = async (bot, message, args) => {
     message.delete();
 
