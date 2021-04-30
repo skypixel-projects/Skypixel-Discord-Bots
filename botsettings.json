@@ -7,5 +7,7 @@
 
     "discord_profile_activity_type" : "LISTENING",
     
-    "discord_profile_status" : "idle"
+    "discord_profile_status" : "idle",
+
+    "embed_color_message_discord_bot" : "GOLD"
 }

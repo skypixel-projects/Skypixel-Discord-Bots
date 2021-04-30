@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 
     var embed = new Discord.MessageEmbed()
         .setAuthor(lang_en.maintenance)
-        .setColor('RED')
+        .setColor(botsettings.embed_color_message_discord_bot)
         .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
             
     message.channel.send(embed);

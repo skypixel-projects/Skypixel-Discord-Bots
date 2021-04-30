@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
 
             var embed = new Discord.MessageEmbed()
                 .addFields({ name: "Playing now:", value: '```' + args + '```', inline: true})
-                .setColor('RED')
+                .setColor(botsettings.embed_color_message_discord_bot)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
             message.channel.send(embed);
         }

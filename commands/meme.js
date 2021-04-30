@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
 
     const embed = new Discord.MessageEmbed()
     .setImage(img)
-    .setColor('RED')
+    .setColor(botsettings.embed_color_message_discord_bot)
     .setTitle(`From /r/${random}`)
     .setURL(`http://reddit.com/${random}`)
     .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
