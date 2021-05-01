@@ -4,7 +4,7 @@ const readline = require('readline');
 const botsettings = require('./botsettings.json');
 const lang_en = require('./languages/lang_en.json');
 
-const bot = new Discord.Client();
+const bot = new Discord.Client({ presence: { status: "dnd" }}); // { presence: { status: "dnd" }, messageCacheMaxSize: 0 }
 
 // In replica aceasta functioneaza toate eventele!
 require("./util/eventHandler")(bot)
