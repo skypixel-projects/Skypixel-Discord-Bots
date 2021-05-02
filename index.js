@@ -49,24 +49,6 @@ bot.on("message", async message => {
 
 })
 
-
-
-
-
-
-// Aici iese botul din voice daca sta prea mult AFK
-// bot.on("ready", () => {
-//   setInterval(function(){ 
-//     // bot.voice.channel.disconnect()
-//     }, 1000);
-// });
-
-
-
-
-
-
-
 // Developer test command with code!
 // Atentie aceasta commanda nu are voie sa fie mult timp aici pentru ca poate provoca errori false!
 // In timpul in care se va fixa bugul cu event handler trebuie mutat cat mai curand!
@@ -90,14 +72,33 @@ bot.on('message', async message => {
 });
 
 
-// Aici este dakota AV!
+// Aici este dakota AV pentru serverele de discord unde se pot trimite mesaje cu MD5!
 bot.on('message', (msg) => {
     if (msg.content === 'hi puro' || msg.content === 'hello puro') {
         msg.lineReplyNoMention(lang_en.ai_replay_command_message);
     }
 });
 
+// Aici este eventul de join and quit guild members!
+// Acest event este pentru welcome message and debug
+// Acest event trimite logs in console pentru a putea vedea membri care au intrat pe ce server!
+bot.on("guildMemberAdd", member => {
+    console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
+});
+
+bot.on("guildMemberRemove", member => {
+    console.log(`- (${member.displayName}) has quit to (${member.guild}) server!`)
+})
+
 
 
 // In replica aceasta botul se poate loga la discord api pentru a folosi botul!
+// Aici botul poate porni sau sa opri in functie de ce commanda a fost executata sau daca a primit o erroare fatala!
 bot.login(botsettings.token);
+
+// Aici iese botul din voice daca sta prea mult AFK
+// bot.on("ready", () => {
+//   setInterval(function(){ 
+//     // bot.voice.channel.disconnect()
+//     }, 1000);
+// });
