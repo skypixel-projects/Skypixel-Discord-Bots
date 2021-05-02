@@ -1,48 +1,48 @@
 {
-    "developer_code_error_message" : "this code is not valid!",
+    "developer_code_error_message" : "ez a kód nem érvényes!",
 
-    "maintenance" : "This command is under development!",
+    "maintenance" : "Ez a parancs fejlesztés alatt áll!",
 
-    "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
-    "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
+    "console_ready" : "A bot működik és működik! Felhívjuk figyelmét, hogy ez a bot még nem stabil!",
+    "console_ready_webhook" : "A bot működik és működik! Felhívjuk figyelmét, hogy ez a bot még nem stabil!",
 
     "commands_help_description" : "Music, Admin, Fun, Random",
     "commands_help_description_1" : "-play, -stop, -skip, -leave, -volume",
     "commands_help_description_2" : "-avatar, -nsfw, -meme, -memberinfo",
     "commands_help_description_3" : "-kick, -clear, -ban, -removerole, -addrole, -cooldown, -send, -announcement",
     "commands_help_description_4" : "-test, -skypixel, -uptime",
-    "commands_help_author" : "Here is the list of available command category:",
-    "commands_help_prefix" : "Prefix:",
+    "commands_help_author" : "Itt található a rendelkezésre álló parancskategóriák listája:",
+    "commands_help_prefix" : "Előtag:",
 
-    "commands_kick_permission" : "You do not have permission to run this command.",
-    "commands_kick_successfully" : "The member was kicked.",
+    "commands_kick_permission" : "Nincs engedélye a parancs futtatására.",
+    "commands_kick_successfully" : "A tagot rúgták.",
 
-    "commands_cooldown_unsuccessfully" : "You cannot use the command because of your cooldown.",
-    "commands_cooldown_successfully" : "Your cooldown ran off.",
+    "commands_cooldown_unsuccessfully" : "A parancs a hűtés miatt nem használható.",
+    "commands_cooldown_successfully" : "A lehűlésed lefutott.",
 
-    "commands_avatar_title" : "Here's the member avatar!",
+    "commands_avatar_title" : "Itt van a tag avatar!",
 
-    "commands_addrole_added" : "Role Added",
-    "commands_addrole_removed" : "Role Removed",
+    "commands_addrole_added" : "Szerep hozzáadva",
+    "commands_addrole_removed" : "A szerepkör eltávolítva",
 
-    "commands_announcement_reply" : "Ok i will send the message to the announcement channel!",
+    "commands_announcement_reply" : "Ok, elküldöm az üzenetet a bejelentő csatornának!",
 
-    "commands_clear_permission" : "Missing Permissions!",
-    "commands_clear_number" : "This is not a number",
+    "commands_clear_permission" : "Hiányoznak az engedélyek!",
+    "commands_clear_number" : "Ez nem szám",
 
-    "commands_music_url_error" : "You need to specify the URL of the music!",
-    "commands_music_error_soundcloud" : "I'm sorry the soundcloud music is not working yet!",
-    "commands_music_error_soptify" : "I'm sorry the spotify music is not working yet!",
-    "commands_music_member_join_voice" : "You need to join a voice channel first!",
-    "commands_music_skip_execute" : "Skip command has been executed!",
-    "commands_music_leave_execute" : "Leave command has been executed!",
-    "commands_music_pause_execute" : "Pause command has been executed!",
-    "commands_music_volume_execute" : "Volume command has been executed!",
+    "commands_music_url_error" : "Meg kell adnia a zene URL-jét!",
+    "commands_music_error_soundcloud" : "Sajnálom, hogy a soundcloud zene még nem működik!",
+    "commands_music_error_soptify" : "Sajnálom, hogy a spotify zene még nem működik!",
+    "commands_music_member_join_voice" : "Először csatlakoznia kell egy hangcsatornához!",
+    "commands_music_skip_execute" : "A kihagyás parancs végrehajtásra került!",
+    "commands_music_leave_execute" : "A Leave parancs végrehajtásra került!",
+    "commands_music_pause_execute" : "A Szünet parancs végrehajtásra került!",
+    "commands_music_volume_execute" : "A kötet parancs végrehajtásra került!",
 
-    "commands_nickname_added" : "The add command has been executed!",
-    "commands_nickname_removed" : "The remove command has been executed!",
+    "commands_nickname_added" : "Az add parancs végrehajtásra került!",
+    "commands_nickname_removed" : "A Remove parancs végrehajtásra került!",
 
-    "commands_uptime" : "The uptime of the bot:",
+    "commands_uptime" : "A bot üzemideje:",
 
-    "ai_replay_command_message" : "Hi if you need my help do not forget to use commanda '-help'! At this moment the AI chating is not working yet!"
+    "ai_replay_command_message" : "Szia, ha segítségre van szüksége, ne felejtse el használni a '-help' parancsokat! Jelenleg az AI csevegés még nem működik!"
 }
