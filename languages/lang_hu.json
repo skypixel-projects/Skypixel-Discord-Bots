@@ -1,16 +1,16 @@
 {
     "developer_code_error_message" : "this code is not valid!",
 
-    "maintenance" : "```This command is under development!```",
+    "maintenance" : "This command is under development!",
 
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
     "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
 
-    "commands_help_description" : "```Music, Admin, Fun, Random```",
-    "commands_help_description_1" : "```-play, -stop, -skip, -leave, -volume```",
-    "commands_help_description_2" : "```-avatar, -nsfw, -meme, -memberinfo```",
-    "commands_help_description_3" : "```-kick, -clear, -ban, -removerole, -addrole, -cooldown, -send, -announcement```",
-    "commands_help_description_4" : "```-test, -skypixel, -uptime```",
+    "commands_help_description" : "Music, Admin, Fun, Random",
+    "commands_help_description_1" : "-play, -stop, -skip, -leave, -volume",
+    "commands_help_description_2" : "-avatar, -nsfw, -meme, -memberinfo",
+    "commands_help_description_3" : "-kick, -clear, -ban, -removerole, -addrole, -cooldown, -send, -announcement",
+    "commands_help_description_4" : "-test, -skypixel, -uptime",
     "commands_help_author" : "Here is the list of available command category:",
     "commands_help_prefix" : "Prefix:",
 
