@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const fs = require("fs")
 
 const botsettings = require('../botsettings.json');
-const lang_en = require('../languages/lang_en.json');
+const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
     message.delete();

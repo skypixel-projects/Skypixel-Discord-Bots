@@ -1,4 +1,8 @@
 {
+    "default_lang_for_discord_bot" : "lang_en",
+
+    "skypixel_official_website_link" : "https://yonaga678.github.io/Skypixel/",
+
     "token": "ODE5Njc4MjM4NjIzNzkzMjEz.YEqG2A.21-58MfTq6SL6iHRahy532RTOeg",
 
     "prefix": "-",
@@ -9,5 +13,5 @@
     
     "discord_profile_status" : "dnd",
 
-    "embed_color_message_discord_bot" : "GOLD"
+    "embed_color_message_discord_bot" : "LIGHT_GREY"
 }

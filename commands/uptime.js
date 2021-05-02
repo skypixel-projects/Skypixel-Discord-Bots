@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const lang_en = require('../languages/lang_en.json');
 const botsettings = require('../botsettings.json');
+const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
     let totalSeconds = (bot.uptime / 1000);
@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
     // message.channel.send(uptime)
 
     var embed = new Discord.MessageEmbed()
-        .addFields({ name: "The uptime of the bot:", value: '```' + uptime + '```', inline: true})
+        .addFields({ name: lang_en.commands_uptime, value: '```' + uptime + '```', inline: true})
         .setColor(botsettings.embed_color_message_discord_bot)
         .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
     message.channel.send(embed);

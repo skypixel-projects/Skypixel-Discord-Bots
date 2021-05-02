@@ -1,4 +1,5 @@
 const botsettings = require('../botsettings.json');
+const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
     message.delete();
@@ -7,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     const member = message.mentions.members.first();
 
     member.roles.remove(epicRole);
-    message.channel.send('Role Removed')
+    message.channel.send(lang_en.commands_addrole_removed)
 }
 
 module.exports.config = {

@@ -1,6 +1,5 @@
 {
     "developer_code_error_message" : "this code is not valid!",
-    "skypixel_official_website_link" : "https://yonaga678.github.io/Skypixel/",
 
     "maintenance" : "```This command is under development!```",
 
@@ -8,6 +7,10 @@
     "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
 
     "commands_help_description" : "```Music, Admin, Fun, Random```",
+    "commands_help_description_1" : "```-play, -stop, -skip, -leave, -volume```",
+    "commands_help_description_2" : "```-avatar, -nsfw, -meme, -memberinfo```",
+    "commands_help_description_3" : "```-kick, -clear, -ban, -removerole, -addrole, -cooldown, -send, -announcement```",
+    "commands_help_description_4" : "```-test, -skypixel, -uptime```",
     "commands_help_author" : "Here is the list of available command category:",
     "commands_help_prefix" : "Prefix:",
 
@@ -18,6 +21,28 @@
     "commands_cooldown_successfully" : "Your cooldown ran off.",
 
     "commands_avatar_title" : "Here's the member avatar!",
+
+    "commands_addrole_added" : "Role Added",
+    "commands_addrole_removed" : "Role Removed",
+
+    "commands_announcement_reply" : "Ok i will send the message to the announcement channel!",
+
+    "commands_clear_permission" : "Missing Permissions!",
+    "commands_clear_number" : "This is not a number",
+
+    "commands_music_url_error" : "You need to specify the URL of the music!",
+    "commands_music_error_soundcloud" : "I'm sorry the soundcloud music is not working yet!",
+    "commands_music_error_soptify" : "I'm sorry the spotify music is not working yet!",
+    "commands_music_member_join_voice" : "You need to join a voice channel first!",
+    "commands_music_skip_execute" : "Skip command has been executed!",
+    "commands_music_leave_execute" : "Leave command has been executed!",
+    "commands_music_pause_execute" : "Pause command has been executed!",
+    "commands_music_volume_execute" : "Volume command has been executed!",
+
+    "commands_nickname_added" : "The add command has been executed!",
+    "commands_nickname_removed" : "The remove command has been executed!",
+
+    "commands_uptime" : "The uptime of the bot:",
 
     "ai_replay_command_message" : "Hi if you need my help do not forget to use commanda '-help'! At this moment the AI chating is not working yet!"
 }

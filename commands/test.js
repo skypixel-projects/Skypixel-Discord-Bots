@@ -2,8 +2,8 @@ const discord = require('discord.js');
 require('discord-reply'); //⚠️ IMPORTANT: put this before your discord.Client()
 const bot = new discord.Client();
 
-const lang_en = require('../languages/lang_en.json');
 const botsettings = require('../botsettings.json');
+const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
     // message.delete();

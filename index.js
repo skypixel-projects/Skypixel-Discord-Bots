@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const readline = require('readline');
 
 const botsettings = require('./botsettings.json');
-const lang_en = require('./languages/lang_en.json');
+const lang_en = require(`./languages/${botsettings.default_lang_for_discord_bot}.json`);
 
-const bot = new Discord.Client({ presence: { status: "dnd" }}); // { presence: { status: "dnd" }, messageCacheMaxSize: 0 }
+const bot = new Discord.Client({ presence: { status: "online" }}); // { presence: { status: "dnd" }, messageCacheMaxSize: 0 }
 
 // In replica aceasta functioneaza toate eventele!
 require("./util/eventHandler")(bot)
@@ -54,12 +54,11 @@ bot.on("message", async message => {
 
 
 
-//Aici este special event pentru bot!
+// Aici iese botul din voice daca sta prea mult AFK
 // bot.on("ready", () => {
 //   setInterval(function(){ 
-//     // bot.channels.cache.get("835600980892319834").send("<@762368975094022155> <@351664932271685632> <@726678975501303809> <@819678238623793213> <@764884863668846592> <@236811109066211329>");
-//     console.log('Alive packet')
-//     }, 60000);
+//     // bot.voice.channel.disconnect()
+//     }, 1000);
 // });
 
 

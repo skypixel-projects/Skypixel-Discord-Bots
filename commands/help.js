@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 const botsettings = require('../botsettings.json');
-const lang_en = require('../languages/lang_en.json');
+const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 
 module.exports.run = async (bot, message, args) => {
@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
     // The music command handler
     if(args === "music"){
         var embed = new Discord.MessageEmbed()
-            .addFields({ name: "Music commands", value: '```' + `-play, -stop, -skip, -leave, -volume` + '```', inline: true})
+            .addFields({ name: "Music commands", value: '```' + lang_en.commands_help_description_1 + '```', inline: true})
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed);
@@ -34,7 +34,7 @@ module.exports.run = async (bot, message, args) => {
     // The fun command handler
     if(args === "fun"){
         var embed = new Discord.MessageEmbed()
-            .addFields({ name: "Fun commands", value: '```' + `-avatar, -nsfw, -meme, -memberinfo` + '```', inline: true})
+            .addFields({ name: "Fun commands", value: '```' + lang_en.commands_help_description_2 + '```', inline: true})
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed);
@@ -43,7 +43,7 @@ module.exports.run = async (bot, message, args) => {
     // The admin command handler
     if(args === "admin"){
         var embed = new Discord.MessageEmbed()
-            .addFields({ name: "Admin commands", value: '```' + `-kick, -clear, -ban, -removerole, -addrole, -cooldown, -send, -announcement` + '```', inline: true})
+            .addFields({ name: "Admin commands", value: '```' + lang_en.commands_help_description_3 + '```', inline: true})
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed);
@@ -52,7 +52,7 @@ module.exports.run = async (bot, message, args) => {
     // The random command handler
     if(args === "random"){
         var embed = new Discord.MessageEmbed()
-            .addFields({ name: "Random commands", value: '```' + `-test, -skypixel, -uptime` + '```', inline: true})
+            .addFields({ name: "Random commands", value: '```' + lang_en.commands_help_description_4 + '```', inline: true})
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed);

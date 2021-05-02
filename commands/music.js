@@ -2,13 +2,14 @@ const ytdl = require('ytdl-core');
 const Discord = require("discord.js");
 
 const botsettings = require('../botsettings.json');
+const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
     // message.delete();
 
     if(message.content.includes("-play")){
         if(!message.content.includes('https://')) {
-            return message.lineReplyNoMention(`You need to specify the URL of the music!`);
+            return message.lineReplyNoMention(lang_en.commands_music_url_error);
         } else {
             message.delete();
 
@@ -20,11 +21,11 @@ module.exports.run = async (bot, message, args) => {
         }
 
         if(message.content.includes('soundcloud')) {
-            return message.lineReplyNoMention(`I'm sorry the soundcloud music is not working yet!`);
+            return message.lineReplyNoMention(lang_en.commands_music_error_soundcloud);
         }
 
         if(message.content.includes('spotify')) {
-            return message.lineReplyNoMention(`I'm sorry the spotify music is not working yet!`);
+            return message.lineReplyNoMention(lang_en.commands_music_error_soptify);
         }
 
         if (message.member.voice.channel) {
@@ -32,31 +33,31 @@ module.exports.run = async (bot, message, args) => {
             // Aici este youtube search!
             connection.play(ytdl(`${args}`, { filter: 'audioonly' }, { volume: 100.0 }, { type: 'opus' }));
         } else {
-            message.lineReplyNoMention('You need to join a voice channel first!');
+            message.lineReplyNoMention(lang_en.commands_music_member_join_voice);
         }
     }
 
     if(message.content === '-skip'){
-        message.lineReplyNoMention('Skip command has been executed!');
+        message.lineReplyNoMention(lang_en.commands_music_skip_execute);
     }
 
     if(message.content === '-leave'){
-        message.lineReplyNoMention('Leave command has been executed!');
+        message.lineReplyNoMention(lang_en.commands_music_leave_execute);
 
         if (message.member.voice.channel) {
             const connection = await message.member.voice.channel.join();
             connection.disconnect();
         } else {
-            message.reply('You need to join a voice channel first!');
+            message.reply(lang_en.commands_music_member_join_voice);
         }
     }
 
     if(message.content === '-pause'){
-        message.lineReplyNoMention('Pause command has been executed!');
+        message.lineReplyNoMention(lang_en.commands_music_pause_execute);
     }
 
     if(message.content === '-volume'){
-        message.lineReplyNoMention('Volume command has been executed!');
+        message.lineReplyNoMention(lang_en.commands_music_volume_execute);
     }
 }
 

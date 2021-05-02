@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 const botsettings = require('../botsettings.json');
-const lang_en = require('../languages/lang_en.json');
+const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
     const user = message.mentions.users.first() || message.author;
