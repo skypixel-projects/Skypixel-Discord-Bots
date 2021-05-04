@@ -5,19 +5,21 @@ const bot = new discord.Client();
 const botsettings = require('../botsettings.json');
 const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
+const fs = require('fs');
+
 module.exports.run = async (bot, message, args) => {
-    // message.delete();
 
+    if(args === 'voice') {
+        if (message.member.voice.channel) {
+            const connection = await message.member.voice.channel.join();
+            const broadcast = bot.voice.createBroadcast();
+            const dispatcher = broadcast.play('commands/audio.mp3');
+            connection.play(broadcast);
+        }
+    }
 
-    // if (message.content === 'hi puro') {
-    //     message.lineReplyNoMention(`My name is ${bot.user.username}`);
-    // }
-
-    //
-    //Aici este linia de code unde botul reactioneaza si sterge mesajul
-    //
-
-    message.channel.send('```This message will been deleted after 25000 milliseconds!```')
+    if(args === 'message') {
+        message.channel.send('```This message will been deleted after 25000 milliseconds!```')
         .then(msg => {
             msg.delete({ timeout: 25000 /*time unitl delete in milliseconds*/});
             msg.react("👎"),
@@ -27,6 +29,7 @@ module.exports.run = async (bot, message, args) => {
             msg.react('🍇')
         })
         .catch('error...');
+    }
 }
 
 module.exports.config = {

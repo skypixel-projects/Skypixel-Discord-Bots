@@ -90,8 +90,6 @@ bot.on("guildMemberRemove", member => {
     console.log(`- (${member.displayName}) has quit to (${member.guild}) server!`)
 })
 
-
-
 // In replica aceasta botul se poate loga la discord api pentru a folosi botul!
 // Aici botul poate porni sau sa opri in functie de ce commanda a fost executata sau daca a primit o erroare fatala!
 bot.login(botsettings.token);
