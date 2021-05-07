@@ -44,5 +44,32 @@
 
     "commands_uptime" : "A bot üzemideje:",
 
+    "commands_serverinfo" : "Server Info",
+    "commands_serverinfo_name" : "Név:",
+    "commands_serverinfo_id" : "Azonosító:",
+    "commands_serverinfo_owner" : "Tulajdonos:",
+    "commands_serverinfo_region" : "Vidék:",
+    "commands_serverinfo_boost_tier" : "Boost Tier:",
+    "commands_serverinfo_explicit_filter" : "Kifejezett szűrő:",
+    "commands_serverinfo_verification_level" : "Ellenőrzési szint:",
+    "commands_serverinfo_time_created" : "Létrehozás ideje:",
+    "commands_serverinfo_statistics" : "Statisztika",
+    "commands_serverinfo_role_count" : "Szerepszám:",
+    "commands_serverinfo_emoji_count" : "Emoji Count:",
+    "commands_serverinfo_regular_emoji_count" : "Rendszeres Emoji Count:",
+    "commands_serverinfo_animated_emoji_count" : "Animált Emoji Count:",
+    "commands_serverinfo_member_count" : "Tagok száma:",
+    "commands_serverinfo_humans" : "Emberek:",
+    "commands_serverinfo_bots" : "Botok:",
+    "commands_serverinfo_text_channels" : "Szöveges csatornák:",
+    "commands_serverinfo_voice_channels" : "Hangcsatornák:",
+    "commands_serverinfo_boost_count" : "Boost Count:",
+    "commands_serverinfo_presence" : "Jelenlét",
+    "commands_serverinfo_online" : "Online:",
+    "commands_serverinfo_idle" : "Tétlen:",
+    "commands_serverinfo_do_not_disturb" : "Ne zavarj:",
+    "commands_serverinfo_offline" : "Offline:",
+    "commands_serverinfo_roles" : "Szerepek",
+
     "ai_replay_command_message" : "Szia, ha segítségre van szüksége, ne felejtse el használni a '-help' parancsokat! Jelenleg az AI csevegés még nem működik!"
 }

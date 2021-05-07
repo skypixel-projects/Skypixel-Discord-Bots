@@ -8,7 +8,6 @@ const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot
 const fs = require('fs');
 
 module.exports.run = async (bot, message, args) => {
-
     if(args === 'voice') {
         if (message.member.voice.channel) {
             const connection = await message.member.voice.channel.join();

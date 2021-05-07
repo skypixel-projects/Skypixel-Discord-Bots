@@ -44,5 +44,32 @@
 
     "commands_uptime" : "The uptime of the bot:",
 
+    "commands_serverinfo" : "Server Info",
+    "commands_serverinfo_name" : "Name:",
+    "commands_serverinfo_id" : "ID:",
+    "commands_serverinfo_owner" : "Owner:",
+    "commands_serverinfo_region" : "Region:",
+    "commands_serverinfo_boost_tier" : "Boost Tier:",
+    "commands_serverinfo_explicit_filter" : "Explicit Filter:",
+    "commands_serverinfo_verification_level" : "Verification Level:",
+    "commands_serverinfo_time_created" : "Time Created:",
+    "commands_serverinfo_statistics" : "Statistics",
+    "commands_serverinfo_role_count" : "Role Count:",
+    "commands_serverinfo_emoji_count" : "Emoji Count:",
+    "commands_serverinfo_regular_emoji_count" : "Regular Emoji Count:",
+    "commands_serverinfo_animated_emoji_count" : "Animated Emoji Count:",
+    "commands_serverinfo_member_count" : "Member Count:",
+    "commands_serverinfo_humans" : "Humans:",
+    "commands_serverinfo_bots" : "Bots:",
+    "commands_serverinfo_text_channels" : "Text Channels:",
+    "commands_serverinfo_voice_channels" : "Voice Channels:",
+    "commands_serverinfo_boost_count" : "Boost Count:",
+    "commands_serverinfo_presence" : "Presence",
+    "commands_serverinfo_online" : "Online:",
+    "commands_serverinfo_idle" : "Idle:",
+    "commands_serverinfo_do_not_disturb" : "Do Not Disturb:",
+    "commands_serverinfo_offline" : "Offline:",
+    "commands_serverinfo_roles" : "Roles",
+
     "ai_replay_command_message" : "Hi if you need my help do not forget to use commanda '-help'! At this moment the AI chating is not working yet!"
 }
