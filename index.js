@@ -81,6 +81,22 @@ bot.on('message', (msg) => {
     }
 });
 
+const { badwords } = require('./swearing/blacklist.json');
+
+bot.on('message', (msg) => {
+    let confirm = false;
+   
+    var i;
+    for (i = 0;i < badwords.length; i++) {
+        if (msg.content.toLowerCase().includes(badwords[i].toLowerCase()))
+            confirm = true;
+            if (confirm) {
+                msg.delete()
+                return msg.channel.send("You are not allowed to swear!")
+            }   
+    } 
+});
+
 // Aici este eventul de join and quit guild members!
 // Acest event este pentru welcome message and debug
 // Acest event trimite logs in console pentru a putea vedea membri care au intrat pe ce server!
