@@ -11,7 +11,7 @@ require("./util/eventHandler")(bot)
 
 // --
 const fs = require("fs");
-const { error } = require('console');
+const { error, time } = require('console');
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
@@ -96,6 +96,40 @@ bot.on('message', (msg) => {
             }   
     } 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Aici este eventul pentru a vedea toate logurile!
+// Aceasta metoda este ilegal!
+// Prin aceasta metoda dakota poate analiza ori ce messaj suspect!
+bot.on("message", function(message){
+    var logger = fs.createWriteStream('message.txt', {
+        flags: 'a' // 'a' means appending (old data will be preserved)
+    });
+
+    logger.write(message.createdAt + ` [${message.guild}] - ` + message.author.username + ` => ${message}` + '\n')
+});
+
+
+
+
+
+
+
+
+
+
+
 
 // Aici este eventul de join and quit guild members!
 // Acest event este pentru welcome message and debug

@@ -1,4 +1,5 @@
 const Discord = require("discord.js")
+const fs = require("fs");
 
 const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
