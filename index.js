@@ -84,6 +84,7 @@ bot.on('message', (msg) => {
 const { badwords } = require('./swearing/blacklist.json');
 
 bot.on('message', (msg) => {
+    if(msg.bot) return;
     let confirm = false;
    
     var i;
@@ -91,8 +92,8 @@ bot.on('message', (msg) => {
         if (msg.content.toLowerCase().includes(badwords[i].toLowerCase()))
             confirm = true;
             if (confirm) {
-                msg.delete()
-                return msg.channel.send("You are not allowed to swear!")
+                // msg.delete()
+                return msg.lineReplyNoMention("You are not allowed to swear!");
             }   
     } 
 });
