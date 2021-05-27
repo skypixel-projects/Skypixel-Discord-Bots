@@ -6,13 +6,19 @@ const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot
 
 module.exports.run = async (bot, message, args) => {
     if (!message.guild) return;
-
     const vcchannel = bot.channels.cache.get("834548647756562432");
 
     vcchannel.join().then(connection => {
-        const dispatcher = connection.play(ytdl('https://www.youtube.com/watch?v=yhRuWGQ8iM4', { filter: 'audioonly' }));
+        const dispatcher = connection.play(ytdl('https://youtu.be/x143C5OHgtg'));
 
-        dispatcher.setVolume(0.5);
+        // Aici este volumul cu care botul sa puna muzica!
+        dispatcher.setVolume(0.45);
+
+        // Aici este bitrate-ul pentru calitatea muzici!
+        dispatcher.setBitrate(12400);
+
+        // Aici sunt decibeli pentru muzica!
+        dispatcher.setVolumeDecibels(0.25);
 
         dispatcher.on('finish', () => { 
             console.log('Finished playing!');
@@ -21,6 +27,7 @@ module.exports.run = async (bot, message, args) => {
 
         dispatcher.on('start', () => {
             console.log('Is playing!');
+            message.lineReplyNoMention('Okay music is playing now!');
         });
     });
 }

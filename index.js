@@ -74,6 +74,11 @@ bot.on('message', async message => {
 });
 
 
+
+
+
+
+
 // Aici este dakota AV pentru serverele de discord unde se pot trimite mesaje cu MD5!
 bot.on('message', (msg) => {
     if (msg.content === 'hi puro' || msg.content === 'hello puro') {
