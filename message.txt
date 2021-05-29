@@ -456,3 +456,109 @@ Thu May 27 2021 12:50:57 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasT
 Thu May 27 2021 12:51:00 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
 Thu May 27 2021 12:51:22 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -fmradio.dev
 Thu May 27 2021 12:51:25 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sat May 29 2021 23:27:54 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:28:06 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -fmradio.dev
+Sat May 29 2021 23:28:11 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sat May 29 2021 23:28:51 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:28:52 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -fmradio.dev
+Sat May 29 2021 23:28:56 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sat May 29 2021 23:29:33 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:29:37 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -fmradio.dev1
+Sat May 29 2021 23:29:40 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sat May 29 2021 23:30:37 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:30:40 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -fmradio.dev1
+Sat May 29 2021 23:30:43 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sat May 29 2021 23:32:19 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:32:20 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -fmradio.dev1
+Sat May 29 2021 23:32:23 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sat May 29 2021 23:35:08 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:35:18 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=5bfCdpug4F4&list=RDGMEMYH9CUrFO7CfLJpaD7UR85w&start_radio=1&rv=smoyWZ4oXA8
+Sat May 29 2021 23:35:19 GMT+0300 (Eastern European Summer Time) [Max] - Puro => 
+Sat May 29 2021 23:35:19 GMT+0300 (Eastern European Summer Time) [Max] - Puro => 
+Sat May 29 2021 23:36:17 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:36:40 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=5bfCdpug4F4&list=RD5bfCdpug4F4&start_radio=1&rv=5bfCdpug4F4
+Sat May 29 2021 23:36:41 GMT+0300 (Eastern European Summer Time) [Max] - Puro => 
+Sat May 29 2021 23:39:51 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:39:59 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=5bfCdpug4F4&list=RD5bfCdpug4F4&start_radio=1&rv=5bfCdpug4F4
+Sat May 29 2021 23:39:59 GMT+0300 (Eastern European Summer Time) [Max] - Puro => 
+Sat May 29 2021 23:40:31 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:40:33 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play 'UU_aEa8K-EOJ3D6gOs7HcyNg'
+Sat May 29 2021 23:40:33 GMT+0300 (Eastern European Summer Time) [Max] - Puro => You need to specify the URL of the music!
+Sat May 29 2021 23:40:40 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=5bfCdpug4F4&list=RD5bfCdpug4F4&start_radio=1&rv=5bfCdpug4F4
+Sat May 29 2021 23:40:40 GMT+0300 (Eastern European Summer Time) [Max] - Puro => 
+Sat May 29 2021 23:41:45 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:41:49 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=5bfCdpug4F4&list=RD5bfCdpug4F4&start_radio=1&rv=5bfCdpug4F4
+Sat May 29 2021 23:41:49 GMT+0300 (Eastern European Summer Time) [Max] - Puro => 
+Sat May 29 2021 23:45:27 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:45:34 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:45:55 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:46:08 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:46:56 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:46:58 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://youtu.be/5FY6e8B83Oc
+Sat May 29 2021 23:48:18 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:48:21 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://youtu.be/5FY6e8B83Oc
+Sat May 29 2021 23:48:39 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:48:42 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://youtu.be/5FY6e8B83Oc
+Sat May 29 2021 23:49:07 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:49:10 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://youtu.be/5FY6e8B83Oc
+Sat May 29 2021 23:49:13 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now! Playing: https://youtu.be/5FY6e8B83Oc
+Sat May 29 2021 23:49:23 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => !clear 100
+Sat May 29 2021 23:49:24 GMT+0300 (Eastern European Summer Time) [Max] - MEE6 => <:CHECK6:403540120181145611> I have deleted `100 messages`!
+Sat May 29 2021 23:49:28 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => !clear 1000
+Sat May 29 2021 23:49:47 GMT+0300 (Eastern European Summer Time) [Max] - MEE6 => <:CHECK6:403540120181145611> I have deleted `438 messages`!
+
+<:XMARK6:403540169992568833> Because of Discord limitations I can't delete messages past 2 weeks.
+
+ If you want to clear a whole channel just right-click the channel then select "Clone Channel"
+Sat May 29 2021 23:49:55 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => !clear 100
+Sat May 29 2021 23:49:56 GMT+0300 (Eastern European Summer Time) [Max] - MEE6 => <:CHECK6:403540120181145611> I have deleted `1 message`!
+
+<:XMARK6:403540169992568833> Because of Discord limitations I can't delete messages past 2 weeks.
+
+ If you want to clear a whole channel just right-click the channel then select "Clone Channel"
+Sat May 29 2021 23:50:06 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => ==================================================
+Sat May 29 2021 23:50:35 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:50:37 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now! Playing: https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:51:00 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:51:04 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:51:20 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:51:23 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:51:40 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:51:41 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:52:06 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:52:09 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:54:36 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:54:41 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=5FY6e8B83Oc
+Sat May 29 2021 23:55:08 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:55:15 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=5FY6e8B83Oc
+Sat May 29 2021 23:56:03 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => ygoui
+Sat May 29 2021 23:56:51 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:56:52 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:57:04 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:57:07 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:57:10 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now! Playing: [object Object]
+Sat May 29 2021 23:58:20 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sat May 29 2021 23:58:24 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=smoyWZ4oXA8
+Sat May 29 2021 23:58:27 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sat May 29 2021 23:58:29 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -volume 100
+Sun May 30 2021 00:01:13 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sun May 30 2021 00:01:31 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=W_FRPoJIrlI
+Sun May 30 2021 00:01:34 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sun May 30 2021 00:11:42 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sun May 30 2021 00:12:03 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sun May 30 2021 00:12:15 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=jG7FGlUtTfM
+Sun May 30 2021 00:12:19 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sun May 30 2021 00:12:23 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -volume 100
+Sun May 30 2021 00:12:44 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sun May 30 2021 00:12:47 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=jG7FGlUtTfM
+Sun May 30 2021 00:12:51 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sun May 30 2021 00:12:53 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -volume 100
+Sun May 30 2021 00:14:06 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sun May 30 2021 00:14:09 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=jG7FGlUtTfM
+Sun May 30 2021 00:14:12 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sun May 30 2021 00:14:17 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -volume 100
+Sun May 30 2021 00:15:33 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Sun May 30 2021 00:15:36 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -play https://www.youtube.com/watch?v=jG7FGlUtTfM
+Sun May 30 2021 00:15:39 GMT+0300 (Eastern European Summer Time) [Max] - Puro => Okay music is playing now!
+Sun May 30 2021 00:15:41 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -volume 100
+Sun May 30 2021 00:16:08 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!

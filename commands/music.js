@@ -1,23 +1,14 @@
 const ytdl = require('ytdl-core');
+const ytpl = require('ytpl');
 const Discord = require("discord.js");
 
 const botsettings = require('../botsettings.json');
 const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    // message.delete();
-
     if(message.content.includes("-play")){
         if(!message.content.includes('https://')) {
             return message.lineReplyNoMention(lang_en.commands_music_url_error);
-        } else {
-            message.delete();
-
-            var embed = new Discord.MessageEmbed()
-                .addFields({ name: "Playing now:", value: '```' + args + '```', inline: true})
-                .setColor(botsettings.embed_color_message_discord_bot)
-                .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
-            message.channel.send(embed);
         }
 
         if(message.content.includes('soundcloud')) {
@@ -29,9 +20,29 @@ module.exports.run = async (bot, message, args) => {
         }
 
         if (message.member.voice.channel) {
-            const connection = await message.member.voice.channel.join();
-            // Aici este youtube search!
-            connection.play(ytdl(`${args}`, { filter: 'audioonly' }, { volume: 100.0 }, { type: 'opus' }));
+            message.member.voice.channel.join().then(connection => {
+                const stream = ytdl(`${args}`)
+                let dispatcher = connection.play(stream);
+        
+                // Aici este volumul cu care botul sa puna muzica!
+                dispatcher.setVolume(0.40);
+        
+                // Aici este bitrate-ul pentru calitatea muzici!
+                dispatcher.setBitrate(12400);
+        
+                // Aici sunt decibeli pentru muzica!
+                dispatcher.setVolumeDecibels(-1.20);
+        
+                dispatcher.on('start', () => {
+                    // console.log('Is playing!');
+                    message.lineReplyNoMention(`Okay music is playing now!`);
+                });
+
+                dispatcher.on('finish', () => { 
+                    // console.log('Finished playing!');
+                    message.member.voice.channel.leave()
+                });
+            });
         } else {
             message.lineReplyNoMention(lang_en.commands_music_member_join_voice);
         }
