@@ -21,13 +21,17 @@ module.exports.run = async (bot, message, args) => {
         dispatcher.setVolumeDecibels(-1.20);
 
         dispatcher.on('finish', () => { 
-            // console.log('Finished playing!');
+            console.log('Finished playing!');
             vcchannel.leave()
         });
 
         dispatcher.on('start', () => {
-            // console.log('Is playing!');
+            console.log('Is playing!');
             message.lineReplyNoMention('Okay music is playing now!');
+        });
+
+        dispatcher.on('error', (error) => {
+            console.log(error)
         });
     });
 }

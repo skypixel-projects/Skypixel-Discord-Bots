@@ -21,8 +21,8 @@ module.exports.run = async (bot, message, args) => {
 
         if (message.member.voice.channel) {
             message.member.voice.channel.join().then(connection => {
-                const stream = ytdl(`${args}`)
-                let dispatcher = connection.play(stream);
+                // const stream = ytdl(`${args}`)
+                let dispatcher = connection.play(ytdl(`${args}`));
         
                 // Aici este volumul cu care botul sa puna muzica!
                 dispatcher.setVolume(0.40);
@@ -31,7 +31,7 @@ module.exports.run = async (bot, message, args) => {
                 dispatcher.setBitrate(12400);
         
                 // Aici sunt decibeli pentru muzica!
-                dispatcher.setVolumeDecibels(-1.20);
+                dispatcher.setVolumeDecibels(0.20);
         
                 dispatcher.on('start', () => {
                     // console.log('Is playing!');
@@ -41,6 +41,11 @@ module.exports.run = async (bot, message, args) => {
                 dispatcher.on('finish', () => { 
                     // console.log('Finished playing!');
                     message.member.voice.channel.leave()
+                });
+
+                dispatcher.on('error', (error) => {
+                    console.log(error)
+                    message.lineReplyNoMention(`An error was occurred!`);
                 });
             });
         } else {
