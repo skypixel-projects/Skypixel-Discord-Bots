@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
         
                 dispatcher.on('start', () => {
                     // console.log('Is playing!');
-                    message.lineReplyNoMention(`Okay music is playing now!`);
+                    message.lineReplyNoMention(`Okay music is playing now! All music will play in the highest audio quality! (Experimental)!`);
                 });
 
                 dispatcher.on('finish', () => { 
@@ -45,7 +45,7 @@ module.exports.run = async (bot, message, args) => {
 
                 dispatcher.on('error', (error) => {
                     console.log(error)
-                    message.lineReplyNoMention(`An error was occurred!`);
+                    message.lineReplyNoMention(`Errors are common because this command is only experimental!`);
                 });
             });
         } else {
