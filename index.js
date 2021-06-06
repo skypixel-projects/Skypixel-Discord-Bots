@@ -142,11 +142,49 @@ bot.on("message", function(message){
 // Acest event trimite logs in console pentru a putea vedea membri care au intrat pe ce server!
 bot.on("guildMemberAdd", member => {
     console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
+
+    const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `discord-bot-debug`)
+    const welcomeEmbed = new Discord.MessageEmbed()
+        .setColor(botsettings.embed_color_message_discord_bot)
+        .setTitle(`:wave: **Welcome ${member.displayName} to the ${member.guild} discord server!**`)
+        .setDescription(`I hope do you have a grate time and fun on this server!`)
+        .setThumbnail(member.user.avatarURL())
+        .setTimestamp()
+    welcome.send(welcomeEmbed);
 });
 
 bot.on("guildMemberRemove", member => {
     console.log(`- (${member.displayName}) has quit to (${member.guild}) server!`)
+
+    const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `discord-bot-debug`)
+    const welcomeEmbed = new Discord.MessageEmbed()
+        .setColor(botsettings.embed_color_message_discord_bot)
+        .setTitle(`:wave: **Goodbye ${member.displayName} to the ${member.guild} discord server!**`)
+        .setDescription(`I hope do you have a grate time and fun on this server!`)
+        .setThumbnail(member.user.avatarURL())
+        .setTimestamp()
+    welcome.send(welcomeEmbed);
 })
+
+
+
+
+
+
+// Aici este noul discord buttons event handler!
+require('discord-buttons')(bot)
+const { MessageButton, MessageActionRow } = require('discord-buttons')
+
+bot.on('clickButton', async (button) => {
+    if(button.id == 'button1') {
+        button.clicker.user.send(`Okay! ${button.clicker.user} just hit the yes button`)
+        // button.clicker.user.roles.add(button.clicker.guild.roles.cache.get('677939383038640199'));
+    }
+    if(button.id == 'button2') {
+        button.clicker.user.send(`Okay! ${button.clicker.user} just hit the no button`)
+        // button.clicker.user.roles.remove(button.clicker.guild.roles.cache.get('677939383038640199'));
+    }
+});
 
 // In replica aceasta botul se poate loga la discord api pentru a folosi botul!
 // Aici botul poate porni sau sa opri in functie de ce commanda a fost executata sau daca a primit o erroare fatala!
