@@ -21,6 +21,7 @@ fs.readdir("./commands/", (err, files) => {
     if(err) console.log(err)
 
     let jsfile = files.filter(f => f.split(".").pop() === "js") 
+    console.log(jsfile + ` has been detected!`)
     if(jsfile.length <= 0) {
         return console.log("[DEBUG] Couldn't Find Commands!");
     }
@@ -30,6 +31,9 @@ fs.readdir("./commands/", (err, files) => {
         bot.commands.set(pull.config.name, pull);  
         pull.config.aliases.forEach(alias => {
             bot.aliases.set(alias, pull.config.name)
+
+            // Aici este outputul pentru a vedea ce comenzi au fost incarcate in momentul porniri botului!
+            // console.log(alias + ` command has loaded!`)
         });
     });
 });
@@ -43,27 +47,14 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = message.content.substring(message.content.indexOf(' ')+1);
 
+    message.channel.startTyping();
+
     if(!message.content.startsWith(prefix)) return;
     let commandfile = bot.commands.get(cmd.slice(prefix.length)) || bot.commands.get(bot.aliases.get(cmd.slice(prefix.length)))
-    message.channel.startTyping();
     if(commandfile) commandfile.run(bot,message,args)
-    message.channel.stopTyping();
 
+    message.channel.stopTyping(true);
 })
-
-// Developer test command with code!
-// Atentie aceasta commanda nu are voie sa fie mult timp aici pentru ca poate provoca errori false!
-// In timpul in care se va fixa bugul cu event handler trebuie mutat cat mai curand!
-bot.on('message', function(msg){
-    if(msg.author.bot || msg.channel.type === "dm") return;
-
-    if(msg.content === '-devcode /}qs9SH#tC-knTr~'){
-        msg.reply(lang_en.developer_code_error_message)
-            .then(msg => {
-                msg.delete({ timeout: 10000 /*time unitl delete in milliseconds*/});
-            })
-    }
-});
 
 // Aici este linia de code unde poti face debug la dm messages!
 bot.on('message', async message => {
@@ -72,12 +63,6 @@ bot.on('message', async message => {
         console.log("[" + message.author.username + "]: " + message.content)
     }
 });
-
-
-
-
-
-
 
 // Aici este dakota AV pentru serverele de discord unde se pot trimite mesaje cu MD5!
 bot.on('message', (msg) => {
@@ -103,18 +88,6 @@ bot.on('message', (msg) => {
     } 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Aici este eventul pentru a vedea toate logurile!
 // Aceasta metoda este ilegal!
 // Prin aceasta metoda dakota poate analiza ori ce messaj suspect!
@@ -125,17 +98,6 @@ bot.on("message", function(message){
 
     logger.write(message.createdAt + ` [${message.guild}] - ` + message.author.username + ` => ${message}` + '\n')
 });
-
-
-
-
-
-
-
-
-
-
-
 
 // Aici este eventul de join and quit guild members!
 // Acest event este pentru welcome message and debug
@@ -165,11 +127,6 @@ bot.on("guildMemberRemove", member => {
         .setTimestamp()
     welcome.send(welcomeEmbed);
 })
-
-
-
-
-
 
 // Aici este noul discord buttons event handler!
 require('discord-buttons')(bot)

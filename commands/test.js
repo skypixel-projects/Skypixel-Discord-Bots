@@ -1,7 +1,6 @@
 const discord = require('discord.js');
-require('discord-reply'); //⚠️ IMPORTANT: put this before your discord.Client()
+require('discord-reply');
 const bot = new discord.Client();
-// require('discord-buttons')(bot);
 
 const botsettings = require('../botsettings.json');
 const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
@@ -10,6 +9,8 @@ const fs = require('fs');
 const { MessageButton, MessageActionRow } = require('discord-buttons');
 
 module.exports.run = async (bot, message, args) => {
+
+    // Aici este commanda pentru a juca un voice recorder!
     if(args === 'voice') {
         if (message.member.voice.channel) {
             const connection = await message.member.voice.channel.join();
@@ -19,6 +20,7 @@ module.exports.run = async (bot, message, args) => {
         }
     }
 
+    // Aici este commanda pentru a crea un mesaj temporal!
     if(args === 'message') {
         message.channel.send('```This message will been deleted after 25000 milliseconds!```')
         .then(msg => {
@@ -32,6 +34,7 @@ module.exports.run = async (bot, message, args) => {
         .catch('error...');
     }
 
+    // Aici este commanda pentru a crea un button embed!
     if(args === 'button') {
         const embed = new discord.MessageEmbed()
         .setTitle(`:space_invader:  **ANUNTURII IMPORTANTE**  :space_invader:`)
@@ -60,6 +63,30 @@ module.exports.run = async (bot, message, args) => {
             embed: embed,
             component: yes
         });
+    }
+
+    // Aici este commanda pentru a crea un text channel!
+    if(args === 'create-channel') {
+        message.guild.channels.create('Text', {
+            type: 'text',
+            permissionOverwrites: [{
+                id: message.guild.id,
+                allow: ['VIEW_CHANNEL'],
+            }]
+        });
+        message.channel.send("Channel Created!");
+    }
+
+    // Aici este commanda pentru a crea un voice channel!
+    if(args === 'create-voice') {
+        message.guild.channels.create('Text', {
+            type: 'voice',
+            permissionOverwrites: [{
+                id: message.guild.id,
+                allow: ['VIEW_CHANNEL'],
+            }]
+        });
+        message.channel.send("Channel Created!");
     }
 }
 
