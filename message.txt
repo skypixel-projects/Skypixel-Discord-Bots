@@ -803,3 +803,10 @@ Sun Jun 06 2021 11:34:55 GMT+0300 (Eastern European Summer Time) [Max] - Puro =>
 Sun Jun 06 2021 11:34:59 GMT+0300 (Eastern European Summer Time) [Max] - Puro => 
 Sun Jun 06 2021 11:37:04 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => =meme
 Sun Jun 06 2021 11:37:05 GMT+0300 (Eastern European Summer Time) [Max] - PuroXD => 
+Mon Jun 07 2021 08:42:23 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Mon Jun 07 2021 08:42:27 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -youtube
+Mon Jun 07 2021 08:42:42 GMT+0300 (Eastern European Summer Time) [Max] - Skypixel™ => The bot is up and running! Please note that this bot is not stable yet!
+Mon Jun 07 2021 08:42:43 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -youtube
+Mon Jun 07 2021 08:42:43 GMT+0300 (Eastern European Summer Time) [Max] - Puro => You have to be in a voice channel!
+Mon Jun 07 2021 08:42:49 GMT+0300 (Eastern European Summer Time) [Max] - MaxWasTaked => -youtube
+Mon Jun 07 2021 08:42:50 GMT+0300 (Eastern European Summer Time) [Max] - Puro => https://discord.com/invite/wR9mBJkR
