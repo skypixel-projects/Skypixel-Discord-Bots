@@ -15,26 +15,26 @@ module.exports.run = async (bot, message, args) => {
         if(member) {
             member
 
-            .kick({
+            .ban({
                 reason: 'They were bad!',
             })
             .then(() => {
-                message.reply('Successfully kicked!');
+                message.reply('Successfully banned!');
             })
             .catch(err => {
-                message.reply('I was unable to kick the member');
+                message.reply('I was unable to ban the member');
                 console.error(err);
             });
         } else {
             message.reply(`That user isn't in this guild`)
         }
     } else {
-        message.reply(`You didn't mention the user to kick!`)
+        message.reply(`You didn't mention the user to ban!`)
     }
 }
 
 module.exports.config = {
-    name: "kick",
+    name: "ban",
     description: "",
     usage: "",
     accessableby: "Admins",
