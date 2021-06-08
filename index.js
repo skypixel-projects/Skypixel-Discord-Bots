@@ -21,7 +21,7 @@ fs.readdir("./commands/", (err, files) => {
     if(err) console.log(err)
 
     let jsfile = files.filter(f => f.split(".").pop() === "js") 
-    console.log(jsfile + ` has been detected!`)
+    console.log(jsfile)
     if(jsfile.length <= 0) {
         return console.log("[DEBUG] Couldn't Find Commands!");
     }
@@ -31,9 +31,6 @@ fs.readdir("./commands/", (err, files) => {
         bot.commands.set(pull.config.name, pull);  
         pull.config.aliases.forEach(alias => {
             bot.aliases.set(alias, pull.config.name)
-
-            // Aici este outputul pentru a vedea ce comenzi au fost incarcate in momentul porniri botului!
-            // console.log(alias + ` command has loaded!`)
         });
     });
 });
@@ -47,13 +44,11 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = message.content.substring(message.content.indexOf(' ')+1);
 
-    message.channel.startTyping();
+    // message.channel.startTyping();
 
     if(!message.content.startsWith(prefix)) return;
     let commandfile = bot.commands.get(cmd.slice(prefix.length)) || bot.commands.get(bot.aliases.get(cmd.slice(prefix.length)))
     if(commandfile) commandfile.run(bot,message,args)
-
-    message.channel.stopTyping(true);
 })
 
 // Aici este linia de code unde poti face debug la dm messages!
@@ -65,9 +60,15 @@ bot.on('message', async message => {
 });
 
 // Aici este dakota AV pentru serverele de discord unde se pot trimite mesaje cu MD5!
-bot.on('message', (msg) => {
-    if (msg.content === 'hi puro' || msg.content === 'hello puro') {
-        msg.lineReplyNoMention(lang_en.ai_replay_command_message);
+bot.on("message", async (message, guild) => {
+    if(message.author.bot || message.author.bot) return;
+
+    if(message.channel.type === 'dm'){
+        fetch.default(`https://api.monkedev.com/fun/chat?msg=${message.content}&uid=${message.author.id}`)
+        .then(res => res.json())
+        .then(data => {
+            message.channel.send(data.response)
+        });
     }
 });
 
@@ -103,6 +104,8 @@ bot.on("message", function(message){
 // Acest event este pentru welcome message and debug
 // Acest event trimite logs in console pentru a putea vedea membri care au intrat pe ce server!
 bot.on("guildMemberAdd", member => {
+    if(member.bot) return;
+
     console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
 
     const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `discord-bot-debug`)
@@ -116,6 +119,8 @@ bot.on("guildMemberAdd", member => {
 });
 
 bot.on("guildMemberRemove", member => {
+    if(member.bot) return;
+
     console.log(`- (${member.displayName}) has quit to (${member.guild}) server!`)
 
     const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `discord-bot-debug`)
@@ -130,7 +135,9 @@ bot.on("guildMemberRemove", member => {
 
 // Aici este noul discord buttons event handler!
 require('discord-buttons')(bot)
-const { MessageButton, MessageActionRow } = require('discord-buttons')
+const { MessageButton, MessageActionRow } = require('discord-buttons');
+const { default: fetch } = require('node-fetch');
+const { AsyncResource } = require('async_hooks');
 
 bot.on('clickButton', async (button) => {
     if(button.id == 'button1') {

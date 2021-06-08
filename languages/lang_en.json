@@ -67,7 +67,5 @@
     "commands_serverinfo_idle" : "Idle:",
     "commands_serverinfo_do_not_disturb" : "Do Not Disturb:",
     "commands_serverinfo_offline" : "Offline:",
-    "commands_serverinfo_roles" : "Roles",
-
-    "ai_replay_command_message" : "Hi if you need my help do not forget to use commands '-help'! At this moment the AI chatting is not working yet!"
+    "commands_serverinfo_roles" : "Roles"
 }
