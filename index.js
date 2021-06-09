@@ -97,7 +97,7 @@ bot.on("message", function(message){
         flags: 'a' // 'a' means appending (old data will be preserved)
     });
 
-    logger.write(message.createdAt + ` [${message.guild}] - ` + message.author.username + ` => ${message}` + '\n')
+    logger.write(` [${message.guild}] - ` + message.author.username + ` => ${message}` + '\n')
 });
 
 // Aici este eventul de join and quit guild members!

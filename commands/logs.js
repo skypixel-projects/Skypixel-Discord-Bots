@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
         create(
             [
                 {
-                    name: "random code",
+                    name: "dakota-av-ac.675342",
                     content,
                     language: "javascript",
                 },
