@@ -76,6 +76,7 @@ const { badwords } = require('./swearing/blacklist.json');
 
 bot.on('message', (msg) => {
     if(msg.bot) return;
+    if(msg.channel.type === 'dm') return;
     let confirm = false;
    
     var i;
