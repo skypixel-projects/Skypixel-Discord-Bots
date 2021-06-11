@@ -4,13 +4,8 @@
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
     "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
 
-    "commands_help_description" : "```Music, Admin, Fun, Random```",
-    "commands_help_description_1" : "-play, -stop, -skip, -leave, -volume",
-    "commands_help_description_2" : "-avatar, -nsfw, -meme, -memberinfo -serverinfo, -8ball, -together, -howgay",
-    "commands_help_description_3" : "-kick, -clear, -ban, -removerole, -addrole, -cooldown, -send, -announcement",
-    "commands_help_description_4" : "-test, -skypixel, -uptime, -logs",
-    "commands_help_author" : "Here is the list of available command category:",
-    "commands_help_prefix" : "Prefix:",
+    "commands_help_title" : "**How can I help!**",
+    "commands_help_description" : "For more help please visit our website. Here you can find all the commands of the bot and all the information about it. Here you can also find the bot invitation link and the official link from the skypixel projects server!",
 
     "commands_kick_permission" : "You do not have permission to run this command.",
     "commands_kick_successfully" : "The member was kicked.",
