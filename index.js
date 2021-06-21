@@ -109,14 +109,16 @@ bot.on("guildMemberAdd", member => {
 
     console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
 
-    const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `welcome-bye`)
-    const welcomeEmbed = new Discord.MessageEmbed()
+    const join = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('welcome'))
+    const joinEmbed = new Discord.MessageEmbed()
         .setColor(botsettings.embed_color_message_discord_bot)
         .setTitle(`:wave: **Welcome ${member.displayName} to the ${member.guild} discord server!**`)
         .setDescription(`I hope do you have a grate time and fun on this server!`)
         .setThumbnail(member.user.avatarURL())
         .setTimestamp()
-    welcome.send(welcomeEmbed);
+
+    if(!join) return console.log(`The ${join} is not found on ${member.guild}!`)
+    join.send(joinEmbed);
 });
 
 bot.on("guildMemberRemove", member => {
@@ -124,14 +126,16 @@ bot.on("guildMemberRemove", member => {
 
     console.log(`- (${member.displayName}) has quit to (${member.guild}) server!`)
 
-    const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `welcome-bye`)
-    const welcomeEmbed = new Discord.MessageEmbed()
+    const quit = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('bye'))
+    const quitEmbed = new Discord.MessageEmbed()
         .setColor(botsettings.embed_color_message_discord_bot)
-        .setTitle(`:wave: **Goodbye ${member.displayName} to the ${member.guild} discord server!**`)
+        .setTitle(`:wave: **Goodbye ${member.displayName} from the ${member.guild} discord server!**`)
         .setDescription(`I hope do you have a grate time and fun on this server!`)
         .setThumbnail(member.user.avatarURL())
         .setTimestamp()
-    welcome.send(welcomeEmbed);
+
+    if(!quit) return console.log(`The ${quit} is not found on ${member.guild}!`)
+    quit.send(quitEmbed);
 })
 
 // Aici este noul discord buttons event handler!

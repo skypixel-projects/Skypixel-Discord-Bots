@@ -130,3 +130,55 @@
  [SKYPIXEL Community] - MaxWasTaked => -help
  [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
  [SKYPIXEL Community] - GitHub => 
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Puro => 
+ [SKYPIXEL Community] - Puro => 
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [RB COMMUNITY ♥] - GabyRo => andrei
+ [RB COMMUNITY ♥] - MEE6 => GG <@852953993863888897>, you just advanced to level 1!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Puro => 
+ [SKYPIXEL Community] - Puro => 
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Puro => 
+ [SKYPIXEL Community] - Puro => 
+ [RB COMMUNITY ♥] - Puro => 
+ [RB COMMUNITY ♥] - ProBot ✨ => Hey salut <@!486412940199591967> bine și venit pe RB COMMUNITY ♥ sper sa te distrezi
+ [RB COMMUNITY ♥] - MEE6 => **Necronium#3494** Speram sa te reintorci 👋
+ [RB COMMUNITY ♥] - Puro => 
+ [SKYPIXEL Community] - MaxWasTaked => @here 
+**DISCORD BOTS**
+
+- Fixed when a new member join on a server send a welcome message.
+- Fixed when a old member quit from the server send a goodbye message.
+- Fixed when the bot can find a welcome or goodbye channel and crash the bot.
+ [SKYPIXEL Community] - MaxWasTaked => @here 
+
+**DISCORD BOTS**
+
+- Added a new method to log the non existing welcome and goodbye channel.
+ [SKYPIXEL Community] - MaxWasTaked => **DISCORD BOTS**
+ [SKYPIXEL Community] - MaxWasTaked => @here
+
+**LIST OF ALL PROJECTS**
+
+In progress:
+ - Discord bots
+ - Website
+ - Server / Hosting
+ - Dakota AV / AC
+
+In futures:
+ - Action camera software
+ - Cars software
+ - Phone / Tablet system
