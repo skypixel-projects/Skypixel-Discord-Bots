@@ -109,7 +109,7 @@ bot.on("guildMemberAdd", member => {
 
     console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
 
-    const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `discord-bot-debug`)
+    const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `welcome-bye`)
     const welcomeEmbed = new Discord.MessageEmbed()
         .setColor(botsettings.embed_color_message_discord_bot)
         .setTitle(`:wave: **Welcome ${member.displayName} to the ${member.guild} discord server!**`)
@@ -124,7 +124,7 @@ bot.on("guildMemberRemove", member => {
 
     console.log(`- (${member.displayName}) has quit to (${member.guild}) server!`)
 
-    const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `discord-bot-debug`)
+    const welcome = member.guild.channels.cache.find((channel) => channel.name.toLowerCase() === `welcome-bye`)
     const welcomeEmbed = new Discord.MessageEmbed()
         .setColor(botsettings.embed_color_message_discord_bot)
         .setTitle(`:wave: **Goodbye ${member.displayName} to the ${member.guild} discord server!**`)
