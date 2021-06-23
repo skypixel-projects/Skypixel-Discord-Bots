@@ -59,7 +59,6 @@ bot.on('message', async message => {
     }
 });
 
-// Aici este dakota AV pentru serverele de discord unde se pot trimite mesaje cu MD5!
 bot.on("message", async (message, guild) => {
     if(message.author.bot || message.author.bot) return;
 
@@ -107,6 +106,10 @@ bot.on("message", function(message){
 bot.on("guildMemberAdd", member => {
     if(member.bot) return;
 
+    // Aici este linia de code unde botul adauga gradul denumit "member" automat la intrare.
+    const role = member.guild.roles.cache.find(role => role.name.toLowerCase().includes('member') || role.name.toLowerCase().includes('membru'));
+    member.roles.add(role);
+
     console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
 
     const join = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('welcome'))
@@ -117,7 +120,7 @@ bot.on("guildMemberAdd", member => {
         .setThumbnail(member.user.avatarURL())
         .setTimestamp()
 
-    if(!join) return console.log(`The ${join} is not found on ${member.guild}!`)
+    if(!join) return console.log(`The ${join} is not found on ${member.guild}!`);
     join.send(joinEmbed);
 });
 
