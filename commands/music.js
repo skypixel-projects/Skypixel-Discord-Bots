@@ -25,13 +25,13 @@ module.exports.run = async (bot, message, args) => {
                 let dispatcher = connection.play(ytdl(`${args}`));
         
                 // Aici este volumul cu care botul sa puna muzica!
-                dispatcher.setVolume(0.40);
+                dispatcher.setVolume(0.35);
         
                 // Aici este bitrate-ul pentru calitatea muzici!
-                dispatcher.setBitrate(12400);
+                dispatcher.setBitrate(145);
         
                 // Aici sunt decibeli pentru muzica!
-                dispatcher.setVolumeDecibels(0.20);
+                dispatcher.setVolumeDecibels(0.25);
         
                 dispatcher.on('start', () => {
                     // console.log('Is playing!');

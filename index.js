@@ -108,6 +108,7 @@ bot.on("guildMemberAdd", member => {
 
     // Aici este linia de code unde botul adauga gradul denumit "member" automat la intrare.
     const role = member.guild.roles.cache.find(role => role.name.toLowerCase().includes('member') || role.name.toLowerCase().includes('membru'));
+    if(!role) return;
     member.roles.add(role);
 
     console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
@@ -120,7 +121,7 @@ bot.on("guildMemberAdd", member => {
         .setThumbnail(member.user.avatarURL())
         .setTimestamp()
 
-    if(!join) return console.log(`The ${join} is not found on ${member.guild}!`);
+    if(!join) return;
     join.send(joinEmbed);
 });
 
@@ -137,7 +138,7 @@ bot.on("guildMemberRemove", member => {
         .setThumbnail(member.user.avatarURL())
         .setTimestamp()
 
-    if(!quit) return console.log(`The ${quit} is not found on ${member.guild}!`)
+    if(!quit) return;
     quit.send(quitEmbed);
 })
 
