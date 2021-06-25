@@ -107,13 +107,13 @@ bot.on("guildMemberAdd", member => {
     if(member.bot) return;
 
     // Aici este linia de code unde botul adauga gradul denumit "member" automat la intrare.
-    const role = member.guild.roles.cache.find(role => role.name.toLowerCase().includes('member') || role.name.toLowerCase().includes('membru'));
+    const role = member.guild.roles.cache.find(role => role.name.toLowerCase().includes('member') || role.name.toLowerCase().includes('membru') || role.name.toLowerCase().includes('tag'));
     if(!role) return;
     member.roles.add(role);
 
     console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
 
-    const join = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('welcome'))
+    const join = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('welcome') || channel.name.toLowerCase().includes('bun-venit') || channel.name.toLowerCase().includes('isten-hozott'))
     const joinEmbed = new Discord.MessageEmbed()
         .setColor(botsettings.embed_color_message_discord_bot)
         .setTitle(`:wave: **Welcome ${member.displayName} to the ${member.guild} discord server!**`)
@@ -130,7 +130,7 @@ bot.on("guildMemberRemove", member => {
 
     console.log(`- (${member.displayName}) has quit to (${member.guild}) server!`)
 
-    const quit = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('bye'))
+    const quit = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('bye') || channel.name.toLowerCase().includes('la-revedere') || channel.name.toLowerCase().includes('viszontlátásra'))
     const quitEmbed = new Discord.MessageEmbed()
         .setColor(botsettings.embed_color_message_discord_bot)
         .setTitle(`:wave: **Goodbye ${member.displayName} from the ${member.guild} discord server!**`)
@@ -158,6 +158,51 @@ bot.on('clickButton', async (button) => {
         // button.clicker.user.roles.remove(button.clicker.guild.roles.cache.get('677939383038640199'));
     }
 });
+
+bot.on('ready', () => {
+    bot.api.applications(bot.user.id).guilds('672018546125045760').commands.post({
+        data: {
+            name: "echo",
+            description: "Echos your text as an embed!",
+
+            options: [
+                {
+                    name: "content",
+                    description: "Content of the embed",
+                    type: 3,
+                    required: true
+                }
+            ]
+        }
+    });
+
+    bot.ws.on('INTERACTION_CREATE', async interaction => {
+        const command = interaction.data.name.toLowerCase();
+        const args = interaction.data.options;
+        if(command == "echo") {
+            const description = args.find(arg => arg.name.toLowerCase() == "content").value;
+            const embed = new Discord.MessageEmbed()
+                .setTitle("Echo!")
+                .setDescription(description)
+                .setAuthor(interaction.member.user.username);
+
+                bot.api.interactions(interaction.id, interaction.token).callback.post({
+                data: {
+                    type: 4,
+                    data: await createAPIMessage(interaction, embed)
+                }
+            });
+        }
+    });
+});
+
+async function createAPIMessage(interaction, content) {
+    const apiMessage = await Discord.APIMessage.create(bot.channels.resolve(interaction.channel_id), content)
+        .resolveData()
+        .resolveFiles();
+    
+    return { ...apiMessage.data, files: apiMessage.files };
+}
 
 // In replica aceasta botul se poate loga la discord api pentru a folosi botul!
 // Aici botul poate porni sau sa opri in functie de ce commanda a fost executata sau daca a primit o erroare fatala!

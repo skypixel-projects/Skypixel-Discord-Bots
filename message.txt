@@ -258,3 +258,560 @@ In futures:
  [MineXxek Sky] - Puro => Leave command has been executed!
  [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=GzVvDGnWQXI&list=RDMM5Ex5mrhJsh8&index=4
  [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [SKYPIXEL Community] - GitHub => 
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => -play https://www.youtube.com/watch?v=wJnBTPUQS5A
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJnBTPUQS5A
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => lay https://www.youtube.com/watch?v=GzVvDGnWQXI&list=RDMM5Ex5mrhJsh8&index=4
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=GzVvDGnWQXI&list=RDMM5Ex5mrhJsh8&index=4
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJnBTPUQS5A
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJnBTPUQS5A
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=GzVvDGnWQXI&list=RDMM5Ex5mrhJsh8&index=4
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJnBTPUQS5A
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJnBTPUQS5A
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJnBTPUQS5A
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [null] - M҉i҉n҉e҉X҉x҉ => hello max
+ [null] - Puro => Hello! I know it's somewhere on the Earth. I like to stay informed.
+ [null] - Puro => Hey! I know it's somewhere on the Earth. I like a good discussion.
+ [null] - M҉i҉n҉e҉X҉x҉ => am zis hello max
+ [null] - Puro => Would you like to say more about that?
+ [null] - Puro => That sounds interesting. Tell me more.
+ [null] - M҉i҉n҉e҉X҉x҉ => ///spoiler message:
+ [null] - Puro => Not too bad.
+ [null] - Puro => I'm optimistic.
+ [null] - M҉i҉n҉e҉X҉x҉ => as
+ [null] - Puro => For example, a tomato.
+ [null] - MaxWasTaked => test
+ [null] - M҉i҉n҉e҉X҉x҉ => asa
+ [null] - Puro => Who is asa?
+ [null] - Puro => What's your favorite movie?
+ [null] - MaxWasTaked => test
+ [null] - Puro => I like test.
+ [null] - Puro => This is just a test.
+ [null] - M҉i҉n҉e҉X҉x҉ => nimic
+ [null] - MaxWasTaked => hello
+ [null] - Puro => Hi, my friend! Do you want me to tell you a joke?
+ [null] - Puro => Hi, my friend, what can I do for you today?
+ [null] - M҉i҉n҉e҉X҉x҉ => sorry noob
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => Role Added
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The <@!236811109066211329> member has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole @Yonaga678 member
+ [SKYPIXEL Community] - Puro => The -addrole @Yonaga678 member has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => <@!236811109066211329>
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The undefined has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The < has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The @ has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The 2 has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The ! has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole @Yonaga678 member
+ [SKYPIXEL Community] - Puro => The Y has been added successfully!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole @Yonaga678 member
+ [SKYPIXEL Community] - Puro => The Y has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole @Yonaga678 member
+ [SKYPIXEL Community] - Puro => The undefined has been added successfully!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329>  member
+ [SKYPIXEL Community] - Puro => The undefined has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The ! has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The ! has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The 6 has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The < has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329>  member
+ [SKYPIXEL Community] - Puro => The @ has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The <@!236811109066211329> has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329>  member
+ [SKYPIXEL Community] - Puro => The ! has been added successfully!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole member
+ [SKYPIXEL Community] - Puro => The m has been added successfully!
+ [SKYPIXEL Community] - MaxWasTaked => ||test||
+ [SKYPIXEL Community] - MaxWasTaked => _test_
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole member
+ [SKYPIXEL Community] - Puro => The member has been added successfully!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!236811109066211329> member
+ [SKYPIXEL Community] - Puro => The <@!236811109066211329> member has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole member
+ [SKYPIXEL Community] - Puro => The member has been added successfully!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole member
+ [SKYPIXEL Community] - Puro => The member has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole member
+ [SKYPIXEL Community] - Puro => The member has been added successfully!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!819678238623793213> member
+ [SKYPIXEL Community] - Puro => The <@!819678238623793213> member has been added successfully!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!775088520799715389> member
+ [SKYPIXEL Community] - Puro => The <@!775088520799715389> member has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole <@!775088520799715389> member
+ [SKYPIXEL Community] - Puro => The <@!775088520799715389> member has been added successfully!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => -addrole
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => /hello
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - MaxWasTaked => /testing
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [Max] - MaxWasTaked => /help
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [Max] - MaxWasTaked => /world
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [Max] - Puro => Hello World!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [Max] - Puro => 
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => 
+ [MineXxek Sky] - MaxWasTaked => -play https://youtu.be/gHAegCYuk9o
+ [MineXxek Sky] - xMin3r => Ho ho
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => VORBESC
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => ACUMA
+ [MineXxek Sky] - xMin3r => <a:shubaru:857499810848309248>
+ [MineXxek Sky] - xMin3r => <:in_pula_mea:835643415177723964>
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => <:lol:835810046050697226>
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => <:cuca_2:835813578480549918>
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => <:fogyatk:835812523155652668>
+ [MineXxek Sky] - xMin3r => <a:cuca:835813291405606913> <:cuca_2:835813578480549918>
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => <:spidermuc:835810689419182150>
+ [MineXxek Sky] - xMin3r => <:fogyatk:835812523155652668>
+ [MineXxek Sky] - xMin3r => <:whattt:827459005357359114>
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => https://tenor.com/view/tatan-baby-tatan-chubby-cute-ok-gif-14597548
+ [MineXxek Sky] - xMin3r => <:nobrain:823089719793549312>
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -device <@!775088520799715389>
+ [MineXxek Sky] - Puro => This command is in developer mode!
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -device <@!432516985214205972>
+ [MineXxek Sky] - Puro => This command is in developer mode!
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - xMin3r => <:821162622488674346:822162735898034266>
+ [MineXxek Sky] - MaxWasTaked => -device <@!764884863668846592>
+ [MineXxek Sky] - Puro => This command is in developer mode!
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - xSober_Chris => <a:dogdance:697554881950646344>
+ [MineXxek Sky] - MaxWasTaked => Ma
+ [MineXxek Sky] - MaxWasTaked => Te bagi si tu
+ [MineXxek Sky] - MaxWasTaked => Aici
+ [MineXxek Sky] - MaxWasTaked => uwu
+ [MineXxek Sky] - xMin3r => <:PES_ThumbsUp:850983460835033099>
+ [MineXxek Sky] - MaxWasTaked => =]]]]
+ [MineXxek Sky] - MaxWasTaked => =]]]]]]
+ [MineXxek Sky] - MaxWasTaked => kglfndfrghbfglmrtyhj
+ [MineXxek Sky] - MaxWasTaked => rgtyujm,gtyljm
+ [MineXxek Sky] - MaxWasTaked => eythpwrtkhprtkh
+ [MineXxek Sky] - MaxWasTaked => rttkh
+ [MineXxek Sky] - MaxWasTaked => wrth
+ [MineXxek Sky] - MaxWasTaked => -helpo
+ [MineXxek Sky] - MaxWasTaked => -help
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -test
+ [MineXxek Sky] - xMin3r => <:821162622488674346:822162735898034266>
+ [MineXxek Sky] - xSober_Chris => <a:roachdance:697554881942257765>
+ [MineXxek Sky] - MaxWasTaked => -test button
+ [MineXxek Sky] - Puro => 
+ [null] - Puro => Okay! <@775088520799715389> just hit the yes button
+ [null] - Puro => Okay! <@236811109066211329> just hit the yes button
+ [MineXxek Sky] - MaxWasTaked => -test message
+ [MineXxek Sky] - Puro => ```This message will been deleted after 25000 milliseconds!```
+ [null] - Puro => Okay! <@432516985214205972> just hit the yes button
+ [null] - Puro => Okay! <@432516985214205972> just hit the no button
+ [MineXxek Sky] - MaxWasTaked => -test
+ [MineXxek Sky] - MaxWasTaked => -howgay <@!775088520799715389>
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -howgay <@!432516985214205972>
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -howgay <@!764884863668846592>
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -howgay <@!236811109066211329>
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => GG <@!775088520799715389> ai castigfat
+ [MineXxek Sky] - MaxWasTaked => =]]]
+ [MineXxek Sky] - MaxWasTaked => <@!775088520799715389>
+ [MineXxek Sky] - MaxWasTaked => <@!775088520799715389>
+ [MineXxek Sky] - MaxWasTaked => <@!775088520799715389>
+ [MineXxek Sky] - MaxWasTaked => <@!775088520799715389>
+ [MineXxek Sky] - MaxWasTaked => <@!775088520799715389>
+ [MineXxek Sky] - MaxWasTaked => <@!775088520799715389>
+ [MineXxek Sky] - MaxWasTaked => <@!775088520799715389>
+ [MineXxek Sky] - MaxWasTaked => <@!775088520799715389>
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => 
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - xMin3r => <:smile:838532397913735238>
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => <:nobrain:823089719793549312>
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => <:smile:838532397913735238> <:dogesmile:833722094206451802>
+ [MineXxek Sky] - xMin3r => <:pepemod:816033705713336340>
+ [MineXxek Sky] - xMin3r => <:in_pula_mea:835643415177723964>
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => ywy
+ [MineXxek Sky] - MaxWasTaked => fuck
+ [MineXxek Sky] - MaxWasTaked => fyck
+ [MineXxek Sky] - MaxWasTaked => fuck
+ [MineXxek Sky] - MaxWasTaked => pula
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - MaxWasTaked => fuck
+ [MineXxek Sky] - MaxWasTaked => bich
+ [MineXxek Sky] - MaxWasTaked => titch
+ [MineXxek Sky] - MaxWasTaked => efgbn]ertignetr]g
+ [MineXxek Sky] - MaxWasTaked => weg
+ [MineXxek Sky] - MaxWasTaked => -clear 100
+ [MineXxek Sky] - Puro => Deleted 1 messages.
+ [MineXxek Sky] - xMin3r => <a:shubaru:857499810848309248> <a:skillissue:852406653578903562> <:nu_mai_fuma_coaie_ca_zice_soba:835648461713309726>
+ [MineXxek Sky] - xMin3r => <:nu_mai_bea_coaie:835649651813646406> <:in_pula_mea:835643415177723964> <:nu_mai_fuma_coaie_ca_zice_soba:835648461713309726> <:erroare_linie_code_69:835644908794544168> <:ce_cacat_coaie:835644158811045938> <:ai_covid_coaie_meu:835645892261969940>
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - xMin3r => coaie
+ [MineXxek Sky] - MaxWasTaked => 
+ [MineXxek Sky] - xMin3r => <:821162622488674346:822162735898034266>
+ [MineXxek Sky] - xMin3r => fack
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - MaxWasTaked => 
+ [MineXxek Sky] - xMin3r => :]
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - xMin3r => <:moyai_thinking:826708484334551051> <:menacing_think:823339004199436308>
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => m ue
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -clear 1
+ [MineXxek Sky] - Puro => Deleted 1 messages.
+ [MineXxek Sky] - MaxWasTaked => 
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - xMin3r => <a:Pepe_Hardrock:827559144268759040> <a:peepoDevilBop:853240909587021834>
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => <a:Pepe_Hardrock:827559144268759040> <a:peepoDevilBop:853240909587021834>
+ [MineXxek Sky] - xMin3r => <:dabmeup:851298756182802468>
+ [MineXxek Sky] - xMin3r => <:lewd:830210221837254657>
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -leave
+ [MineXxek Sky] - Puro => Leave command has been executed!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308> <:moyai_thinking:826708484334551051>
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308><:menacing_think:823339004199436308><:menacing_think:823339004199436308><:menacing_think:823339004199436308><:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308><:menacing_think:823339004199436308><:menacing_think:823339004199436308><:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => v
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <:menacing_think:823339004199436308>
+ [MineXxek Sky] - xMin3r => <a:ban:832074542670282813> <a:ban2:832074571238080522> <a:ban3:832074589827629068>
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => <a:shubaru:857499810848309248>
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => :shubaru
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -kick @alfred
+ [MineXxek Sky] - Puro => <@!236811109066211329>, You didn't mention the user to kick!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - MaxWasTaked => '-kick
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => <:NO:846415300756766730>
+ [MineXxek Sky] - xMin3r => <a:skillissue:852406653578903562>
+ [MineXxek Sky] - xMin3r => <:PES_ThumbsUp:850983460835033099>
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => <:rgrab:848030201862291466> <:smh:823339559566966834> <:lgrab:848030297702268928>
+ [MineXxek Sky] - M҉i҉n҉e҉X҉x҉ => -kick Cipsul_Cubic_Sburator
+ [MineXxek Sky] - Puro => <@764884863668846592>, You didn't mention the user to kick!
+ [MineXxek Sky] - xMin3r => <:purity:850983639050616872>
+ [MineXxek Sky] - xMin3r => <:nobrain:823089719793549312>
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - xMin3r => <:meleg:835812796972793946>
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - xMin3r => :dogesmile:
+ [MineXxek Sky] - MaxWasTaked => <a:Aigrija:808974302081974272>
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=wJGcwEv7838
+ [MineXxek Sky] - xMin3r => <:fuxi:835811964223619113>
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396> <a:pettheghost2:773588512422756396>
+ [MineXxek Sky] - MaxWasTaked => <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282> <a:twerk:726025326672609282> 
+<a:twerk:726025326672609282>
+ [MineXxek Sky] - xMin3r => :Aigrija:
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=23hi_4QUihw
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => 👍
+ [MineXxek Sky] - xMin3r => <a:shubaru:857499810848309248>
+ [MineXxek Sky] - MaxWasTaked => -kick <@!432516985214205972>
+ [MineXxek Sky] - Puro => <@!236811109066211329>, Successfully kicked!
+ [MineXxek Sky] - xMin3r => MUE
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - xMin3r => <:nobrain:823089719793549312>
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=23hi_4QUihw
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - xMin3r => <:nobrain:823089719793549312>
+ [MineXxek Sky] - MaxWasTaked => -kick <@!432516985214205972>
+ [MineXxek Sky] - Puro => <@!236811109066211329>, Successfully kicked!
+ [MineXxek Sky] - xMin3r => <:nobrain:823089719793549312>
+ [MineXxek Sky] - MaxWasTaked => lellelelelel
+ [MineXxek Sky] - xMin3r => BYEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=23hi_4QUihw
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=pgN-vvVVxMA
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=pgN-vvVVxMA
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=pgN-vvVVxMA
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => -leave
+ [MineXxek Sky] - Puro => Leave command has been executed!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [MineXxek Sky] - MaxWasTaked => 
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Errors are common because this command is only experimental!
+ [SKYPIXEL Community] - Skypixel Projects => The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=hzp8Gv84FYU
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=pgN-vvVVxMA
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=UN7sSx3RZ-s
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=jkyB4yg7IRg
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [MineXxek Sky] - MaxWasTaked => -leave
+ [MineXxek Sky] - Puro => Leave command has been executed!
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => ba
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Da
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => caare imi cumpara host?
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Nush
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Nam bani
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Am host de mc
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Doar
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => dami hostu tau
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => de samp0-
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => aivut
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => e beta
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Aa
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => il dai pe a;a
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Auzi
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Am host de samp
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => damil mie
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => De la lemehost
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => nue bun ala ]
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => e de cacat
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Știi
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Atiu
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Știu
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => ce stii
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Că nu e bun
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => De unde sa luam
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => din pula
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - Puro => You are not allowed to swear!
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => ;)))))))))
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => de unde
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => anubis
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Nush
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => cumpara host
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Aaa
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Să cunperi
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Îți recomand
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Garduri
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => De joc
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Alea
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - AndreiRb => Sau darkhost
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => e gratis
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - anubis => cumperi* :))
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => anubise
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => cumpararab hosty
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => de samp
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - anubis => nu joc samp :))
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => nuconeaza
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => imi cumperi
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - anubis => :))
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => sau imi dai mie cardu sa compar eu
+ [🔥 𝐓𝐇𝐄 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘] - GabyRo => host

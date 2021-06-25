@@ -4,6 +4,17 @@ const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
 module.exports = bot => { 
+
+    // bot.user.guild.roles.create({
+    //     data: {
+    //       name: 'Super Cool People',
+    //       color: 'BLUE',
+    //     },
+    //     reason: 'we needed a role for Super Cool People',
+    // })
+    //     .then(console.log)
+    //     .catch(console.error);
+
     bot.user.setPresence({status: "idle"});
     bot.user.setActivity(botsettings.discord_profile_activity, { type: botsettings.discord_profile_activity_type });
 

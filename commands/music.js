@@ -1,6 +1,5 @@
-const ytdl = require('ytdl-core');
-const ytpl = require('ytpl');
 const Discord = require("discord.js");
+const ytdl = require("discord-ytdl-core");
 
 const botsettings = require('../botsettings.json');
 const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
@@ -21,25 +20,25 @@ module.exports.run = async (bot, message, args) => {
 
         if (message.member.voice.channel) {
             message.member.voice.channel.join().then(connection => {
-                // const stream = ytdl(`${args}`)
-                let dispatcher = connection.play(ytdl(`${args}`));
+
+                // console.log(args)
+
+                let dispatcher = connection.play(ytdl(`${args}`, {
+                    quality: 'highest',
+                    filter: "audioonly",
+                    fmt: "mp3",
+                    encoderArgs: ['-af', 'bass=g=10'],
+                    highWaterMark: 1 << 25
+                }));
         
-                // Aici este volumul cu care botul sa puna muzica!
-                dispatcher.setVolume(0.35);
-        
-                // Aici este bitrate-ul pentru calitatea muzici!
-                dispatcher.setBitrate(145);
-        
-                // Aici sunt decibeli pentru muzica!
-                dispatcher.setVolumeDecibels(0.25);
+                dispatcher.setVolume(0.30);
+                dispatcher.setBitrate(12850);
         
                 dispatcher.on('start', () => {
-                    // console.log('Is playing!');
                     message.lineReplyNoMention(`Okay music is playing now! All music will play in the highest audio quality! (Experimental)!`);
                 });
 
                 dispatcher.on('finish', () => { 
-                    // console.log('Finished playing!');
                     message.member.voice.channel.leave()
                 });
 

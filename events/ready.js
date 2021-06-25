@@ -10,5 +10,5 @@ const hook = new Discord.WebhookClient('852084762985365514', '0O2v0UP2jpnpsCkd_F
 
 module.exports = bot => { 
     hook.send(lang_en.console_ready);
-    console.log(lang_en.console_ready_webhook);
+    console.log('\x1b[32m%s\x1b[0m',lang_en.console_ready_webhook);
 }

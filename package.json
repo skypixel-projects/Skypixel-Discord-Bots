@@ -1,5 +1,5 @@
 {
-  "name": "bot-tutorial",
+  "name": "puro-discord",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,24 +10,26 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.5.0",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "discord": "^0.8.2",
-    "discord-buttons": "^3.1.1",
+    "discord-buttons": "^3.2.1",
     "discord-reply": "^0.1.2",
+    "discord-ytdl-core": "^5.0.4",
     "discord.js": "^12.5.3",
     "ffmpeg": "0.0.4",
-    "ffmpeg-static": "^4.3.0",
+    "ffmpeg-static": "^4.4.0",
     "fluent-ffmpeg": "^2.1.2",
     "fs": "0.0.1-security",
+    "i": "^0.3.6",
     "index.js": "0.0.3",
     "moment": "^2.29.1",
     "ms": "^2.1.3",
     "node-fetch": "^2.6.1",
+    "npm": "^7.19.0",
     "opusscript": "0.0.8",
     "random-puppy": "^1.1.0",
     "snekfetch": "^4.0.4",
-    "sourcebin": "^4.2.3",
-    "ytdl-core": "^4.8.2",
-    "ytpl": "^2.2.1"
+    "sourcebin": "^4.2.5",
+    "ytdl-core": "git+https://github.com/KabirJaipal/node-ytdl-core.git"
   }
 }
