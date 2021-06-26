@@ -2,13 +2,14 @@ const botsettings = require('../botsettings.json');
 const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    message.delete();
-    
-    let epicRole = message.guild.roles.cache.get('677939383038640199');
-    const member = message.mentions.members.first();
+    let args2 = args.slice(23).split('/').join(" ");
 
-    member.roles.add(epicRole);
-    message.channel.send(lang_en.commands_addrole_added)
+    // Aici este debug pentru a vedea ce grad a specificat
+    // console.log(args2)
+
+    const role = message.member.guild.roles.cache.find(role => role.name.toLowerCase().includes(args2));
+    message.member.roles.add(role);
+    message.lineReplyNoMention("Okay!");
 }
 
 module.exports.config = {

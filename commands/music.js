@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
                     quality: 'highest',
                     filter: "audioonly",
                     fmt: "mp3",
-                    encoderArgs: ['-af', 'bass=g=10'],
+                    encoderArgs: ['-af', 'bass=g=1'],
                     highWaterMark: 1 << 25
                 }));
         
