@@ -9,6 +9,9 @@ const lang_en = require('../languages/lang_en.json');
 const hook = new Discord.WebhookClient('852084762985365514', '0O2v0UP2jpnpsCkd_Fr0W-MKPhyFsaHN71-XRNBV2y1AJhiDVM9GPalWYU39Ftj0hLTj');
 
 module.exports = bot => { 
-    hook.send(lang_en.console_ready);
+
+    var currentdate = new Date();
+
+    hook.send('**' + currentdate.toLocaleString() + '**' + ' ' + lang_en.console_ready);
     console.log('\x1b[32m%s\x1b[0m',lang_en.console_ready_webhook);
 }

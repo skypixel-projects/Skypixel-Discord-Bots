@@ -13,5 +13,5 @@
     
     "discord_profile_status" : "dnd",
 
-    "embed_color_message_discord_bot" : "RED"
+    "embed_color_message_discord_bot" : "RANDOM"
 }

@@ -29,6 +29,7 @@
     "opusscript": "0.0.8",
     "random-puppy": "^1.1.0",
     "snekfetch": "^4.0.4",
+    "soundcloud-audio": "^1.4.0",
     "sourcebin": "^4.2.5",
     "ytdl-core": "git+https://github.com/KabirJaipal/node-ytdl-core.git"
   }

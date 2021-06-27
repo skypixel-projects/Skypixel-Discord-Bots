@@ -160,7 +160,7 @@ bot.on('clickButton', async (button) => {
 });
 
 bot.on('ready', () => {
-    bot.api.applications(bot.user.id).guilds('672018546125045760').commands.post({
+    bot.api.applications(bot.user.id).commands.post({
         data: {
             name: "echo",
             description: "Echos your text as an embed!",
@@ -181,10 +181,12 @@ bot.on('ready', () => {
         const args = interaction.data.options;
         if(command == "echo") {
             const description = args.find(arg => arg.name.toLowerCase() == "content").value;
+
+            // bot.channels.cache.get('852084741645533234').send('Hello here!');
+
             const embed = new Discord.MessageEmbed()
-                .setTitle("Echo!")
-                .setDescription(description)
-                .setAuthor(interaction.member.user.username);
+                .setFooter("This command is in development!")
+                .setTitle(description)
 
                 bot.api.interactions(interaction.id, interaction.token).callback.post({
                 data: {
@@ -200,7 +202,6 @@ async function createAPIMessage(interaction, content) {
     const apiMessage = await Discord.APIMessage.create(bot.channels.resolve(interaction.channel_id), content)
         .resolveData()
         .resolveFiles();
-    
     return { ...apiMessage.data, files: apiMessage.files };
 }
 
