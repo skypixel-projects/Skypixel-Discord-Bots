@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
 
     var embed = new Discord.MessageEmbed()
         .setTitle(`${lang_en.commands_help_title}`)
-        .setDescription(`${lang_en.commands_help_description} \n \n https://yonaga678.github.io/SK-DISCORDBOTS/`)
+        .setDescription(`${lang_en.commands_help_description} \n \n https://skypixel-projects.github.io/SK-DISCORDBOTS/`)
         .setColor(botsettings.embed_color_message_discord_bot)
         .setThumbnail(bot.user.displayAvatarURL())
         .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
