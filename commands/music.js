@@ -6,14 +6,13 @@ const botsettings = require('../botsettings.json');
 const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
+
     if(message.content.includes("-play")){
  
         // Aici este metoda de a detecta daca linkul este real
         if(!message.content.includes('https://')) {
             return message.lineReplyNoMention(lang_en.commands_music_url_error);
         }
-
-
 
         if(message.content.includes('soundcloud')) {
             // return message.lineReplyNoMention(lang_en.commands_music_error_soundcloud);
