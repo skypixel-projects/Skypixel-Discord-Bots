@@ -4,9 +4,9 @@ const fs = require("fs");
 const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
-// https://discord.com/api/webhooks/852084762985365514/0O2v0UP2jpnpsCkd_Fr0W-MKPhyFsaHN71-XRNBV2y1AJhiDVM9GPalWYU39Ftj0hLTj
+// https://discord.com/api/webhooks/860440817318232124/LlqHh_xPwoGcVBpzsiN-CElAg_hlmZcYQ0YbuAS3SAvz5TAzcaXr4kp42P_mxzZKIuUA
 
-const hook = new Discord.WebhookClient('852084762985365514', '0O2v0UP2jpnpsCkd_Fr0W-MKPhyFsaHN71-XRNBV2y1AJhiDVM9GPalWYU39Ftj0hLTj');
+const hook = new Discord.WebhookClient('860440817318232124', 'LlqHh_xPwoGcVBpzsiN-CElAg_hlmZcYQ0YbuAS3SAvz5TAzcaXr4kp42P_mxzZKIuUA');
 
 module.exports = bot => { 
 
