@@ -54,7 +54,7 @@ module.exports.run = async (bot, message, args) => {
     }
 
     if(message.content.includes("-filter")) {
-        if ([`3d`, `bassboost`, `echo`, `karaoke`, `nightcore`, `vaporwave`].includes(args)) {
+        if ([`3d`, `bassboost`, `echo`, `karaoke`, `nightcore`, `vaporwave`, `flanger`, `gate`, `haas`, `reverse`, `surround`, `mcompand`, `phaser`, `tremolo`, `earwax`].includes(args)) {
             let filter = bot.distube.setFilter(message, args);
             var embed = new Discord.MessageEmbed()
                 .setTitle(`Current queue:`)

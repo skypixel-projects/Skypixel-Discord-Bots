@@ -1692,3 +1692,65 @@ Requested by: <@236811109066211329>}
  [MineXxek Sky] - MaxWasTaked => -ping
  [MineXxek Sky] - Puro => 
  [SKYPIXEL Community] - GitHub => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 7:41:13 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -filter surround
+ [MineXxek Sky] - Puro => An error encountered: Error: FFmpeg/avconv not found!
+ID: -ObdvMkCKws
+Name: Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 of message has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 of message has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 of message has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 of message has been deleted!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 7:43:08 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -filter surround
+ [MineXxek Sky] - Puro => An error encountered: Error: FFmpeg/avconv not found!
+ID: -ObdvMkCKws
+Name: Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 7:44:18 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -filter surround
+ [MineXxek Sky] - Puro => An error encountered: Error: FFmpeg/avconv not found!
+ID: -ObdvMkCKws
+Name: Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 7:44:50 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -filter surround
+ [MineXxek Sky] - Puro => An error encountered: Error: FFmpeg/avconv not found!
+ID: -ObdvMkCKws
+Name: Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 7:45:50 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 of message has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -play surround
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -filter surround
+ [MineXxek Sky] - Puro => An error encountered: Error: FFmpeg/avconv not found!
+ID: -ObdvMkCKws
+Name: Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs
+ [MineXxek Sky] - Puro => An error encountered: Error: FFmpeg/avconv not found!
+ID: a20QsxEfL0Q
+Name: Surround (环绕) - Zhang Zhe Han (张哲翰) Lyrics
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -stop

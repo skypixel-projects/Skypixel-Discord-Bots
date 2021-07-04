@@ -72,7 +72,7 @@ bot.on("message", async (message, guild) => {
 const { badwords } = require('./swearing/blacklist.json');
 
 bot.on('message', (msg) => {
-    if(msg.bot) return;
+    if(msg.author.bot || msg.author.bot) return;
     if(msg.channel.type === 'dm') return;
     let confirm = false;
    
@@ -229,7 +229,7 @@ bot.distube
     .on("playList", (message, queue, playlist, song) => {
         var embed = new Discord.MessageEmbed()
             .setTitle('Music:')
-            .setDescription(`Play \`${playlist.name}\` playlist (${playlist.songs.length} songs).\nNow playing \`${song.name}\` - \`${song.formattedDuration}\`}`)
+            .setDescription(`Play \`${playlist.name}\` playlist (${playlist.songs.length} songs).\nNow playing \`${song.name}\` - \`${song.formattedDuration}\`})`)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed)
