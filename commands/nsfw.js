@@ -203,7 +203,7 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.config = {
-    name: "secsy",
+    name: "nsfw",
     description: "",
     usage: "",
     accessableby: "Members",

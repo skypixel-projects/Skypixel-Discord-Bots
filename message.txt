@@ -1754,3 +1754,11 @@ Name: Surround (环绕) - Zhang Zhe Han (张哲翰) Lyrics
  [MineXxek Sky] - MaxWasTaked => -play ncs
  [MineXxek Sky] - Puro => 
  [MineXxek Sky] - MaxWasTaked => -stop
+ [SKYPIXEL Community] - GitHub => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 11:29:34 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 11:30:21 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - GitHub => 
