@@ -1,9 +1,7 @@
 const Discord = require('discord.js');
 const readline = require('readline');
-
 const botsettings = require('./botsettings.json');
 const lang_en = require(`./languages/${botsettings.default_lang_for_discord_bot}.json`);
-
 const bot = new Discord.Client({ presence: { status: "idle" }}); // { presence: { status: "dnd" }, messageCacheMaxSize: 0 }
 
 // In replica aceasta functioneaza toate eventele!
@@ -205,13 +203,57 @@ async function createAPIMessage(interaction, content) {
     return { ...apiMessage.data, files: apiMessage.files };
 }
 
-// In replica aceasta botul se poate loga la discord api pentru a folosi botul!
-// Aici botul poate porni sau sa opri in functie de ce commanda a fost executata sau daca a primit o erroare fatala!
-bot.login(botsettings.token);
+// Distube for playing music!
+// ---------------------------------------------------------------------------------------------------------------------------
+const distube = require("distube")
+bot.distube = new distube(bot, { searchSongs: false, emitNewSongOnly: true })
+bot.distube
+    .on("playSong", (message, queue, song) => {
+        var embed = new Discord.MessageEmbed()
+            .setTitle('Music')
+            .setDescription(`Playing \`${song.name}\` - \`${song.formattedDuration}\``)
+            .setColor(botsettings.embed_color_message_discord_bot)
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+        message.channel.send(embed)
+    })
 
-// Aici iese botul din voice daca sta prea mult AFK
-// bot.on("ready", () => {
-//   setInterval(function(){ 
-//     // bot.voice.channel.disconnect()
-//     }, 1000);
-// });
+    .on("addSong", (message, queue, song) => {
+        var embed = new Discord.MessageEmbed()
+            .setTitle('Music')
+            .setDescription(`Added ${song.name} - \`${song.formattedDuration}\` to the queue`)
+            .setColor(botsettings.embed_color_message_discord_bot)
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+        message.channel.send(embed)
+    })
+
+    .on("playList", (message, queue, playlist, song) => {
+        var embed = new Discord.MessageEmbed()
+            .setTitle('Music')
+            .setDescription(`Play \`${playlist.name}\` playlist (${playlist.songs.length} songs).\nNow playing \`${song.name}\` - \`${song.formattedDuration}\`}`)
+            .setColor(botsettings.embed_color_message_discord_bot)
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+        message.channel.send(embed)
+    })
+
+    .on("addList", (message, queue, playlist) => {
+        var embed = new Discord.MessageEmbed()
+            .setTitle('Music')
+            .setDescription(`Added \`${playlist.name}\` playlist (${playlist.songs.length} songs to the queue`)
+            .setColor(botsettings.embed_color_message_discord_bot)
+            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
+        message.channel.send(embed)
+    })
+
+    // DisTubeOptions.searchSongs = true
+    .on("searchResult", (message, result) => {
+        let i = 0;
+        message.channel.send(`**Choose an option from below**\n${result.map(song => `**${++i}**. ${song.name} - \`${song.formattedDuration}\``).join("\n")}\n*Enter anything else or wait 60 seconds to cancel*`);
+    })
+    // DisTubeOptions.searchSongs = true
+    .on("searchCancel", (message) => message.channel.send(`Searching canceled`))
+    .on("error", (message, e) => {
+        console.error(e)
+        message.channel.send("An error encountered: " + e);
+    });
+
+bot.login(botsettings.token);

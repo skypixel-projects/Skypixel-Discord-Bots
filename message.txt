@@ -1338,3 +1338,321 @@ In futures:
  [SKYPIXEL Community] - Puro => Okay I will change my name in to test2
  [SKYPIXEL Community] - MaxWasTaked => -nick Development
  [SKYPIXEL Community] - Puro => Okay I will change my name in to Development
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:22:17 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=s5PBrK_bkvw
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:23:05 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=s5PBrK_bkvw
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:24:56 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=s5PBrK_bkvw
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:26:14 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=s5PBrK_bkvw
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:26:44 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [MineXxek Sky] - MaxWasTaked => -leave
+ [MineXxek Sky] - Puro => Leave command has been executed!
+ [MineXxek Sky] - Puro => Leave command has been executed!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=s5PBrK_bkvw
+ [MineXxek Sky] - Puro => Okay music is playing now! All music will play in the highest audio quality! (Experimental)!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:35:48 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play florin salam
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:36:20 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play florin salam
+ [MineXxek Sky] - MaxWasTaked => -leave
+ [MineXxek Sky] - MaxWasTaked => -;eave
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:38:58 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:39:39 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:39:57 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:40:07 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:40:40 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:41:41 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:41:51 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - MaxWasTaked => -skip
+ [MineXxek Sky] - MaxWasTaked => -leave
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:42:30 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:42:36 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [MineXxek Sky] - MaxWasTaked => -skip
+ [MineXxek Sky] - MaxWasTaked => -skip
+ [MineXxek Sky] - MaxWasTaked => -stop
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:43:43 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -stop
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:44:25 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -stop
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:44:43 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=s8XIgR5OGJc&list=PLC1og_v3eb4hrv4wsqG1G5dsNZh9bIscJ
+ [MineXxek Sky] - MaxWasTaked => -skip
+ [SKYPIXEL Community] - MaxWasTaked => @everyone 
+**Now you can play your favorites playlist from youtube to your discord voice channel!**
+ [null] - xMin3r => Puro
+ [null] - Puro => Sports are a microcosm of society.
+ [null] - xMin3r => Oh cool
+ [null] - Puro => You're cool too.
+ [null] - xMin3r => Thx
+ [null] - Puro => I'm always glad to help.
+ [null] - xMin3r => Im bored
+ [null] - Puro => You must push everything to the absolute limit or else life will be boring.
+ [null] - xMin3r => Oh I DIDNT know that
+ [null] - Puro => So I have taught you something new.
+ [null] - xMin3r => Yea thx
+ [null] - Puro => Are you sure?
+ [null] - xMin3r => Yes
+ [null] - Puro => That's fine. Then, do you want me to tell you a joke?
+ [null] - xMin3r => Yes
+ [null] - Puro => Innkeeper: "The room is $15 a night. It's $5 if you make your own bed." Guest: "I'll make my own bed." Innkeeper: "Good. I'll get you some nails and wood."
+ [null] - xMin3r => Haha
+ [null] - Puro => That was funny.
+ [null] - xMin3r => Yea
+ [null] - Puro => Yeah!
+ [null] - xMin3r => Who îs your owner
+ [null] - Puro => That's OK.
+ [null] - xMin3r => Who is your owner
+ [null] - Puro => I was created by Acobot Team.
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 has been deleted!
+ [null] - xMin3r => Oh
+ [null] - Puro => Ah.
+ [null] - xMin3r => What do you think ABOUT MaxWasTaked
+ [null] - Puro => Let me think if I have a good answer for you... I try to be generous, caring and warm.
+ [null] - xMin3r => Oh
+ [null] - Puro => Okay.
+ [MineXxek Sky] - MaxWasTaked => <@!432516985214205972> SUS
+ [null] - xMin3r => I gtg bye see u later
+ [null] - Puro => Bye! But I don't like to say goodbye to you.
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:56:51 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=ZUHh2PU3Lao
+ [MineXxek Sky] - Puro => Okay I will play this music for you! https://www.youtube.com/watch?v=ZUHh2PU3Lao
+ [MineXxek Sky] - MaxWasTaked => -volume 2
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:57:45 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/watch?v=ZUHh2PU3Lao
+ [MineXxek Sky] - Puro => Okay I will play this music for you! https://www.youtube.com/watch?v=ZUHh2PU3Lao
+ [MineXxek Sky] - MaxWasTaked => -volume 2
+ [SKYPIXEL Community] - MaxWasTaked => Added "-ping"
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:59:32 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play dead to me
+ [MineXxek Sky] - Puro => Okay I will play this music for you! dead to me
+ [MineXxek Sky] - MaxWasTaked => -ping
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 1:59:58 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -ping
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -ping
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:00:35 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -ping
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:00:57 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -ping
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -play heroine
+ [MineXxek Sky] - Puro => Okay I will play this music for you! heroine
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:04:52 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play heroine
+ [MineXxek Sky] - Puro => Okay I will play this music for you! heroine
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [MineXxek Sky] - MaxWasTaked => -filter
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:05:45 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play heroine
+ [MineXxek Sky] - Puro => Okay I will play this music for you! heroine
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:08:47 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play heroine
+ [MineXxek Sky] - Puro => Okay I will play this music for you! heroine
+ [MineXxek Sky] - MaxWasTaked => -stop
+ [MineXxek Sky] - MaxWasTaked => -play heroine
+ [MineXxek Sky] - Puro => Okay I will play this music for you! heroine
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:09:46 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -play heroine
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:10:56 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play heroine
+ [𝐁𝐫𝐞𝐚𝐬𝐥𝐚𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞𝐥𝐨𝐫] - WizzOctavian => https://discord.gg/9jkvGfJX
+ [𝐁𝐫𝐞𝐚𝐬𝐥𝐚𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞𝐥𝐨𝐫] - WizzOctavian => https://discord.gg/9jkvGfJX
+ [𝐁𝐫𝐞𝐚𝐬𝐥𝐚𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞𝐥𝐨𝐫] - WizzOctavian => https://discord.gg/9jkvGfJX
+ [𝐁𝐫𝐞𝐚𝐬𝐥𝐚𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞𝐥𝐨𝐫] - WizzOctavian => https://discord.gg/9jkvGfJX
+ [𝐁𝐫𝐞𝐚𝐬𝐥𝐚𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞𝐥𝐨𝐫] - WizzOctavian => https://discord.gg/9jkvGfJX
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:14:41 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:15:22 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:15:58 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:16:51 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play heroina
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:18:51 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:19:55 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:21:27 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:22:10 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:22:25 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:29:02 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:30:53 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - MaxWasTaked => -stop
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:35:37 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:38:55 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:39:42 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:41:17 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - MaxWasTaked => -stop
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:43:32 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - MaxWasTaked => -stop
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:44:44 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => Playing `Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs` - `01:12:47`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - MaxWasTaked => -stop
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:45:29 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - Puro => Playing `Trap Nation: 2021 Best Trap Music` - `02:08:47`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - MaxWasTaked => -skip
+ [MineXxek Sky] - Puro => Okay I will skip the music for you!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:46:25 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [MineXxek Sky] - Puro => Playing `LOUD - Thoughts` - `02:44`
+Requested by: <@236811109066211329>}
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:47:47 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - Puro => Playing `Trap Nation: 2021 Best Trap Music` - `02:08:47`
+Requested by: <@236811109066211329>}
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:50:40 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => Playing `Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs` - `01:12:47`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:51:18 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => Playing `Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs` - `01:12:47`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - xMin3r => Wow
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:52:14 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -trap nation
+ [MineXxek Sky] - xMin3r => Puro o înjurat 😵
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - Puro => Playing `Trap Nation: 2021 Best Trap Music` - `02:08:47`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - Puro => Current queue:
+**1**. Trap Nation: 2021 Best Trap Music - `02:08:47`
+ [MineXxek Sky] - MaxWasTaked => wow
+ [MineXxek Sky] - xMin3r => Mhm
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:53:01 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play bass nation
+ [MineXxek Sky] - Puro => Playing `LOUD - Thoughts` - `02:44`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [MineXxek Sky] - Puro => Not a valid filter
+ [MineXxek Sky] - MaxWasTaked => -filter 3d
+ [MineXxek Sky] - Puro => Not a valid filter
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:55:04 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - Puro => Playing `Trap Nation: 2021 Best Trap Music` - `02:08:47`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:55:37 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => Playing `Top 20 Most Popular Songs by NCS | Best of NCS | Most Viewed Songs` - `01:12:47`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - Puro => You are not allowed to swear!
+ [MineXxek Sky] - MaxWasTaked => -filter 3d
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:56:24 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play trap nation
+ [MineXxek Sky] - Puro => Playing `Trap Nation: 2021 Best Trap Music` - `02:08:47`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - MaxWasTaked => -filter 3d
+ [MineXxek Sky] - Puro => Current queue filter: 3d
+ [MineXxek Sky] - MaxWasTaked => -filter off
+ [MineXxek Sky] - MaxWasTaked => -filter
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [MineXxek Sky] - Puro => Current queue filter: bassboost
+ [SKYPIXEL Community] - MaxWasTaked => Added "-queue"
+Added "-filter"
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 2:58:48 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play heroine
+ [MineXxek Sky] - Puro => Playing `Heroine` - `03:02`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - MaxWasTaked => -filter bassboost
+ [MineXxek Sky] - Puro => Current queue filter: bassboost
+ [MineXxek Sky] - MaxWasTaked => -filter off
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/playlist?list=PLXilr0LNkAceb6Zi7Ixb0Y_kfSb9TTw5d
+ [MineXxek Sky] - Puro => Added `Muzica` playlist (195 songs) to queue}
+ [MineXxek Sky] - MaxWasTaked => -skip
+ [MineXxek Sky] - Puro => Okay I will skip the music for you!
+ [MineXxek Sky] - Puro => Playing `Missy Elliott - Get Ur Freak On (whereisalex Remix)` - `02:34`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - Puro => Current queue:
+**1**. Missy Elliott - Get Ur Freak On (whereisalex Remix) - `02:34`
+**2**. Life Ain't Fair - B3Y0NDA110DD$ (Extended - Instrumental) - TikTok Remix [prod. by Shae OT] - `04:03`
+**3**. Bangers Only & Luke Chappell - Lonely Again (Lyrics) - `03:18`
+**4**. blackbear - hot girl bummer (slowed + reverb) - `03:37`
+**5**. YABØII - WAKE UP - `03:18`
+**6**. Masked Wolf - Gravity Glidin (Bass Boosted) - `02:18`
+**7**. Masked Wolf - Gravity Glidin (Official Music Video) - `02:24`
+**8**. Nathan Evans - Wellerman (Sea Shanty) Lyrics - `02:34`
+**9**. BRAINWAVEZ - Fallout - `03:01`
+**10**. TIGER DROOL - SABER TOOTH (GAWM Remix) - `03:00`
+ [MineXxek Sky] - Puro => Playing `Life Ain't Fair - B3Y0NDA110DD$ (Extended - Instrumental) - TikTok Remix [prod. by Shae OT]` - `04:03`
+Requested by: <@236811109066211329>}
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 has been deleted!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:07:02 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/playlist?list=PLXilr0LNkAceb6Zi7Ixb0Y_kfSb9TTw5d
+ [MineXxek Sky] - Puro => Play `Muzica` playlist (195 songs).
+Requested by: <@236811109066211329>
+Now playing `Missy Elliott - Get Ur Freak On (whereisalex Remix)` - `02:34`}
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:07:34 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/playlist?list=PLXilr0LNkAceb6Zi7Ixb0Y_kfSb9TTw5d
+ [MineXxek Sky] - Puro => Play `Muzica` playlist (195 songs).
+Requested by: <@236811109066211329>
+Now playing `Missy Elliott - Get Ur Freak On (whereisalex Remix)` - `02:34`}
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - Puro => Playing `Life Ain't Fair - B3Y0NDA110DD$ (Extended - Instrumental) - TikTok Remix [prod. by Shae OT]` - `04:03`
+Requested by: <@236811109066211329>}
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:10:55 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:17:15 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -play mama mea e florareasa
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:19:23 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 has been deleted!
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:19:58 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 of message has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -play ncs
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - MaxWasTaked => @here 
+**On playlist added the embed is large then 600. And is sending an error on console.**
