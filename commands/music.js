@@ -48,7 +48,7 @@ module.exports.run = async (bot, message, args) => {
         // ).slice(0, 10).join("\n"));
         var embed = new Discord.MessageEmbed()
             .setTitle(`Current queue:`)
-            .setDescription(queue.songs.map((song, id) => `**${id + 1}**. ${song.name} - ${song.formattedDuration}`))
+            .setDescription(queue.songs.map((song, id) => `**${id + 1}**. ${song.name} - ${song.formattedDuration}`).slice(0, 10))
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
         message.channel.send(embed)

@@ -1656,3 +1656,38 @@ Requested by: <@236811109066211329>}
  [MineXxek Sky] - Puro => 
  [SKYPIXEL Community] - MaxWasTaked => @here 
 **On playlist added the embed is large then 600. And is sending an error on console.**
+ [SKYPIXEL Community] - GitHub => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:23:39 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/playlist?list=PLXilr0LNkAceb6Zi7Ixb0Y_kfSb9TTw5d
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:25:53 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/playlist?list=PLXilr0LNkAceb6Zi7Ixb0Y_kfSb9TTw5d
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:28:55 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/playlist?list=PLXilr0LNkAceb6Zi7Ixb0Y_kfSb9TTw5d
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:29:23 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 of message has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/playlist?list=PLXilr0LNkAceb6Zi7Ixb0Y_kfSb9TTw5d
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - Puro => 
+ [SKYPIXEL Community] - Skypixel => **7/4/2021, 3:30:13 PM** The bot is up and running! Please note that this bot is not stable yet!
+ [MineXxek Sky] - MaxWasTaked => -play https://www.youtube.com/playlist?list=PLXilr0LNkAceb6Zi7Ixb0Y_kfSb9TTw5d
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -skip
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -queue
+ [MineXxek Sky] - Puro => 
+ [MineXxek Sky] - MaxWasTaked => -c 99
+ [MineXxek Sky] - Puro => Done! 99 of message has been deleted!
+ [MineXxek Sky] - MaxWasTaked => -ping
+ [MineXxek Sky] - Puro => 

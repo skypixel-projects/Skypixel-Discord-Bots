@@ -210,7 +210,7 @@ bot.distube = new distube(bot, { searchSongs: false, emitNewSongOnly: true })
 bot.distube
     .on("playSong", (message, queue, song) => {
         var embed = new Discord.MessageEmbed()
-            .setTitle('Music')
+            .setTitle('Music:')
             .setDescription(`Playing \`${song.name}\` - \`${song.formattedDuration}\``)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
@@ -219,7 +219,7 @@ bot.distube
 
     .on("addSong", (message, queue, song) => {
         var embed = new Discord.MessageEmbed()
-            .setTitle('Music')
+            .setTitle('Music:')
             .setDescription(`Added ${song.name} - \`${song.formattedDuration}\` to the queue`)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
@@ -228,7 +228,7 @@ bot.distube
 
     .on("playList", (message, queue, playlist, song) => {
         var embed = new Discord.MessageEmbed()
-            .setTitle('Music')
+            .setTitle('Music:')
             .setDescription(`Play \`${playlist.name}\` playlist (${playlist.songs.length} songs).\nNow playing \`${song.name}\` - \`${song.formattedDuration}\`}`)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
@@ -237,7 +237,7 @@ bot.distube
 
     .on("addList", (message, queue, playlist) => {
         var embed = new Discord.MessageEmbed()
-            .setTitle('Music')
+            .setTitle('Music:')
             .setDescription(`Added \`${playlist.name}\` playlist (${playlist.songs.length} songs to the queue`)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
