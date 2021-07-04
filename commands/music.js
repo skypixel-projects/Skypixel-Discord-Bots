@@ -17,7 +17,6 @@ module.exports.run = async (bot, message, args) => {
     if(message.content.includes("-stop")) {
         if (message.member.voice.channel) {
             bot.distube.stop(message);
-            const connection = await message.member.voice.channel.join();
             connection.disconnect();
         } else {
             message.reply(lang_en.commands_music_member_join_voice);
