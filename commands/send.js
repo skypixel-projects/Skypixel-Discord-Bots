@@ -5,16 +5,23 @@ const botsettings = require('../botsettings.json');
 const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    message.delete();
+    let msg;
+        let textChannel = message.mentions.channels.first()
+        message.delete()
 
-    let person = message.guild.member(message.mentions.users.first() || message.guild.members.fetch(args[1]))
-    if(!message.author.bot) person.user.send(args);
+        if(textChannel) {
+            msg = args.slice(1).join(" ");
+            textChannel.send(msg)
+        } else {
+            // msg = args.join(" ");
+            message.channel.send(msg)
+        }
 }
 
 module.exports.config = {
-    name: "send",
+    name: "say",
     description: "",
     usage: "",
     accessableby: "Admin",
-    aliases: ["send", "bc", "broadcast"]
+    aliases: ["send", "say"]
 }

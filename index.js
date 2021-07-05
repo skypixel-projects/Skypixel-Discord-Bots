@@ -206,7 +206,7 @@ async function createAPIMessage(interaction, content) {
 // Distube for playing music!
 // ---------------------------------------------------------------------------------------------------------------------------
 const distube = require("distube")
-bot.distube = new distube(bot, { searchSongs: false, emitNewSongOnly: true })
+bot.distube = new distube(bot, { searchSongs: false, emitNewSongOnly: true, leaveOnFinish: true, leaveOnEmpty: true })
 bot.distube
     .on("playSong", (message, queue, song) => {
         var embed = new Discord.MessageEmbed()
