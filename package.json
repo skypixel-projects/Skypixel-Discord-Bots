@@ -18,7 +18,7 @@
     "discord.js": "^12.5.3",
     "distube": "^2.8.15",
     "ffmpeg": "0.0.4",
-    "ffmpeg-static": "^4.3.0",
+    "ffmpeg-static": "^4.4.0",
     "fs": "0.0.1-security",
     "i": "^0.3.6",
     "index.js": "0.0.3",
