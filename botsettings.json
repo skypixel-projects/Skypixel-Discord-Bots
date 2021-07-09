@@ -7,9 +7,9 @@
 
     "prefix": "-",
  
-    "discord_profile_activity" : "(-help) command!",
+    "discord_profile_activity" : "with the author",
 
-    "discord_profile_activity_type" : "LISTENING",
+    "discord_profile_activity_type" : "STREAMING",
     
     "discord_profile_status" : "dnd",
 
