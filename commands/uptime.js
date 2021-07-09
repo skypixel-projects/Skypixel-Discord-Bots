@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
             }
             const duration = moment.duration(message.client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
             const botinfo = new Discord.MessageEmbed()
-                .setAuthor(message.client.user.username + `has this specs.`)
+                .setAuthor(message.client.user.username + ` has this specs.`)
                 .setTitle("__**Stats:**__")
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .addField("`⏳` Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`, true)
