@@ -1,6 +1,7 @@
 const discord = require('discord.js');
 require('discord-reply');
 const bot = new discord.Client();
+const fetch = require('node-fetch');
 
 const botsettings = require('../botsettings.json');
 const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot}.json`);
@@ -8,7 +9,7 @@ const lang_en = require(`../languages/${botsettings.default_lang_for_discord_bot
 const fs = require('fs');
 const { MessageButton, MessageActionRow } = require('discord-buttons');
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (bot, message, args, ...banner) => {
 
     // Aici este commanda pentru a juca un voice recorder!
     if(args === 'voice') {
@@ -18,6 +19,20 @@ module.exports.run = async (bot, message, args) => {
             const dispatcher = broadcast.play('commands/audio.mp3');
             connection.play(broadcast);
         }
+    }
+
+    if(args === "count") {
+        message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+    }
+
+    if(args === "live") {
+        getJSON("https://api.twitch.tv/kraken/streams/insym", function(err, res) {
+            if (res.stream == null) {
+                message.reply(message, "currently not live");
+            } else {
+                message.reply(message, "currently live");
+            }
+        });
     }
 
     // Aici este commanda pentru a crea un mesaj temporal!
@@ -37,27 +52,27 @@ module.exports.run = async (bot, message, args) => {
     // Aici este commanda pentru a crea un button embed!
     if(args === 'button') {
         const embed = new discord.MessageEmbed()
-        .setTitle(`:space_invader:  **ANUNTURII IMPORTANTE**  :space_invader:`)
-        .setDescription(`*Salutare! Deci faza este ca trebuie sa te verificam daca nu esti un robot sau ceva!
-        Mda... Suna cam dubios dar trebuie so facem pentru siguranta server-ului!
-        Deci pentru a intra trebuie sa apesi pe capul lupului acolo la reactii :sweat_smile:
-        Sii... Puff... Ai intrat cu success in server-ul meu :). Sa te distrezi. Si sa fii sanatos!!!
-        Daca te rog ceva mult atunci o so faci? Poti sa promovezi acest server de discord ( https://discord.io/maxwastaked )*`)
-        .setColor("RED")
+            .setTitle(`:space_invader:  **ANUNTURII IMPORTANTE**  :space_invader:`)
+            .setDescription(`*Salutare! Deci faza este ca trebuie sa te verificam daca nu esti un robot sau ceva!
+            Mda... Suna cam dubios dar trebuie so facem pentru siguranta server-ului!
+            Deci pentru a intra trebuie sa apesi pe capul lupului acolo la reactii :sweat_smile:
+            Sii... Puff... Ai intrat cu success in server-ul meu :). Sa te distrezi. Si sa fii sanatos!!!
+            Daca te rog ceva mult atunci o so faci? Poti sa promovezi acest server de discord ( https://discord.io/maxwastaked )*`)
+            .setColor("RED")
 
         const btn1 = new MessageButton()
-        .setStyle("green")
-        .setLabel("DA ACCEPT")
-        .setID("button1")
+            .setStyle("green")
+            .setLabel("DA ACCEPT")
+            .setID("button1")
 
         const btn2 = new MessageButton()
-        .setStyle("red")
-        .setLabel("NU ACCEPT")
-        .setID("button2")
+            .setStyle("red")
+            .setLabel("NU ACCEPT")
+            .setID("button2")
 
         const yes = new MessageActionRow()
-        .addComponent(btn1)
-        .addComponent(btn2)
+            .addComponent(btn1)
+            .addComponent(btn2)
 
         message.channel.send ({
             embed: embed,

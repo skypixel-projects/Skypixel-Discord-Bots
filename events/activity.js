@@ -4,25 +4,23 @@ const botsettings = require('../botsettings.json');
 const lang_en = require('../languages/lang_en.json');
 
 module.exports = bot => { 
-
-    // bot.user.guild.roles.create({
-    //     data: {
-    //       name: 'Super Cool People',
-    //       color: 'BLUE',
-    //     },
-    //     reason: 'we needed a role for Super Cool People',
-    // })
-    //     .then(console.log)
-    //     .catch(console.error);
-
     bot.user.setPresence({status: "idle"});
     bot.user.setActivity(botsettings.discord_profile_activity, { type: botsettings.discord_profile_activity_type });
 
-    setInterval(function(){ 
-        bot.user.setActivity(botsettings.discord_profile_activity, { type: botsettings.discord_profile_activity_type });
-    }, 60000);
+    bot.user.setPresence({
+        status: 'online',
+        activity: {
+            name: 'with the creator',
+            type: 'STREAMING',
+            url: 'https://www.twitch.tv/maxwastaked'
+        }
+    })
 
-    setInterval(function(){
-        bot.user.setPresence({status: `${botsettings.discord_profile_status}`});
-    }, 60000);
+    // setInterval(function(){ 
+    //     bot.user.setActivity(botsettings.discord_profile_activity, { type: botsettings.discord_profile_activity_type });
+    // }, 60000);
+
+    // setInterval(function(){
+    //     bot.user.setPresence({status: `${botsettings.discord_profile_status}`});
+    // }, 60000);
 }
