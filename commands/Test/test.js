@@ -106,9 +106,9 @@ module.exports.run = async (bot, message, args, ...banner) => {
 }
 
 module.exports.config = {
-    name: "test",
+    name: "dev",
     description: "",
     usage: "",
     accessableby: "Admin",
-    aliases: ['dev', 'ping']
+    aliases: ['dev', 'test']
 }

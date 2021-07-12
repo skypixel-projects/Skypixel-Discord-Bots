@@ -271,44 +271,44 @@ bot.on('clickButton', async (button) => {
     }
 });
 
-bot.on('ready', () => {
-    bot.api.applications(bot.user.id).commands.post({
-        data: {
-            name: "echo",
-            description: "Echos your text as an embed!",
+// bot.on('ready', () => {
+//     bot.api.applications(bot.user.id).commands.post({
+//         data: {
+//             name: "echo",
+//             description: "Echos your text as an embed!",
 
-            options: [
-                {
-                    name: "content",
-                    description: "Content of the embed",
-                    type: 3,
-                    required: true
-                }
-            ]
-        }
-    });
+//             options: [
+//                 {
+//                     name: "content",
+//                     description: "Content of the embed",
+//                     type: 3,
+//                     required: true
+//                 }
+//             ]
+//         }
+//     });
 
-    bot.ws.on('INTERACTION_CREATE', async interaction => {
-        const command = interaction.data.name.toLowerCase();
-        const args = interaction.data.options;
-        if(command == "echo") {
-            const description = args.find(arg => arg.name.toLowerCase() == "content").value;
+//     bot.ws.on('INTERACTION_CREATE', async interaction => {
+//         const command = interaction.data.name.toLowerCase();
+//         const args = interaction.data.options;
+//         if(command == "echo") {
+//             const description = args.find(arg => arg.name.toLowerCase() == "content").value;
 
-            // bot.channels.cache.get('852084741645533234').send('Hello here!');
+//             // bot.channels.cache.get('852084741645533234').send('Hello here!');
 
-            const embed = new Discord.MessageEmbed()
-                .setFooter("This command is in development!")
-                .setTitle(description)
+//             const embed = new Discord.MessageEmbed()
+//                 .setFooter("This command is in development!")
+//                 .setTitle(description)
 
-                bot.api.interactions(interaction.id, interaction.token).callback.post({
-                data: {
-                    type: 4,
-                    data: await createAPIMessage(interaction, embed)
-                }
-            });
-        }
-    });
-});
+//                 bot.api.interactions(interaction.id, interaction.token).callback.post({
+//                 data: {
+//                     type: 4,
+//                     data: await createAPIMessage(interaction, embed)
+//                 }
+//             });
+//         }
+//     });
+// });
 
 async function createAPIMessage(interaction, content) {
     const apiMessage = await Discord.APIMessage.create(bot.channels.resolve(interaction.channel_id), content)
