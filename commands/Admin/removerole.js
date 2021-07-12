@@ -2,19 +2,27 @@ const botsettings = require('../../botsettings.json');
 const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    message.delete();
-
-    let epicRole = message.guild.roles.cache.get('677939383038640199');
-    const member = message.mentions.members.first();
-
-    member.roles.remove(epicRole);
-    message.channel.send(lang_en.commands_addrole_removed)
+    //lets use parameters (optional)
+    /**
+    * @param {Message} message
+    */
+    //so firstly we will check whether the author of the message has permissions
+    //this line means if the author doesn't have manage roles permission it will stop the process and send the following text
+    if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send('You do not have permission.')
+    //next we define some variables
+    const target = message.mentions.members.first() //member = mentions
+    if(!target) return message.channel.send('No member specified') //when no member is pinged
+    const role = message.mentions.roles.first() // roles = mentions
+    if(!role) return message.channel.send('No role specified') //when no role is specified or pinged
+    //now the code!
+    await target.roles.remove(role) // removeing the role to the user
+    message.channel.send(`${target.user.username} roles has been removed`) //this is optional and editable
 }
 
 module.exports.config = {
     name: "removerole",
     description: "",
     usage: "",
-    accessableby: "Members",
+    accessableby: "Admin",
     aliases: []
 }
