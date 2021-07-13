@@ -310,6 +310,17 @@ bot.on('clickButton', async (button) => {
 //     });
 // });
 
+bot.on('voiceStateUpdate', (oldMember, newMember) => {
+    let newUserChannel = newMember.voiceChannel
+    let oldUserChannel = oldMember.voiceChannel
+    var channel = newMember.guild.channels.cache.get('864593317026332692')
+  
+  
+    if(oldUserChannel === undefined && newUserChannel !== 615306755420717143) {
+      newMember.disconnect();
+    }
+});
+
 async function createAPIMessage(interaction, content) {
     const apiMessage = await Discord.APIMessage.create(bot.channels.resolve(interaction.channel_id), content)
         .resolveData()
