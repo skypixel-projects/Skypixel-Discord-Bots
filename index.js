@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
-const readline = require('readline');
 const botsettings = require('./botsettings.json');
 const lang_en = require(`./languages/${botsettings.default_lang_for_discord_bot}.json`);
 const bot = new Discord.Client({ presence: { status: "idle" }}); // { presence: { status: "dnd" }, messageCacheMaxSize: 0 }
+
+require('dotenv').config();
 
 // In replica aceasta functioneaza toate eventele!
 require("./util/eventHandler")(bot)
@@ -385,4 +386,4 @@ bot.distube
         message.channel.send("An error encountered: " + e);
     });
 
-bot.login(botsettings.token);
+bot.login(process.env.DISCORD_TOKEN);
