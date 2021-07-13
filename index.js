@@ -386,4 +386,4 @@ bot.distube
         message.channel.send("An error encountered: " + e);
     });
 
-bot.login(process.env.DISCORD_TOKEN);
+bot.login(botsettings.token);
