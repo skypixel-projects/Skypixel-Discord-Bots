@@ -5,6 +5,9 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 
 module.exports.run = async (bot, message, args) => {
+
+    if(message.mentions.members.first() === message.member) return message.lineReply("You are not allow to play with your self!")
+
     let opponent = message.mentions.members.first() || message.guild.members.cache.get(args[0])
         if(!opponent) return message.lineReply("Please provide the user to challenge!")
         let fighters = [message.member.id, opponent.id].sort(() => (Math.random() > .5) ? 1 : -1)

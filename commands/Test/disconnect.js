@@ -5,7 +5,12 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 
 module.exports.run = async (bot, message, args) => {
-    
+    const memberTarget = message.mentions.users.first();
+
+    memberTarget.voice
+        .kick('Kicked!')
+        .then((users) => message.channel.send(`${users} has been kicked from the voice channel!`))
+        .catch(console.error);
 }
 
 module.exports.config = {
