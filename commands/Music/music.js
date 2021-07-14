@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
         bot.distube.play(message, search)
     }
 
-    if(message.content.includes("-stop")) {
+    if(message.content.includes("-leave")) {
         if (message.member.voice.channel) {
             bot.distube.stop(message);
             connection.disconnect();
@@ -71,5 +71,5 @@ module.exports.config = {
     description: "",
     usage: "",
     accessableby: "Members",
-    aliases: ["play", "skip", "stop", "filter", "queue"]
+    aliases: ["play", "skip", "leave", "filter", "queue"]
 }
