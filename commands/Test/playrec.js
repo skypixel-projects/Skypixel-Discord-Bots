@@ -7,19 +7,21 @@ const fs = require("fs");
 
 module.exports.run = async (bot, message, args) => {
     const voicechannel = message.member.voice.channel;
-    if (!voicechannel) return message.channel.send("Please join a voice channel first!");
+    if (!voicechannel) return message.channel.send("Please join a voice channel!");
+
+    if (!fs.existsSync(`./recorded-${message.author.id}.pcm`)) return message.channel.send("Your audio is not recorded!");
 
     const connection = await message.member.voice.channel.join();
-    const receiver = connection.receiver.createStream(message.member, {
-        mode: "pcm",
-        end: "silence"
+    const stream = fs.createReadStream(`./recorded-${message.author.id}.pcm`);
+
+    const dispatcher = connection.play(stream, {
+        type: "converted"
     });
 
-    const writer = receiver.pipe(fs.createWriteStream(`./recorded-${message.author.id}.pcm`));
-    writer.on("finish", () => {
+    dispatcher.on("finish", () => {
         message.member.voice.channel.leave();
-        message.channel.send("Finished writing audio");
-    });
+        return message.channel.send("finished playing audio");
+    })
 }
 
 module.exports.config = {
