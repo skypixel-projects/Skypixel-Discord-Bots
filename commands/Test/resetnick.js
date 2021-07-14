@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.config = {
-    name: "reset-nick",
+    name: "resetnick",
     description: "",
     usage: "",
     accessableby: "Admin",
