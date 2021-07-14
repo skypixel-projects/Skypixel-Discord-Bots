@@ -5,13 +5,17 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 
 module.exports.run = async (bot, message, args) => {
-    message.lineReply("Beep").then((sentMessage) => sentMessage.edit("Boop!"))
-}
+    const user = message.mentions.users.first().id;
+    if(!user) return message.lineReply(`You need to specify a member!`)
+
+    message.channel.permissionOverwrites.get(user).delete();
+    message.lineReply(`Unmuted!`)
+} 
 
 module.exports.config = {
-    name: "edit",
+    name: "unmute",
     description: "",
     usage: "",
     accessableby: "Admin",
-    aliases: ["edit"]
+    aliases: []
 }

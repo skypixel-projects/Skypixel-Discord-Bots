@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args, ...banner) => {
     }
 
     if(args === "count") {
-        message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+        message.lineReply(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     }
 
     if(args === "live") {
@@ -37,7 +37,7 @@ module.exports.run = async (bot, message, args, ...banner) => {
 
     // Aici este commanda pentru a crea un mesaj temporal!
     if(args === 'message') {
-        message.channel.send('```This message will been deleted after 25000 milliseconds!```')
+        message.lineReply('```This message will been deleted after 25000 milliseconds!```')
         .then(msg => {
             msg.delete({ timeout: 25000 /*time unitl delete in milliseconds*/});
             msg.react("👎"),
@@ -74,7 +74,7 @@ module.exports.run = async (bot, message, args, ...banner) => {
             .addComponent(btn1)
             .addComponent(btn2)
 
-        message.channel.send ({
+        message.lineReply ({
             embed: embed,
             component: yes
         });
@@ -89,7 +89,7 @@ module.exports.run = async (bot, message, args, ...banner) => {
                 allow: ['VIEW_CHANNEL'],
             }]
         });
-        message.channel.send("Channel Created!");
+        message.lineReply("Channel Created!");
     }
 
     // Aici este commanda pentru a crea un voice channel!
@@ -101,7 +101,7 @@ module.exports.run = async (bot, message, args, ...banner) => {
                 allow: ['VIEW_CHANNEL'],
             }]
         });
-        message.channel.send("Channel Created!");
+        message.lineReply("Channel Created!");
     }
 }
 

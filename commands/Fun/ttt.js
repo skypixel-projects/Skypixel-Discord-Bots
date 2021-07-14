@@ -6,7 +6,7 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 module.exports.run = async (bot, message, args) => {
     let opponent = message.mentions.members.first() || message.guild.members.cache.get(args[0])
-        if(!opponent) return message.channel.send("Please provide the user to challenge!")
+        if(!opponent) return message.lineReply("Please provide the user to challenge!")
         let fighters = [message.member.id, opponent.id].sort(() => (Math.random() > .5) ? 1 : -1)
         let Args = {
             user: 0,
@@ -57,7 +57,7 @@ module.exports.run = async (bot, message, args) => {
             }
         }
         let { MessageButton, MessageActionRow } = require('discord-buttons')
-        let msg = await message.channel.send(`**TicTacToe** | <@!${Args.userid}>'s turn (⭕)`)
+        let msg = await message.lineReply(`**TicTacToe** | <@!${Args.userid}>'s turn (⭕)`)
         tictactoe(msg)
         async function tictactoe(m) {
             Args.userid=fighters[Args.user]

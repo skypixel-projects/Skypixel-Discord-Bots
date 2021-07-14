@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     if(!role) return message.channel.send('No role specified') //when no role is specified or pinged
     //now the code!
     await target.roles.remove(role) // removeing the role to the user
-    message.channel.send(`${target.user.username} roles has been removed`) //this is optional and editable
+    message.lineReply(`${target.user.username} roles has been removed`) //this is optional and editable
 }
 
 module.exports.config = {

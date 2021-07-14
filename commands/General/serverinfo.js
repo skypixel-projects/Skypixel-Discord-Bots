@@ -80,7 +80,7 @@ module.exports.run = async (bot, message, args) => {
         .addField(`${lang_en.commands_serverinfo_roles} [${roles.length - 1}]`, roles.join(', '))
     
         .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-    message.channel.send(embed);
+    message.lineReply(embed);
 }
 
 module.exports.config = {

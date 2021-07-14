@@ -6,9 +6,9 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 module.exports.run = async (bot, message, args) => {
     if (message.author.id !== '236811109066211329') {
-        return message.channel.send(`You cannot use this command!`)
+        return message.lineReply(`You cannot use this command!`)
     }
-    await message.channel.send(`Restarting bot...`)
+    await message.lineReply(`Restarting bot...`)
     process.exit();
 }
 

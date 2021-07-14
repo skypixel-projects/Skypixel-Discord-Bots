@@ -5,7 +5,7 @@ const botsettings = require('../../botsettings.json');
 const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    message.delete();
+    
 
     let userArray = message.content.split(" ");
     let userArgs = userArray.slice(1);
@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Status", status)
     .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
 
-    message.channel.send(userEmbed);
+    message.lineReply(userEmbed);
 }
 
 module.exports.config = {

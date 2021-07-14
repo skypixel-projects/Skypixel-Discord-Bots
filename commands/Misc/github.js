@@ -6,14 +6,14 @@ const botsettings = require('../../botsettings.json');
 const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    if (!args[0]) return message.channel.send({
+    if (!args[0]) return message.lineReply({
         embed:{
             description: `**Please Give Me A Github Username!**`
         }
     })
     fetch(`https://api.github.com/users/${args}`)
       .then(res => res.json()).then(body => {
-        if(body.message) return message.channel.send({
+        if(body.message) return message.lineReply({
             embed:{
                 description: ` **User Not Found | Please Give Me A Valid Username!**`
             }
@@ -34,7 +34,7 @@ module.exports.run = async (bot, message, args) => {
               .addField(`Account Created`, moment.utc(created_at).format("dddd, MMMM, Do YYYY"))
               .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
               .setTimestamp()
-              message.channel.send(embed)
+              message.lineReply(embed)
 
       })
 }

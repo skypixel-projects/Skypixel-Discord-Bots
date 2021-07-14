@@ -10,8 +10,8 @@ module.exports.run = async (bot, message, args) => {
             .setAuthor(`${user.username} ` + lang_en.commands_avatar_title)
             .setImage(user.displayAvatarURL())
 	        .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-    message.channel.send(avatarEmbed);
-    message.delete();
+    message.lineReply(avatarEmbed);
+    
 }
 
 module.exports.config = {

@@ -6,7 +6,7 @@ const fetch = require('node-fetch')
 module.exports.run = async (bot, message, args) => {
     if(args === 'YouTube') {
         let channel = message.member.voice.channel;
-        if(!channel) return message.channel.send('You have to be in a voice channel!')
+        if(!channel) return message.lineReply('You have to be in a voice channel!')
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -23,14 +23,14 @@ module.exports.run = async (bot, message, args) => {
                 "Content-Type": "application/json"
             }
         }).then(res => res.json()).then(invite => {
-            if(!invite.code) return message.channel.send('Sadly i cant start a youtube together!')
-            message.channel.send(`https://discord.com/invite/${invite.code}`)
+            if(!invite.code) return message.lineReply('Sadly i cant start a youtube together!')
+            message.lineReply(`https://discord.com/invite/${invite.code}`)
         });
     }
 
     if(args === 'Fishing') {
         let channel = message.member.voice.channel;
-        if(!channel) return message.channel.send('You have to be in a voice channel!')
+        if(!channel) return message.lineReply('You have to be in a voice channel!')
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -47,14 +47,14 @@ module.exports.run = async (bot, message, args) => {
                 "Content-Type": "application/json"
             }
         }).then(res => res.json()).then(invite => {
-            if(!invite.code) return message.channel.send('Sadly i cant start a youtube together!')
-            message.channel.send(`https://discord.com/invite/${invite.code}`)
+            if(!invite.code) return message.lineReply('Sadly i cant start a youtube together!')
+            message.lineReply(`https://discord.com/invite/${invite.code}`)
         });
     }
 
     if(args === 'Poker') {
         let channel = message.member.voice.channel;
-        if(!channel) return message.channel.send('You have to be in a voice channel!')
+        if(!channel) return message.lineReply('You have to be in a voice channel!')
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -71,14 +71,14 @@ module.exports.run = async (bot, message, args) => {
                 "Content-Type": "application/json"
             }
         }).then(res => res.json()).then(invite => {
-            if(!invite.code) return message.channel.send('Sadly i cant start a youtube together!')
-            message.channel.send(`https://discord.com/invite/${invite.code}`)
+            if(!invite.code) return message.lineReply('Sadly i cant start a youtube together!')
+            message.lineReply(`https://discord.com/invite/${invite.code}`)
         });
     }
 
     if(args === 'Betrayal') {
         let channel = message.member.voice.channel;
-        if(!channel) return message.channel.send('You have to be in a voice channel!')
+        if(!channel) return message.lineReply('You have to be in a voice channel!')
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -95,8 +95,8 @@ module.exports.run = async (bot, message, args) => {
                 "Content-Type": "application/json"
             }
         }).then(res => res.json()).then(invite => {
-            if(!invite.code) return message.channel.send('Sadly i cant start a youtube together!')
-            message.channel.send(`https://discord.com/invite/${invite.code}`)
+            if(!invite.code) return message.lineReply('Sadly i cant start a youtube together!')
+            message.lineReply(`https://discord.com/invite/${invite.code}`)
         });
     }
 }

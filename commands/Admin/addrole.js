@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     if(!role) return message.channel.send('No role specified') //when no role is specified or pinged
     //now the code!
     await target.roles.add(role) // adding the role to the user
-    message.channel.send(`${target.user.username} has obtained a role`)
+    message.lineReply(`${target.user.username} has obtained a role`)
 }
 
 module.exports.config = {

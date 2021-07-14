@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
         .setDescription(`🏓 \`${bot.ws.ping}\`ms. This is the bot ping!`)
         .setColor(botsettings.embed_color_message_discord_bot)
 
-    message.channel.send(ping);
+    message.lineReply(ping);
 }
 
 module.exports.config = {

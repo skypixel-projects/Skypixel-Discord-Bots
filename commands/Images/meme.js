@@ -5,7 +5,7 @@ const botsettings = require('../../botsettings.json');
 const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    message.delete();
+    
 
     const embed = new Discord.MessageEmbed();
         got('https://www.reddit.com/r/memes/random/.json')
@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
                 embed.setImage(memeImage);
                 embed.setFooter(`👍 ${memeUpvotes} 💬 ${memeNumComments}`);
 
-                message.channel.send(embed);
+                message.lineReply(embed);
                 
             }).catch(console.error);
 }

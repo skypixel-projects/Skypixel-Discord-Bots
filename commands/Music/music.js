@@ -5,12 +5,12 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 module.exports.run = async (bot, message, args) => {
 
-    message.delete();
+    
 
     if(message.content.includes("-play")) {
-        if(!message.member.voice.channel) return message.channel.send("Please join a voice channel first!");
+        if(!message.member.voice.channel) return message.lineReply("Please join a voice channel first!");
         let search = args
-        if(!search) return message.channel.send('Please provide a search query');
+        if(!search) return message.lineReply('Please provide a search query');
         bot.distube.play(message, search)
     }
 
@@ -26,23 +26,23 @@ module.exports.run = async (bot, message, args) => {
             .setDescription("Okay I will stop the music for you!")
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-        message.channel.send(embed)
+        message.lineReply(embed)
     }
 
     if(message.content.includes("-skip")) {
-        if(!message.member.voice.channel) return message.channel.send("please join a voice channel first!");
+        if(!message.member.voice.channel) return message.lineReply("please join a voice channel first!");
         bot.distube.skip(message);
         var embed = new Discord.MessageEmbed()
             .setTitle(`Skip music:`)
             .setDescription("Okay I will skip the music for you!")
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-        message.channel.send(embed)
+        message.lineReply(embed)
     }
 
     if(message.content.includes("-queue")) {
         let queue = bot.distube.getQueue(message);
-        // message.channel.send('Current queue:\n' + queue.songs.map((song, id) =>
+        // message.lineReply('Current queue:\n' + queue.songs.map((song, id) =>
         //     `**${id + 1}**. ${song.name} - \`${song.formattedDuration}\``
         // ).slice(0, 10).join("\n"));
         var embed = new Discord.MessageEmbed()
@@ -50,7 +50,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(queue.songs.map((song, id) => `**${id + 1}**. ${song.name} - ${song.formattedDuration}`).slice(0, 10))
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-        message.channel.send(embed)
+        message.lineReply(embed)
     }
 
     if(message.content.includes("-filter")) {
@@ -61,7 +61,7 @@ module.exports.run = async (bot, message, args) => {
                 .setDescription("Current queue filter: " + (filter || "Off"))
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed)
+            message.lineReply(embed)
         }
     }
 }

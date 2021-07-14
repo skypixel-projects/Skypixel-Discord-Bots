@@ -37,7 +37,7 @@ module.exports.run = async (bot, message, args) => {
                 .addField("`💻` Platform", `\`\`${os.platform()}\`\``, true)
                 .addField("API Latency", `${(message.client.ws.ping)}ms`)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-         message.channel.send(botinfo)
+         message.lineReply(botinfo)
         });
 }
 

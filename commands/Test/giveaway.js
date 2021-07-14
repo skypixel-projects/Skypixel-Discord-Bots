@@ -6,23 +6,23 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 
 module.exports.run = async (bot, message, args) => {
-    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send('You are not allowed to start giveaways');
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.lineReply('You are not allowed to start giveaways');
 
         let channel = message.mentions.channels.first();
 
-        if (!channel) return message.channel.send('Please provide a channel');
+        if (!channel) return message.lineReply('Please provide a channel');
 
         let giveawayDuration = args[1];
 
-        if (!giveawayDuration || isNaN(ms(giveawayDuration))) return message.channel.send('Please provide a valid duration');
+        if (!giveawayDuration || isNaN(ms(giveawayDuration))) return message.lineReply('Please provide a valid duration');
 
         let giveawayWinners = args[2];
 
-        if (isNaN(giveawayWinners) || (parseInt(giveawayWinners) <= 0)) return message.channel.send('Please provide a valid number of winners!');
+        if (isNaN(giveawayWinners) || (parseInt(giveawayWinners) <= 0)) return message.lineReply('Please provide a valid number of winners!');
 
         let giveawayPrize = args.slice(3).join(" ");
 
-        if (!giveawayPrize) return message.channel.send('Ok then, I\'ll give away nothing');
+        if (!giveawayPrize) return message.lineReply('Ok then, I\'ll give away nothing');
 
         client.giveawaysManager.start(channel, {
             time: ms(giveawayDuration),
@@ -51,7 +51,7 @@ module.exports.run = async (bot, message, args) => {
             }
         })
 
-        message.channel.send(`Giveaway starting in ${channel}`);
+        message.lineReply(`Giveaway starting in ${channel}`);
 }
 
 module.exports.config = {

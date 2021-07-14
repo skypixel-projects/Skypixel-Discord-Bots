@@ -7,7 +7,7 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 const fs = require('fs');
 
 module.exports.run = async (bot, message, args) => {
-    message.delete();
+    
 
     let member = message.mentions.users.first() || message.author
 
@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
         .setTitle(`${member.username} is ` + rng + `% Gay 🤣`)
         .setColor(botsettings.embed_color_message_discord_bot)
         .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-    message.channel.send(embed);
+    message.lineReply(embed);
 }
 
 module.exports.config = {

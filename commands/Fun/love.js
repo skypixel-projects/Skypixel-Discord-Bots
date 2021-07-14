@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
         .addField(`☁ **${person.displayName}** loves **${message.member.displayName}** this much:`,
         `💟 ${Math.floor(love)}%\n\n${loveLevel}`);
 
-    message.channel.send(embed);
+    message.lineReply(embed);
 }
 
 module.exports.config = {

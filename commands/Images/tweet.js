@@ -6,7 +6,7 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 module.exports.run = async (bot, message, args) => {
     let user = message.author.username;
-        let m = await message.channel.send("**Please wait...**");
+        let m = await message.lineReply("**Please wait...**");
         if(!args){
             return m.edit("You must enter a message!");
         }
@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
             let res = await fetch(encodeURI(`https://nekobot.xyz/api/imagegen?type=tweet&username=${user}&text=${args}`));
             let json = await res.json();
             let attachment = new discord.MessageAttachment(json.message, "tweet.png");
-            await message.channel.send(`**New tweet by **<@${message.author.id}>`, attachment);
+            await message.lineReply(`**New tweet by **<@${message.author.id}>`, attachment);
             m.delete({ timeout: 5000});
 		}
 }

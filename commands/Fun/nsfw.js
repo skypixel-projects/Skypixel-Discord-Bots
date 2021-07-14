@@ -7,14 +7,14 @@ const botsettings = require('../../botsettings.json');
 const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    // message.delete();
+    // 
 
     // var embed = new Discord.MessageEmbed()
     //     .setAuthor(lang_en.maintenance)
     //     .setColor(botsettings.embed_color_message_discord_bot)
     //     .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
             
-    // message.channel.send(embed);
+    // message.lineReply(embed);
 
     if (message.channel.nsfw === true) {
         if(args === "anal") {
@@ -24,7 +24,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "fourk") {
             const image = await nsfw.fourk()
@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "ass") {
             const image = await nsfw.ass()
@@ -42,7 +42,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "gonewild") {
             const image = await nsfw.gonewild()
@@ -51,7 +51,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "pgif") {
             const image = await nsfw.pgif()
@@ -60,7 +60,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "pussy") {
             const image = await nsfw.pussy()
@@ -69,7 +69,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "thigh") {
             const image = await nsfw.thigh()
@@ -78,7 +78,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "boobs") {
             const image = await nsfw.boobs()
@@ -87,7 +87,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "hentaiass") {
             const image = await nsfw.hentaiass()
@@ -96,7 +96,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "hentai") {
             const image = await nsfw.hentai()
@@ -105,7 +105,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "hmidriff") {
             const image = await nsfw.hmidriff()
@@ -114,7 +114,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "hentaithigh") {
             const image = await nsfw.hentaithigh()
@@ -123,7 +123,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "erokemo") {
             const image = await nsfw.erokemo()
@@ -132,7 +132,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "kitsune") {
             const image = await nsfw.kitsune()
@@ -141,7 +141,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "lewd") {
             const image = await nsfw.lewd()
@@ -150,7 +150,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "nekofeet") {
             const image = await nsfw.nekofeet()
@@ -159,7 +159,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "nekopussy") {
             const image = await nsfw.nekopussy()
@@ -168,7 +168,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "nekotits") {
             const image = await nsfw.nekotits()
@@ -177,7 +177,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "solo") {
             const image = await nsfw.solo()
@@ -186,7 +186,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
         if(args === "wallpaper") {
             const image = await nsfw.wallpaper()
@@ -195,10 +195,10 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(botsettings.embed_color_message_discord_bot)
                 .setImage(image)
                 .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-            message.channel.send(embed);
+            message.lineReply(embed);
         }
     } else {
-        message.channel.send("This isn't NSFW channel!")
+        message.lineReply("This isn't NSFW channel!")
     }
 }
 

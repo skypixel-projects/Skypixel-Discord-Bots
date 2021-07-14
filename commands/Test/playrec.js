@@ -7,9 +7,9 @@ const fs = require("fs");
 
 module.exports.run = async (bot, message, args) => {
     const voicechannel = message.member.voice.channel;
-    if (!voicechannel) return message.channel.send("Please join a voice channel!");
+    if (!voicechannel) return message.lineReply("Please join a voice channel!");
 
-    if (!fs.existsSync(`./recorded-${message.author.id}.pcm`)) return message.channel.send("Your audio is not recorded!");
+    if (!fs.existsSync(`./recorded-${message.author.id}.pcm`)) return message.lineReply("Your audio is not recorded!");
 
     const connection = await message.member.voice.channel.join();
     const stream = fs.createReadStream(`./recorded-${message.author.id}.pcm`);
@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
 
     dispatcher.on("finish", () => {
         message.member.voice.channel.leave();
-        return message.channel.send("finished playing audio");
+        return message.lineReply("finished playing audio");
     })
 }
 

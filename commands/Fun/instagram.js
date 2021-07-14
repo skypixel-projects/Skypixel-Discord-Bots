@@ -8,7 +8,7 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 
 module.exports.run = async (bot, message, args) => {
     if (!args[0]) {
-        return message.channel.send(`Please Enter a Channel Name`)
+        return message.lineReply(`Please Enter a Channel Name`)
     }
     let url, response, account, details;
     try {
@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
         account = response.data
         details = account.graphql.user
     } catch (error) {
-        return message.channel.send(`Not A Account`)
+        return message.lineReply(`Not A Account`)
     }
 
     const embed = new MessageEmbed()
@@ -41,7 +41,7 @@ module.exports.run = async (bot, message, args) => {
                 inline: true
             }
         )
-    await message.channel.send(embed)
+    await message.lineReply(embed)
 }
 
 module.exports.config = {

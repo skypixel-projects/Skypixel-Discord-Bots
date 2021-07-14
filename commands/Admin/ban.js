@@ -2,7 +2,7 @@ const botsettings = require('../../botsettings.json');
 const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
 
 module.exports.run = async (bot, message, args) => {
-    message.delete();
+    
 
     if(!message.guild) return;
     if(!message.member.hasPermission('BAN_MEMBERS', 'ADMINISTRATOR')) return;
@@ -19,17 +19,17 @@ module.exports.run = async (bot, message, args) => {
                 reason: 'They were bad!',
             })
             .then(() => {
-                message.reply('Successfully banned!');
+                message.lineReply('Successfully banned!');
             })
             .catch(err => {
-                message.reply('I was unable to ban the member');
+                message.lineReply('I was unable to ban the member');
                 console.error(err);
             });
         } else {
-            message.reply(`That user isn't in this guild`)
+            message.lineReply(`That user isn't in this guild`)
         }
     } else {
-        message.reply(`You didn't mention the user to ban!`)
+        message.lineReply(`You didn't mention the user to ban!`)
     }
 }
 
