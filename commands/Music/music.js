@@ -14,7 +14,10 @@ module.exports.run = async (bot, message, args) => {
     if(message.content.includes("-leave")) {
         if (message.member.voice.channel) {
             let queue = bot.distube.getQueue(message);
-            if(queue) return bot.distube.stop(message);
+            if (queue) {
+                bot.distube.stop(message);
+                message.lineReply('Okay I will stop the music for you and I will leave from the channel!');
+            }
         } else {
             message.reply(lang_en.commands_music_member_join_voice);
         }
@@ -23,12 +26,7 @@ module.exports.run = async (bot, message, args) => {
     if(message.content.includes("-skip")) {
         if(!message.member.voice.channel) return message.lineReply("please join a voice channel first!");
         bot.distube.skip(message);
-        var embed = new Discord.MessageEmbed()
-            .setTitle(`Skip music:`)
-            .setDescription("Okay I will skip the music for you!")
-            .setColor(botsettings.embed_color_message_discord_bot)
-            .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
-        message.lineReply(embed)
+        message.lineReply('Okay I will skip the music for you!');
     }
 
     if(message.content.includes("-queue")) {

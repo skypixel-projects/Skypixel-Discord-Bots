@@ -179,7 +179,7 @@ bot.on("message", async (message, guild) => {
         fetch.default(`https://api.monkedev.com/fun/chat?msg=${message.content}&uid=${message.author.id}`)
         .then(res => res.json())
         .then(data => {
-            message.channel.send(data.response)
+            message.lineReply(data.response)
         });
     }
 });
@@ -330,7 +330,7 @@ bot.distube
             .setImage(song.thumbnail)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
-        message.channel.send(embed)
+        message.lineReply(embed)
     })
 
     .on("addSong", (message, queue, song) => {
@@ -340,7 +340,7 @@ bot.distube
             .setImage(song.thumbnail)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
-        message.channel.send(embed)
+        message.lineReply(embed)
     })
 
     .on("playList", (message, queue, playlist, song) => {
@@ -350,7 +350,7 @@ bot.distube
             .setImage(song.thumbnail)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
-        message.channel.send(embed)
+        message.lineReply(embed)
     })
 
     .on("addList", (message, queue, playlist) => {
@@ -360,19 +360,19 @@ bot.distube
             .setImage(song.thumbnail)
             .setColor(botsettings.embed_color_message_discord_bot)
             .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL())
-        message.channel.send(embed)
+        message.lineReply(embed)
     })
 
     // DisTubeOptions.searchSongs = true
     .on("searchResult", (message, result) => {
         let i = 0;
-        message.channel.send(`**Choose an option from below**\n${result.map(song => `**${++i}**. ${song.name} - \`${song.formattedDuration}\``).join("\n")}\n*Enter anything else or wait 60 seconds to cancel*`);
+        message.lineReply(`**Choose an option from below**\n${result.map(song => `**${++i}**. ${song.name} - \`${song.formattedDuration}\``).join("\n")}\n*Enter anything else or wait 60 seconds to cancel*`);
     })
     // DisTubeOptions.searchSongs = true
-    .on("searchCancel", (message) => message.channel.send(`Searching canceled`))
+    .on("searchCancel", (message) => message.lineReply(`Searching canceled`))
     .on("error", (message, e) => {
         console.error(e)
-        message.channel.send("An error encountered: " + e);
+        message.lineReply("An error encountered: " + e);
     });
 
 bot.login(process.env.DISCORD_TOKEN);
