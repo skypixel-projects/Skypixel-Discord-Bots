@@ -4,17 +4,17 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 module.exports.run = async (bot, message, args) => {
     const member = message.mentions.members.first();
 
-    if (!member) return message.reply("Please specify a member!");
+    if (!member) return message.lineReply("Please specify a member!");
 
     const arguments = args.slice(22);
 
-    if (!arguments) return message.reply("Please specify a nickname!");
+    if (!arguments) return message.lineReply("Please specify a nickname!");
 
     try {
       member.setNickname(arguments);
     } catch (err) {
       console.log(err);
-      message.reply(
+      message.lineReply(
         "I do not have permission to set " + member.toString() + " nickname!"
       );
     }

@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     if(args > 100) return
 
     await message.channel.bulkDelete(parseInt(args) + 1, true).then((_message) => {
-        message.channel.send(`Done! ${args} of message has been deleted!`)
+        message.lineReply(`**${args}** has been deleted by me :)`)
             .then(msg => {
                 msg.delete({ timeout: 12500 });
             });

@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 
     memberTarget.voice
         .kick('Kicked!')
-        .then((users) => message.channel.send(`${users} has been kicked from the voice channel!`))
+        .then((users) => message.lineReply(`${users} has been kicked from the voice channel!`))
         .catch(console.error);
 }
 
