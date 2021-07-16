@@ -1,15 +1,42 @@
 const discord = require('discord.js');
-require('discord-reply');
 const bot = new discord.Client();
 const fetch = require('node-fetch');
-
+const fs = require('fs');
 const botsettings = require('../../botsettings.json');
 const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
+const { MessageMenu, MessageMenuOption, MessageActionRow } = require("discord-buttons");
+require('discord-reply');
 
-const fs = require('fs');
-const { MessageButton, MessageActionRow } = require('discord-buttons');
+module.exports.run = async (bot, message, args) => {
 
-module.exports.run = async (bot, message, args, ...banner) => {
+    // if(args === 'dropdown') {
+    //     const Option1 = new MessageMenuOption()
+    //         .setLabel('Testing1')
+    //         .setDescription('This is a testing command!')
+    //         .setEmoji(':joy:')
+    //         .setValue('Testing1')
+
+    //     const Option2 = new MessageMenuOption()
+    //         .setLabel('Testing2')
+    //         .setDescription('This is a testing command!')
+    //         .setEmoji(':joy:')
+    //         .setValue('Testing2')
+
+    //     const Option3 = new MessageMenuOption()
+    //         .setLabel('Testing3')
+    //         .setDescription('This is a testing command!')
+    //         .setEmoji(':joy:')
+    //         .setValue('Testing3')
+
+    //     const Menu = new MessageMenu()
+    //         .setID('menu1')
+    //         .setPlaceholder('Choose you ideeas')
+    //         .addOption(Option1)
+    //         .addOption(Option2)
+    //         .addOption(Option3)
+
+    //     await message.channel.send(Menu)
+    // }
 
     // Aici este commanda pentru a juca un voice recorder!
     if(args === 'voice') {
