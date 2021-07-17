@@ -4,7 +4,7 @@ const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_
 module.exports.run = async (bot, message, args) => {
     if(args > 100) return
 
-    await message.channel.bulkDelete(parseInt(args) + 1, true).then((_message) => {
+    await message.channel.bulkDelete(parseInt(args), true).then((_message) => {
         message.lineReply(`**${args}** has been deleted by me :)`)
             .then(msg => {
                 msg.delete({ timeout: 12500 });
