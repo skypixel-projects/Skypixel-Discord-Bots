@@ -23,6 +23,7 @@
     "dotenv": "^10.0.0",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.4.0",
+    "fortnite": "^4.3.2",
     "fs": "0.0.1-security",
     "gamedig": "^3.0.7",
     "i": "^0.3.6",

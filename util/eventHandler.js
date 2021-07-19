@@ -1,8 +1,15 @@
 const Discord = require("discord.js");
-const reqEvent = (event) => require(`../events/${event}`)
+const fs = require("fs");
 
 module.exports = bot => {
-    bot.on("ready", function() {reqEvent("ready") (bot) })
-    bot.on("ready", function() {reqEvent("activity") (bot) })
-    bot.on("guildMemberAdd", () => reqEvent("security/AltAccount")(bot));
+    const eventFiles = fs.readdirSync('././events').filter(file => file.endsWith('.js'));
+
+    for (const file of eventFiles) {
+        const event = require(`../events/${file}`);
+        if (event.once) {
+            bot.once(event.name, (...args) => event.execute(...args, Discord, bot));
+        } else {
+            bot.on(event.name, (...args) => event.execute(...args, Discord, bot));
+        }
+    }
 }

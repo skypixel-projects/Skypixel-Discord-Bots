@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const botsettings = require('./botsettings.json');
 const lang_en = require(`./languages/${botsettings.default_lang_for_discord_bot}.json`);
-const bot = new Discord.Client({ presence: { status: "idle" }});
+const bot = new Discord.Client();
 const fs = require("fs");
 const { error, time } = require('console');
 const { badwords } = require('./swearing/blacklist.json');
@@ -9,6 +9,8 @@ const { MessageButton, MessageActionRow } = require('discord-buttons');
 const { default: fetch } = require('node-fetch');
 const { AsyncResource } = require('async_hooks');
 const distube = require("distube")
+
+module.exports.bot = bot;
 
 require('dotenv').config();
 require("./util/eventHandler")(bot)
@@ -73,42 +75,6 @@ bot.on("message", function(message){
     logger.write(` [${message.guild}] - ` + message.author.username + ` => ${message}` + '\n')
 });
 
-bot.on("guildMemberAdd", member => {
-    if(member.bot) return;
-    console.log(`+ (${member.displayName}) has join to (${member.guild}) server!`)
-
-    const role = member.guild.roles.cache.find(role => role.name.toLowerCase().includes('member') || role.name.toLowerCase().includes('membru') || role.name.toLowerCase().includes('tag'));
-    if(!role) return;
-    member.roles.add(role);
-
-    const join = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('welcome') || channel.name.toLowerCase().includes('bun-venit') || channel.name.toLowerCase().includes('isten-hozott'))
-    const joinEmbed = new Discord.MessageEmbed()
-        .setColor(botsettings.embed_color_message_discord_bot)
-        .setTitle(`:wave: **Welcome ${member.displayName} to the ${member.guild} discord server!**`)
-        .setDescription(`I hope do you have a grate time and fun on this server!`)
-        .setThumbnail(member.user.avatarURL())
-        .setTimestamp()
-
-    if(!join) return;
-    join.send(joinEmbed);
-});
-
-bot.on("guildMemberRemove", member => {
-    if(member.bot) return;
-    console.log(`- (${member.displayName}) has quit to (${member.guild}) server!`)
-
-    const quit = member.guild.channels.cache.find((channel) => channel.name.toLowerCase().includes('bye') || channel.name.toLowerCase().includes('la-revedere') || channel.name.toLowerCase().includes('viszontlátásra'))
-    const quitEmbed = new Discord.MessageEmbed()
-        .setColor(botsettings.embed_color_message_discord_bot)
-        .setTitle(`:wave: **Goodbye ${member.displayName} from the ${member.guild} discord server!**`)
-        .setDescription(`I hope do you have a grate time and fun on this server!`)
-        .setThumbnail(member.user.avatarURL())
-        .setTimestamp()
-
-    if(!quit) return;
-    quit.send(quitEmbed);
-})
-
 bot.on('clickButton', async (button) => {
     if(button.id == 'button1') {
         button.clicker.user.send(`Okay! ${button.clicker.user} just hit the yes button`)
@@ -117,13 +83,6 @@ bot.on('clickButton', async (button) => {
         button.clicker.user.send(`Okay! ${button.clicker.user} just hit the no button`)
     }
 });
-
-async function createAPIMessage(interaction, content) {
-    const apiMessage = await Discord.APIMessage.create(bot.channels.resolve(interaction.channel_id), content)
-        .resolveData()
-        .resolveFiles();
-    return { ...apiMessage.data, files: apiMessage.files };
-}
 
 bot.distube
     .on("playSong", (message, queue, song) => {
@@ -215,5 +174,12 @@ bot.distube
 //         }
 //     });
 // });
+
+// async function createAPIMessage(interaction, content) {
+//     const apiMessage = await Discord.APIMessage.create(bot.channels.resolve(interaction.channel_id), content)
+//         .resolveData()
+//         .resolveFiles();
+//     return { ...apiMessage.data, files: apiMessage.files };
+// }
 
 bot.login(process.env.DISCORD_TOKEN);

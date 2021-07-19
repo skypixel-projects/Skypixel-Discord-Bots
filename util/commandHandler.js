@@ -6,7 +6,7 @@ module.exports = bot => {
         if(err) console.log(err)
     
         let jsfile = files.filter(f => f.split(".").pop() === "js") 
-        console.log(jsfile)
+        console.log('\x1b[33m' + `1. ADMIN: ` + '\x1b[0m' + jsfile)
         if(jsfile.length <= 0) {
             return console.log("[DEBUG] Couldn't Find Commands!");
         }
@@ -25,7 +25,7 @@ module.exports = bot => {
         if(err) console.log(err)
     
         let jsfile = files.filter(f => f.split(".").pop() === "js") 
-        console.log(jsfile)
+        console.log('\x1b[33m' + `2. FUN: ` + '\x1b[0m' + jsfile)
         if(jsfile.length <= 0) {
             return console.log("[DEBUG] Couldn't Find Commands!");
         }
@@ -44,7 +44,7 @@ module.exports = bot => {
         if(err) console.log(err)
     
         let jsfile = files.filter(f => f.split(".").pop() === "js") 
-        console.log(jsfile)
+        console.log('\x1b[33m' + `3. GENERAL: ` + '\x1b[0m' + jsfile)
         if(jsfile.length <= 0) {
             return console.log("[DEBUG] Couldn't Find Commands!");
         }
@@ -63,7 +63,7 @@ module.exports = bot => {
         if(err) console.log(err)
     
         let jsfile = files.filter(f => f.split(".").pop() === "js") 
-        console.log(jsfile)
+        console.log('\x1b[33m' + `4. IMAGES: ` + '\x1b[0m' + jsfile)
         if(jsfile.length <= 0) {
             return console.log("[DEBUG] Couldn't Find Commands!");
         }
@@ -82,7 +82,7 @@ module.exports = bot => {
         if(err) console.log(err)
     
         let jsfile = files.filter(f => f.split(".").pop() === "js") 
-        console.log(jsfile)
+        console.log('\x1b[33m' + `5. MISC: ` + '\x1b[0m' + jsfile)
         if(jsfile.length <= 0) {
             return console.log("[DEBUG] Couldn't Find Commands!");
         }
@@ -101,7 +101,7 @@ module.exports = bot => {
         if(err) console.log(err)
     
         let jsfile = files.filter(f => f.split(".").pop() === "js") 
-        console.log(jsfile)
+        console.log('\x1b[33m' + `6. MUSIC: ` + '\x1b[0m' + jsfile)
         if(jsfile.length <= 0) {
             return console.log("[DEBUG] Couldn't Find Commands!");
         }
@@ -120,7 +120,7 @@ module.exports = bot => {
         if(err) console.log(err)
     
         let jsfile = files.filter(f => f.split(".").pop() === "js") 
-        console.log(jsfile)
+        console.log('\x1b[33m' + `7. TEST: ` + '\x1b[0m' + jsfile)
         if(jsfile.length <= 0) {
             return console.log("[DEBUG] Couldn't Find Commands!");
         }
