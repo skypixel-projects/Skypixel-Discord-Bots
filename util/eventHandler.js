@@ -24,14 +24,14 @@ module.exports = bot => {
         }
     }
 
-    const eventFiles_security = fs.readdirSync('././events/Security/').filter(file => file.endsWith('.js'));
+    // const eventFiles_security = fs.readdirSync('././events/Security/').filter(file => file.endsWith('.js'));
 
-    for (const file of eventFiles_security) {
-        const event = require(`../events/Security/${file}`);
-        if (event.once) {
-            bot.once(event.name, (...args) => event.execute(...args, Discord, bot));
-        } else {
-            bot.on(event.name, (...args) => event.execute(...args, Discord, bot));
-        }
-    }
+    // for (const file of eventFiles_security) {
+    //     const event = require(`../events/Security/${file}`);
+    //     if (event.once) {
+    //         bot.once(event.name, (...args) => event.execute(...args, Discord, bot));
+    //     } else {
+    //         bot.on(event.name, (...args) => event.execute(...args, Discord, bot));
+    //     }
+    // }
 }
