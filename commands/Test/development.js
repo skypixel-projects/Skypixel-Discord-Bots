@@ -5,6 +5,7 @@ const fs = require('fs');
 const botsettings = require('../../botsettings.json');
 const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
 const { MessageMenu, MessageMenuOption, MessageActionRow } = require("discord-buttons");
+const languages = require('quick.db');
 require('discord-reply');
 
 module.exports.run = async (bot, message, args) => {
@@ -129,6 +130,10 @@ module.exports.run = async (bot, message, args) => {
             }]
         });
         message.lineReply("Channel Created!");
+    }
+
+    if(args.includes('getlang')) {
+        message.channel.send(languages.get(message.guild.id));
     }
 }
 

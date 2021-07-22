@@ -1,0 +1,67 @@
+{
+    "maintenance": "Ez a parancs fejlesztés alatt áll!",
+
+    "console_ready": "A bot működik és működik! Kérjük, vegye figyelembe, hogy ez a bot még nem stabil!",
+    "console_ready_webhook": "A bot működik és működik! Kérjük, vegye figyelembe, hogy ez a bot még nem stabil!",
+
+    "commands_help_title": "** Hogyan segíthetek! **",
+    "commands_help_description": "További segítségért kérjük, látogasson el weboldalunkra. Itt megtalálja a bot összes parancsát és az ezzel kapcsolatos összes információt. Itt megtalálhatja a bot meghívó linkjét és a skypixel projekt szerver hivatalos linkjét is!" ,
+    "commands_help_asked" : "Kérdezte ",
+
+    "commands_kick_permission": "Nincs engedélye a parancs futtatására.",
+    "commands_kick_successfully": "A tagot elrúgták.",
+
+    "commands_cooldown_unsuccessfully": "A hűtés miatt nem használhatja a parancsot.",
+    "commands_cooldown_successfully": "A letöltés lefutott.",
+
+    "commands_avatar_title": "Itt van a tag avatar!",
+
+    "commands_addrole_added": "Szerep hozzáadva",
+    "commands_addrole_removed": "A szerepkör eltávolítva",
+
+    "commands_announcement_reply": "Ok, elküldöm az üzenetet a bejelentési csatornának!",
+
+    "commands_clear_permission": "Hiányoznak az engedélyek!",
+    "commands_clear_number": "Ez nem szám",
+
+    "commands_music_url_error": "Meg kell adnia a zene URL-jét!",
+    "commands_music_error_soundcloud": "Sajnálom, hogy a soundcloud zene még nem működik!",
+    "commands_music_error_soptify": "Sajnálom, hogy a spotify zene még nem működik!",
+    "commands_music_member_join_voice": "Először csatlakoznod kell egy hangcsatornához!",
+    "commands_music_skip_execute": "A kihagyás parancs végrehajtásra került!",
+    "commands_music_leave_execute": "A Leave parancs végrehajtásra került!",
+    "commands_music_pause_execute": "A Szünet parancs végrehajtásra került!",
+    "commands_music_volume_execute": "A kötet parancs végrehajtásra került!",
+
+    "commands_nickname_added": "Az add parancs végrehajtásra került!",
+    "commands_nickname_removed": "Az eltávolítás parancs végrehajtásra került!",
+
+    "commands_uptime": "A bot üzemideje:",
+
+    "commands_serverinfo": "Szerver információ",
+    "commands_serverinfo_name": "Név:",
+    "commands_serverinfo_id": "ID:",
+    "commands_serverinfo_owner": "Tulajdonos:",
+    "commands_serverinfo_region": "Régió:",
+    "commands_serverinfo_boost_tier": "Boost Tier:",
+    "commands_serverinfo_explicit_filter": "Kifejezett szűrő:",
+    "commands_serverinfo_verification_level": "Ellenőrzési szint:",
+    "commands_serverinfo_time_created": "Létrehozás ideje:",
+    "commands_serverinfo_statistics": "Statisztika",
+    "commands_serverinfo_role_count": "Szerepszám:",
+    "commands_serverinfo_emoji_count": "Emoji Count:",
+    "commands_serverinfo_regular_emoji_count": "Normál Emoji Count:",
+    "commands_serverinfo_animated_emoji_count": "Animált hangulatjelek száma:",
+    "commands_serverinfo_member_count": "Tagok száma:",
+    "commands_serverinfo_humans": "Emberek:",
+    "commands_serverinfo_bots": "Botok:",
+    "commands_serverinfo_text_channels": "Szöveges csatornák:",
+    "commands_serverinfo_voice_channels": "Hangcsatornák:",
+    "commands_serverinfo_boost_count": "Boost Count:",
+    "commands_serverinfo_presence": "Jelenlét",
+    "commands_serverinfo_online": "Online:",
+    "commands_serverinfo_idle": "Tétlen:",
+    "commands_serverinfo_do_not_disturb": "Ne zavarjanak:",
+    "commands_serverinfo_offline": "Offline:",
+    "commands_serverinfo_roles": "Szerepek"
+}

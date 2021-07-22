@@ -6,6 +6,7 @@
 
     "commands_help_title" : "**How can I help!**",
     "commands_help_description" : "For more help please visit our website. Here you can find all the commands of the bot and all the information about it. Here you can also find the bot invitation link and the official link from the skypixel projects server!",
+    "commands_help_asked" : "Asked by ",
 
     "commands_kick_permission" : "You do not have permission to run this command.",
     "commands_kick_successfully" : "The member was kicked.",

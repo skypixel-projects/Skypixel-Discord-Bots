@@ -1,0 +1,67 @@
+{
+    "maintenance" : "Această comandă este în curs de dezvoltare!",
+
+    "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
+    "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
+
+    "commands_help_title" : "**Aici este ajutorul tau!**",
+    "commands_help_description" : "Pentru mai mult ajutor, vă rugăm să vizitați site-ul nostru web. Aici puteți găsi toate comenzile botului și toate informațiile despre acesta. Aici puteți găsi, de asemenea, linkul de invitație bot și link-ul oficial de pe serverul de proiecte skypixel!",
+    "commands_help_asked" : "Întrebat de ",
+
+    "commands_kick_permission" : "Nu aveți permisiunea de a rula această comandă.",
+    "commands_kick_successfully" : "Membrul a fost dat cu piciorul.",
+
+    "commands_cooldown_unsuccessfully" : "Nu puteți utiliza comanda din cauza timpului de răcire.",
+    "commands_cooldown_successfully" : "Timpul tău de răcire a fugit.",
+
+    "commands_avatar_title" : "Iată avatarul membrului!",
+
+    "commands_addrole_added" : "Rol adăugat",
+    "commands_addrole_removed" : "Rol eliminat",
+
+    "commands_announcement_reply" : "Ok, voi trimite mesajul către canalul de anunțuri!",
+
+    "commands_clear_permission" : "Permisiuni lipsă!",
+    "commands_clear_number" : "Acesta nu este un număr.",
+
+    "commands_music_url_error" : "Trebuie să specificați adresa URL a muzicii!",
+    "commands_music_error_soundcloud" : "Îmi pare rău că muzica sunetului nu funcționează încă!",
+    "commands_music_error_soptify" : "Îmi pare rău că muzica spotify nu funcționează încă!",
+    "commands_music_member_join_voice" : "Mai întâi trebuie să vă alăturați unui canal vocal!",
+    "commands_music_skip_execute" : "Comanda Skip a fost executată!",
+    "commands_music_leave_execute" : "Comanda Lasă a fost executată!",
+    "commands_music_pause_execute" : "Comanda Pauză a fost executată!",
+    "commands_music_volume_execute" : "Comanda de volum a fost executată!",
+
+    "commands_nickname_added" : "Comanda add a fost executată!",
+    "commands_nickname_removed" : "Comanda remove a fost executată!",
+
+    "commands_uptime" : "Durata activității botului:",
+
+    "commands_serverinfo": "Informații despre server",
+    "commands_serverinfo_name": "Nume:",
+    "commands_serverinfo_id": "ID:",
+    "commands_serverinfo_owner": "Proprietar:",
+    "commands_serverinfo_region": "Regiune:",
+    "commands_serverinfo_boost_tier": "Nivel de creștere:",
+    "commands_serverinfo_explicit_filter": "Filtru explicit:",
+    "commands_serverinfo_verification_level": "Nivel de verificare:",
+    "commands_serverinfo_time_created": "Timpul creat:",
+    "commands_serverinfo_statistics": "Statistici",
+    "commands_serverinfo_role_count": "Număr de roluri:",
+    "commands_serverinfo_emoji_count": "Număr de emoji:",
+    "commands_serverinfo_regular_emoji_count": "Număr regulat de emoji:",
+    "commands_serverinfo_animated_emoji_count": "Număr animat de emoji:",
+    "commands_serverinfo_member_count": "Număr de membri:",
+    "commands_serverinfo_humans": "Oameni:",
+    "commands_serverinfo_bots": "Roboți:",
+    "commands_serverinfo_text_channels": "Canale text:",
+    "commands_serverinfo_voice_channels": "Canale vocale:",
+    "commands_serverinfo_boost_count": "Număr de impulsuri:",
+    "commands_serverinfo_presence": "Prezență",
+    "commands_serverinfo_online": "Online:",
+    "commands_serverinfo_idle": "Repaus:",
+    "commands_serverinfo_do_not_disturb": "Nu deranja:",
+    "commands_serverinfo_offline": "Offline:",
+    "commands_serverinfo_roles": "Roluri"
+}
