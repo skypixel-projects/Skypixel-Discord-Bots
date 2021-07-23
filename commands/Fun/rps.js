@@ -1,12 +1,14 @@
 const Discord = require("discord.js");
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
+const languages = require('quick.db');
 
 module.exports = {
     async run (bot, message, args) {
+        const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
         let embed = new Discord.MessageEmbed()
-            .setTitle("RPS")
-            .setDescription("React to play!")
+            .setTitle(lang_en.commands_rps_title)
+            .setDescription(lang_en.commands_rps_description)
             .setTimestamp()
             
         let msg = await message.channel.send(embed)
@@ -24,17 +26,17 @@ module.exports = {
             async(collected) => {
                 const reaction = collected.first()
                 let result = new Discord.MessageEmbed()
-                    .setTitle("Result")
-                    .addField("Your Choice", `${reaction.emoji.name}`)
-                    .addField("Bots choice", `${me}`)
+                    .setTitle(lang_en.commands_rps_result)
+                    .addField(lang_en.commands_rps_member_choice, `${reaction.emoji.name}`)
+                    .addField(lang_en.commands_rps_bot_choice, `${me}`)
                 await msg.edit(result)
 
                 if ((me === "🗻" && reaction.emoji.name === "✂") || (me === "✂" && reaction.emoji.name === "📰") || (me === "📰" && reaction.emoji.name === "🗻")) {
-                    message.reply("You Lost!");
+                    message.reply(lang_en.commands_rps_lose);
                 } else if (me === reaction.emoji.name) {
-                    return message.reply("Its a tie!");
+                    return message.reply(lang_en.commands_rps_tie);
                 } else {
-                    return message.reply("You Won!");
+                    return message.reply(lang_en.commands_rps_win);
                 }
             }
         )

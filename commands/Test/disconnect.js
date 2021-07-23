@@ -1,28 +1,28 @@
 const Discord = require("discord.js");
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
     const user = message.mentions.users.first();
     if (user) {
         const member = message.guild.member(user);
         if (member) {
           member.voice
-            .kick('Optional reason that will display in the audit logs')
+            .kick(lang_en.commands_disconnect_kick_reason)
             .then(() => {
-                message.lineReply(`Successfully kicked from the voice ${user.tag}!`);
+                message.lineReply(`${lang_en.commands_disconnect_kick_succes} ${user.tag}!`);
             })
             .catch(err => {
-                message.lineReply('I was unable to kick the member :(');
+                message.lineReply(lang_en.commands_disconnect_kick_error);
                 console.error(err);
             });
         } else {
-            message.lineReply("That user isn't in this guild!");
+            message.lineReply(lang_en.commands_disconnect_kick_member_find_error);
         }
     } else {
-        message.lineReply("You didn't mention the user to kick!");
+        message.lineReply(lang_en.commands_disconnect_kick_member_mention_error);
     }
 }
 

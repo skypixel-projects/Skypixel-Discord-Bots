@@ -1,11 +1,11 @@
 const Discord = require("discord.js");
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
-    message.lineReply("Beep").then((sentMessage) => sentMessage.edit("Boop!"))
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
+    // message.lineReply("Beep").then((sentMessage) => sentMessage.edit("Boop!"))
 }
 
 module.exports.config = {

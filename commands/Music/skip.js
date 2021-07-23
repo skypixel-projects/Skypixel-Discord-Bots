@@ -1,12 +1,13 @@
 const Discord = require("discord.js");
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
-    if(!message.member.voice.channel) return message.lineReply("please join a voice channel first!");
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
+    if(!message.member.voice.channel) return message.lineReply(lang_en.commands_skip_error_voice);
     bot.distube.skip(message);
-    message.lineReply('Okay I will skip the music for you!');
+    message.lineReply(lang_en.commands_skip_succes);
 }
 
 module.exports.config = {

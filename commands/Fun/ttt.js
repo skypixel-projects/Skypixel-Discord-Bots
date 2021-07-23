@@ -1,15 +1,14 @@
 const Discord = require("discord.js");
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
 
-    if(message.mentions.members.first() === message.member) return message.lineReply("You are not allow to play with your self!")
+    if(message.mentions.members.first() === message.member) return message.lineReply(lang_en.commands_ttt_error_member)
 
     let opponent = message.mentions.members.first() || message.guild.members.cache.get(args[0])
-        if(!opponent) return message.lineReply("Please provide the user to challenge!")
+        if(!opponent) return message.lineReply(lang_en.commands_ttt_member_game)
         let fighters = [message.member.id, opponent.id].sort(() => (Math.random() > .5) ? 1 : -1)
         let Args = {
             user: 0,
@@ -60,7 +59,7 @@ module.exports.run = async (bot, message, args) => {
             }
         }
         let { MessageButton, MessageActionRow } = require('discord-buttons')
-        let msg = await message.lineReply(`**TicTacToe** | <@!${Args.userid}>'s turn (⭕)`)
+        let msg = await message.lineReply(`**TicTacToe** | <@!${Args.userid}>'s ${lang_en.commands_ttt_turn} (⭕)`)
         tictactoe(msg)
         async function tictactoe(m) {
             Args.userid=fighters[Args.user]
@@ -76,7 +75,7 @@ module.exports.run = async (bot, message, args) => {
             if (Args.a1.label == "⭕" && Args.a2.label == "⭕" && Args.a3.label == "⭕") won["⭕"] = true
             if (Args.b1.label == "⭕" && Args.b2.label == "⭕" && Args.b3.label == "⭕") won["⭕"] = true
             if (Args.c1.label == "⭕" && Args.c2.label == "⭕" && Args.c3.label == "⭕") won["⭕"] = true
-            if (won["⭕"] != false) return m.edit('⭕ won a banana!')
+            if (won["⭕"] != false) return m.edit(`⭕ ${lang_en.commands_ttt_win_message}`)
             if (Args.a1.label == "❌" && Args.b1.label == "❌" && Args.c1.label == "❌") won["❌"] = true
             if (Args.a2.label == "❌" && Args.b2.label == "❌" && Args.c2.label == "❌") won["❌"] = true
             if (Args.a3.label == "❌" && Args.b3.label == "❌" && Args.c3.label == "❌") won["❌"] = true
@@ -85,7 +84,7 @@ module.exports.run = async (bot, message, args) => {
             if (Args.a1.label == "❌" && Args.a2.label == "❌" && Args.a3.label == "❌") won["❌"] = true
             if (Args.b1.label == "❌" && Args.b2.label == "❌" && Args.b3.label == "❌") won["❌"] = true
             if (Args.c1.label == "❌" && Args.c2.label == "❌" && Args.c3.label == "❌") won["❌"] = true
-            if (won["❌"] != false) return m.edit('❌ won a banana!')
+            if (won["❌"] != false) return m.edit(`❌ ${lang_en.commands_ttt_win_message}`)
             let a1 = new MessageButton()
                 .setStyle(Args.a1.style)
                 .setLabel(Args.a1.label)
@@ -138,7 +137,7 @@ module.exports.run = async (bot, message, args) => {
             let c = new MessageActionRow()
                 .addComponents([c1, c2, c3])
             let buttons = { components: [a, b, c] }
-            m.edit(`**TicTacToe** | <@!${Args.userid}>'s turn (${Args.user == 0 ? "⭕" : "❌"})`, buttons)
+            m.edit(`**TicTacToe** | <@!${Args.userid}>'s ${lang_en.commands_ttt_turn} (${Args.user == 0 ? "⭕" : "❌"})`, buttons)
             const filter = (button) => button.clicker.user.id === Args.userid;
             const collector = m.createButtonCollector(filter, { max: 1, time: 30000 });
 
@@ -172,11 +171,11 @@ module.exports.run = async (bot, message, args) => {
                         .filter(key => predicate(obj[key]))
                         .reduce((res, key) => (res[key] = obj[key], res), {});
                 let Brgs = objectFilter(map(Args, (_, fruit) => fruit.label == "➖"), num => num == true);
-                if (Object.keys(Brgs).length == 0) return m.edit('It\'s a tie! And you don\'t won a banana!')
+                if (Object.keys(Brgs).length == 0) return m.edit(lang_en.commands_ttt_tie_message)
                 tictactoe(m)
             });
             collector.on('end', collected => {
-                if (collected.size == 0) m.edit(`<@!${Args.userid}> didn\'t react in time! (30s)`)
+                if (collected.size == 0) m.edit(`<@!${Args.userid}> ${lang_en.commands_ttt_time_end}`)
             });
         }
 }

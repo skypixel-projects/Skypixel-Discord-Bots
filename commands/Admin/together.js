@@ -1,12 +1,13 @@
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-
-const fetch = require('node-fetch')
+const fetch = require('node-fetch');
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
     if(args === 'YouTube') {
         let channel = message.member.voice.channel;
-        if(!channel) return message.lineReply('You have to be in a voice channel!')
+        if(!channel) return message.lineReply(lang_en.commands_together_youtube_voice_error)
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -23,14 +24,14 @@ module.exports.run = async (bot, message, args) => {
                 "Content-Type": "application/json"
             }
         }).then(res => res.json()).then(invite => {
-            if(!invite.code) return message.lineReply('Sadly i cant start a youtube together!')
+            if(!invite.code) return message.lineReply(lang_en.commands_together_youtube_start_error)
             message.lineReply(`https://discord.com/invite/${invite.code}`)
         });
     }
 
     if(args === 'Fishing') {
         let channel = message.member.voice.channel;
-        if(!channel) return message.lineReply('You have to be in a voice channel!')
+        if(!channel) return message.lineReply(lang_en.commands_together_fishing_voice_error)
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -47,14 +48,14 @@ module.exports.run = async (bot, message, args) => {
                 "Content-Type": "application/json"
             }
         }).then(res => res.json()).then(invite => {
-            if(!invite.code) return message.lineReply('Sadly i cant start a youtube together!')
+            if(!invite.code) return message.lineReply(lang_en.commands_together_fishing_start_error)
             message.lineReply(`https://discord.com/invite/${invite.code}`)
         });
     }
 
     if(args === 'Poker') {
         let channel = message.member.voice.channel;
-        if(!channel) return message.lineReply('You have to be in a voice channel!')
+        if(!channel) return message.lineReply(lang_en.commands_together_poker_voice_error)
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -71,14 +72,14 @@ module.exports.run = async (bot, message, args) => {
                 "Content-Type": "application/json"
             }
         }).then(res => res.json()).then(invite => {
-            if(!invite.code) return message.lineReply('Sadly i cant start a youtube together!')
+            if(!invite.code) return message.lineReply(lang_en.commands_together_poker_start_error)
             message.lineReply(`https://discord.com/invite/${invite.code}`)
         });
     }
 
     if(args === 'Betrayal') {
         let channel = message.member.voice.channel;
-        if(!channel) return message.lineReply('You have to be in a voice channel!')
+        if(!channel) return message.lineReply(lang_en.commands_together_betrayal_voice_error)
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",
@@ -95,7 +96,7 @@ module.exports.run = async (bot, message, args) => {
                 "Content-Type": "application/json"
             }
         }).then(res => res.json()).then(invite => {
-            if(!invite.code) return message.lineReply('Sadly i cant start a youtube together!')
+            if(!invite.code) return message.lineReply(lang_en.commands_together_betrayal_start_error)
             message.lineReply(`https://discord.com/invite/${invite.code}`)
         });
     }

@@ -1,42 +1,174 @@
 {
-    "maintenance" : "Această comandă este în curs de dezvoltare!",
+    "maintenance" : "This command is under development!",
 
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
     "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
 
-    "commands_help_title" : "**Aici este ajutorul tau!**",
-    "commands_help_description" : "Pentru mai mult ajutor, vă rugăm să vizitați site-ul nostru web. Aici puteți găsi toate comenzile botului și toate informațiile despre acesta. Aici puteți găsi, de asemenea, linkul de invitație bot și link-ul oficial de pe serverul de proiecte skypixel!",
-    "commands_help_asked" : "Întrebat de ",
+    "embed_asked": "Întrebat de",
 
-    "commands_kick_permission" : "Nu aveți permisiunea de a rula această comandă.",
-    "commands_kick_successfully" : "Membrul a fost dat cu piciorul.",
+    "commands_addrole_permission": "Nu aveți permisiunea.",
+    "commands_addrole_member": "Niciun membru specificat.",
+    "commands_addrole_role": "a obținut un rol.",
+    "commands_addrole_succes": "a obținut un rol.",
 
-    "commands_cooldown_unsuccessfully" : "Nu puteți utiliza comanda din cauza timpului de răcire.",
-    "commands_cooldown_successfully" : "Timpul tău de răcire a fugit.",
+    "commands_announcement_reply": "Ok, voi trimite mesajul către canalul de anunțuri!",
 
-    "commands_avatar_title" : "Iată avatarul membrului!",
+    "commands_ban_reason": "Au fost răi!",
+    "commands_ban_succes": "Interzis cu succes!",
+    "commands_ban_member_unable": "Nu am putut interzice membrul!",
+    "commands_ban_guild_member": "Acest utilizator nu se află în această breaslă!",
+    "commands_ban_member_mention": "Nu ați menționat utilizatorul să îl interzică!",
 
-    "commands_addrole_added" : "Rol adăugat",
-    "commands_addrole_removed" : "Rol eliminat",
+    "commands_clear_reply": "a fost șters de mine :)",
 
-    "commands_announcement_reply" : "Ok, voi trimite mesajul către canalul de anunțuri!",
+    "commands_kick_reason": "Au fost răi!",
+    "commands_kick_succes": "Lovit cu succes!",
+    "commands_kick_member_unable": "Nu am putut lovi cu piciorul membrul!",
+    "commands_kick_guild_member": "Acest utilizator nu se află în această breaslă!",
+    "commands_kick_member_mention": "Nu ați menționat utilizatorul pentru a lovi cu piciorul!",
 
-    "commands_clear_permission" : "Permisiuni lipsă!",
-    "commands_clear_number" : "Acesta nu este un număr.",
+    "commands_mute_specify": "Trebuie să specificați un membru!",
+    "commands_mute_member_muted": "Dezactivat!",
 
-    "commands_music_url_error" : "Trebuie să specificați adresa URL a muzicii!",
-    "commands_music_error_soundcloud" : "Îmi pare rău că muzica sunetului nu funcționează încă!",
-    "commands_music_error_soptify" : "Îmi pare rău că muzica spotify nu funcționează încă!",
-    "commands_music_member_join_voice" : "Mai întâi trebuie să vă alăturați unui canal vocal!",
-    "commands_music_skip_execute" : "Comanda Skip a fost executată!",
-    "commands_music_leave_execute" : "Comanda Lasă a fost executată!",
-    "commands_music_pause_execute" : "Comanda Pauză a fost executată!",
-    "commands_music_volume_execute" : "Comanda de volum a fost executată!",
+    "commands_removerole_permission": "Nu aveți permisiunea.",
+    "commands_removerole_member": "Niciun membru specificat.",
+    "commands_removerole_role": "a obținut un rol.",
+    "commands_removerole_succes": "rolurile au fost eliminate.",
 
-    "commands_nickname_added" : "Comanda add a fost executată!",
-    "commands_nickname_removed" : "Comanda remove a fost executată!",
+    "commands_slowmode_set": "Setați slowmode la:",
 
-    "commands_uptime" : "Durata activității botului:",
+    "commands_together_youtube_voice_error": "Trebuie să fii într-un canal vocal!",
+    "commands_together_youtube_start_error": "Din păcate, nu pot începe împreună un youtube!",
+    "commands_together_fishing_voice_error": "Trebuie să fii într-un canal vocal!",
+    "commands_together_fishing_start_error": "Din păcate, nu pot începe împreună un youtube!",
+    "commands_together_poker_voice_error": "Trebuie să fii într-un canal vocal!",
+    "commands_together_poker_start_error": "Din păcate, nu pot începe împreună un youtube!",
+    "commands_together_betrayal_voice_error": "Trebuie să fii într-un canal vocal!",
+    "commands_together_betrayal_start_error": "Din păcate nu pot începe împreună un youtube!",
+
+    "commands_unmute_specify": "Trebuie să specificați un membru!",
+    "commands_unmute_member_unmuted": "Anulat!",
+
+    "commands_8ball_question": "Vă rugăm să puneți o întrebare completă!",
+    "commands_8ball_embed_question": "Întrebare",
+    "commands_8ball_embed_answer": "Răspunde",
+
+    "commands_instagram_channel_name": "Vă rugăm să introduceți un nume de canal",
+    "commands_instagram_not_account": "Nu este un cont",
+    "commands_instagram_profile_total_posts": "Total mesaje:",
+    "commands_instagram_profile_followers": "Urmăritori:",
+    "commands_instagram_profile_following": "Următorul:",
+
+    "commands_nsfw_images": "Imagine Nsfw",
+    
+    "commands_rps_title": "RPS",
+    "commands_rps_description": "Reacționează la joc!",
+    "commands_rps_result": "Rezultat",
+    "commands_rps_member_choice": "Alegerea ta",
+    "commands_rps_bot_choice": "Alegerea roboților",
+    "commands_rps_lose": "Ai pierdut!",
+    "commands_rps_tie": "Este o cravată!",
+    "commands_rps_win": "Ai câștigat!",
+
+    "commands_ttt_error_member": "Nu ai voie să te joci cu tine!",
+    "commands_ttt_member_game": "Vă rugăm să oferiți utilizatorului provocarea!",
+    "commands_ttt_turn": "întoarce",
+    "commands_ttt_win_message": "a câștigat o banană!",
+    "commands_ttt_tie_message": "Este o cravată! Și nu ai câștigat o banană!",
+    "commands_ttt_time_end": "nu a reacționat la timp! (30 de ani)",
+
+    "commands_dellang_message": "Limba a fost resetată la limba implicită!",
+
+    "commands_feedback_rate_message_1": ": x: Vă rugăm să evaluați acel bot pe o scară de la 1 la 5 cu un motiv` De exemplu, feedback-ul 5 are utilități minunate` ",
+    "commands_feedback_rate_message_2": ": x: Vă rugăm să evaluați botul pe o scară de 1 - 5 cu un motiv` De exemplu, feedback-ul 5 are utilități minunate` ",
+    "commands_feedback_new_review": "Revizuire nouă",
+    "commands_feedback_stars": "Stele:",
+    "commands_feedback_comment": "Comentariu:",
+    "commands_feedback_from": "De la:",
+
+    "commands_memberinfo_id": "ID de membru",
+    "commands_memberinfo_roles": "Roluri",
+    "commands_memberinfo_created": "Cont creat la:",
+    "commands_memberinfo_join_guild_time": "S-a alăturat serverului la",
+    "commands_memberinfo_status": "Stare",
+
+    "commands_ping_message": "` ms. Acesta este ping-ul botului! ",
+
+    "commands_setlang_error_message": "Vă rugăm să specificați o limbă! (Română, Engleză, Magyar)",
+
+    "commands_avatar_title": "Iată avatarul membrului!",
+
+    "commands_tweet_wait": "** Vă rugăm să așteptați ... **",
+    "commands_tweet_enter_message": "Trebuie să introduceți un mesaj!",
+    "commands_tweet_new_tweet": "** Tweet nou de **",
+
+    "commands_github_error_username": "** Vă rog să-mi dați un nume de utilizator Github! **",
+    "commands_github_not_found_username": "** Utilizatorul nu a fost găsit | Vă rog să-mi dați un nume de utilizator valid! **",
+    "commands_github_username_information": "Informații!",
+    "commands_github_username": "Nume utilizator",
+    "commands_github_id": "ID",
+    "commands_github_bio": "Bio",
+    "commands_github_no_bio": "Fără biografie",
+    "commands_github_public_repositories": "Depozite publice",
+    "commands_github_followers": "Urmăritori",
+    "commands_github_following": "Urmează",
+    "commands_github_location": "Locație",
+    "commands_github_account_created": "Cont creat",
+
+    "commands_restart_permission": "Nu puteți utiliza această comandă!",
+    "commands_restart_succes": "Repornirea botului ...",
+
+    "commands_filter_title": "Coada curentă:",
+    "commands_filter_description": "Filtru de coadă curent:",
+    "commands_filter_description_off": "Dezactivat",
+
+    "commands_leave_message": "Bine, voi opri muzica pentru tine și voi pleca de pe canal!",
+    "commands_leave_member_join_voice": "Mai întâi trebuie să vă alăturați unui canal vocal!",
+
+    "commands_play_error_voice": "Vă rugăm să vă alăturați mai întâi unui canal vocal!",
+    "commands_play_error_link": "Vă rugăm să furnizați o interogare de căutare!",
+
+    "commands_queue_title": "Coada curentă:",
+
+    "commands_skip_error_voice": "Vă rugăm să vă alăturați mai întâi unui canal vocal!",
+    "commands_skip_succes": "Bine, voi omite muzica pentru tine!",
+
+    "commands_disconnect_kick_reason": "Motiv opțional care va fi afișat în jurnalele de audit",
+    "commands_disconnect_kick_succes": "Lansat cu succes din voce",
+    "commands_disconnect_kick_error": "Nu am reușit să lovesc membru :(",
+    "commands_disconnect_kick_member_find_error": "Acest utilizator nu se află în această breaslă!",
+    "commands_disconnect_kick_member_mention_error": "Nu ați menționat utilizatorul pentru a lovi cu piciorul!",
+
+    "commands_playrec_voice_error": "Vă rugăm să vă alăturați unui canal vocal!",
+    "commands_playrec_rec_error": "Sunetul dvs. nu este înregistrat!",
+    "commands_playrec_finish": "a terminat redarea audio",
+
+    "commands_rec_voice_error": "Vă rugăm să vă alăturați unui canal vocal!",
+    "commands_rec_finish": "a terminat redarea audio",
+
+    "commands_resetnick_member_error": "Vă rugăm să specificați un membru!",
+    "commands_resetnick_permission_1": "Nu am permisiunea de resetare",
+    "commands_resetnick_permission_2": "poreclă!",
+
+    "commands_setnick_member_error": "Vă rugăm să specificați un membru!",
+    "commands_setnick_nickname_error": "Vă rugăm să specificați o poreclă!",
+    "commands_setnick_permission_1": "Nu am permisiunea de a seta",
+    "commands_setnick_permission_2": "poreclă!",
+
+    "commands_uptime_bot_title": "are aceste specificații.",
+    "commands_uptime_bot_status": "__ ** Statistici: ** __",
+    "commands_uptime_bot_memory": "`⏳` Utilizare memorie",
+    "commands_uptime_bot_uptime": "`⌚️` Uptime",
+    "commands_uptime_bot_users": "`📁` Users",
+    "commands_uptime_bot_servers": "`📁` Servere",
+    "commands_uptime_bot_channels": "`📁` Canale",
+    "commands_uptime_bot_discord_js": "`👾` Discord.js",
+    "commands_uptime_bot_node": "`🤖` Node",
+    "commands_uptime_bot_cpu": "`🤖` CPU ",
+    "commands_uptime_bot_cpu_usage": "`🤖` utilizare CPU",
+    "commands_uptime_bot_arch": "`🤖` Arch",
+    "commands_uptime_bot_platform": "`💻` Platforma",
+    "commands_uptime_bot_api_latency": "Latența API",
 
     "commands_serverinfo": "Informații despre server",
     "commands_serverinfo_name": "Nume:",
@@ -63,5 +195,8 @@
     "commands_serverinfo_idle": "Repaus:",
     "commands_serverinfo_do_not_disturb": "Nu deranja:",
     "commands_serverinfo_offline": "Offline:",
-    "commands_serverinfo_roles": "Roluri"
+    "commands_serverinfo_roles": "Roluri",
+
+    "commands_help_title": "** Cum vă pot ajuta! **",
+    "commands_help_description": "Pentru mai mult ajutor, vă rugăm să vizitați site-ul nostru web. Aici puteți găsi toate comenzile botului și toate informațiile despre acesta. Aici puteți găsi, de asemenea, linkul de invitație bot și linkul oficial de pe serverul de proiecte skypixel!"
 }

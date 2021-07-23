@@ -1,10 +1,8 @@
 const Discord = require('discord.js');
 const moment = require('moment');
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-
 const { MessageEmbed } = require('discord.js');
+const languages = require('quick.db');
 
 const filterLevels = {
     DISABLED: 'Off',
@@ -37,6 +35,8 @@ const regions = {
 };
 
 module.exports.run = async (bot, message, args) => {
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
     const roles = message.guild.roles.cache.sort((a, b) => b.position - a.position).map(role => role.toString());
     const members = message.guild.members.cache;
     const channels = message.guild.channels.cache;

@@ -4,39 +4,171 @@
     "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
     "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
 
-    "commands_help_title" : "**How can I help!**",
-    "commands_help_description" : "For more help please visit our website. Here you can find all the commands of the bot and all the information about it. Here you can also find the bot invitation link and the official link from the skypixel projects server!",
-    "commands_help_asked" : "Asked by ",
+    "embed_asked" : "Asked by",
 
-    "commands_kick_permission" : "You do not have permission to run this command.",
-    "commands_kick_successfully" : "The member was kicked.",
-
-    "commands_cooldown_unsuccessfully" : "You cannot use the command because of your cooldown.",
-    "commands_cooldown_successfully" : "Your cooldown ran off.",
-
-    "commands_avatar_title" : "Here's the member avatar!",
-
-    "commands_addrole_added" : "Role Added",
-    "commands_addrole_removed" : "Role Removed",
+    "commands_addrole_permission" : "You do not have permission.",
+    "commands_addrole_member" : "No member specified.",
+    "commands_addrole_role" : "has obtained a role.",
+    "commands_addrole_succes" : "has obtained a role.",
 
     "commands_announcement_reply" : "Ok i will send the message to the announcement channel!",
 
-    "commands_clear_permission" : "Missing Permissions!",
-    "commands_clear_number" : "This is not a number",
+    "commands_ban_reason" : "They were bad!",
+    "commands_ban_succes" : "Successfully banned!",
+    "commands_ban_member_unable" : "I was unable to ban the member!",
+    "commands_ban_guild_member" : "That user isn't in this guild!",
+    "commands_ban_member_mention" : "You didn't mention the user to ban!",
 
-    "commands_music_url_error" : "You need to specify the URL of the music!",
-    "commands_music_error_soundcloud" : "I'm sorry the soundcloud music is not working yet!",
-    "commands_music_error_soptify" : "I'm sorry the spotify music is not working yet!",
-    "commands_music_member_join_voice" : "You need to join a voice channel first!",
-    "commands_music_skip_execute" : "Skip command has been executed!",
-    "commands_music_leave_execute" : "Leave command has been executed!",
-    "commands_music_pause_execute" : "Pause command has been executed!",
-    "commands_music_volume_execute" : "Volume command has been executed!",
+    "commands_clear_reply" : "has been deleted by me :)",
 
-    "commands_nickname_added" : "The add command has been executed!",
-    "commands_nickname_removed" : "The remove command has been executed!",
+    "commands_kick_reason" : "They were bad!",
+    "commands_kick_succes" : "Successfully kicked!",
+    "commands_kick_member_unable" : "I was unable to kick the member!",
+    "commands_kick_guild_member" : "That user isn't in this guild!",
+    "commands_kick_member_mention" : "You didn't mention the user to kick!",
 
-    "commands_uptime" : "The uptime of the bot:",
+    "commands_mute_specify" : "You need to specify a member!", 
+    "commands_mute_member_muted" : "Muted!", 
+
+    "commands_removerole_permission" : "You do not have permission.",
+    "commands_removerole_member" : "No member specified.",
+    "commands_removerole_role" : "has obtained a role.",
+    "commands_removerole_succes" : "roles has been removed.",
+
+    "commands_slowmode_set" : "Set the slowmode to :",
+
+    "commands_together_youtube_voice_error" : "You have to be in a voice channel!",
+    "commands_together_youtube_start_error" : "Sadly i cant start a youtube together!",
+    "commands_together_fishing_voice_error" : "You have to be in a voice channel!",
+    "commands_together_fishing_start_error" : "Sadly i cant start a youtube together!",
+    "commands_together_poker_voice_error" : "You have to be in a voice channel!",
+    "commands_together_poker_start_error" : "Sadly i cant start a youtube together!",
+    "commands_together_betrayal_voice_error" : "You have to be in a voice channel!",
+    "commands_together_betrayal_start_error" : "Sadly i cant start a youtube together!",
+
+    "commands_unmute_specify" : "You need to specify a member!", 
+    "commands_unmute_member_unmuted" : "Unmuted!", 
+
+    "commands_8ball_question" : "Please ask a full question!", 
+    "commands_8ball_embed_question" : "Question",
+    "commands_8ball_embed_answer" : "Answer",
+
+    "commands_instagram_channel_name" : "Please Enter a Channel Name",
+    "commands_instagram_not_account" : "Not A Account",
+    "commands_instagram_profile_total_posts" : "Total Posts:",
+    "commands_instagram_profile_followers" : "Followers:",
+    "commands_instagram_profile_following" : "Following:",
+
+    "commands_nsfw_images" : "Nsfw Image",
+    
+    "commands_rps_title" : "RPS",
+    "commands_rps_description" : "React to play!",
+    "commands_rps_result" : "Result",
+    "commands_rps_member_choice" : "Your Choice",
+    "commands_rps_bot_choice" : "Bots choice",
+    "commands_rps_lose" : "You Lost!",
+    "commands_rps_tie" : "Its a tie!",
+    "commands_rps_win" : "You Won!",
+
+    "commands_ttt_error_member" : "You are not allow to play with your self!",
+    "commands_ttt_member_game" : "Please provide the user to challenge!",
+    "commands_ttt_turn" : "turn",
+    "commands_ttt_win_message" : "won a banana!",
+    "commands_ttt_tie_message" : "It's a tie! And you don't won a banana!",
+    "commands_ttt_time_end" : "didn't react in time! (30s)",
+
+    "commands_dellang_message" : "The language has been reset to the default language!",
+
+    "commands_feedback_rate_message_1" : ":x: Please rate that bot on a scale of 1 - 5 with a reason `E.g ^feedback 5 has awesome utilities`",
+    "commands_feedback_rate_message_2" : ":x: Please rate the bot on a scale of 1 - 5 with a reason `E.g ^feedback 5 has awesome utilities`",
+    "commands_feedback_new_review" : "New review",
+    "commands_feedback_stars" : "Stars:",
+    "commands_feedback_comment" : "Comment:",
+    "commands_feedback_from" : "From:",
+
+    "commands_memberinfo_id" : "Member ID",
+    "commands_memberinfo_roles" : "Roles",
+    "commands_memberinfo_created" : "Account Created On:",
+    "commands_memberinfo_join_guild_time" : "Joined the server At",
+    "commands_memberinfo_status" : "Status",
+
+    "commands_ping_message" : "`ms. This is the bot ping!",
+
+    "commands_setlang_error_message" : "Please specify an language! (Romana, English, Magyar)",
+
+    "commands_avatar_title" : "Here's the member avatar!",
+
+    "commands_tweet_wait" : "**Please wait...**",
+    "commands_tweet_enter_message" : "You must enter a message!",
+    "commands_tweet_new_tweet" : "**New tweet by**",
+
+    "commands_github_error_username" : "**Please Give Me A Github Username!**",
+    "commands_github_not_found_username" : "**User Not Found | Please Give Me A Valid Username!**",
+    "commands_github_username_information" : "Information!",
+    "commands_github_username" : "Username",
+    "commands_github_id" : "ID",
+    "commands_github_bio" : "Bio",
+    "commands_github_no_bio" : "No Bio",
+    "commands_github_public_repositories" : "Public Repositories",
+    "commands_github_followers" : "Followers",
+    "commands_github_following" : "Following",
+    "commands_github_location" : "Location",
+    "commands_github_account_created" : "Account Created",
+
+    "commands_restart_permission" : "You cannot use this command!",
+    "commands_restart_succes" : "Restarting bot...",
+
+    "commands_filter_title" : "Current queue:",
+    "commands_filter_description" : "Current queue filter: ",
+    "commands_filter_description_off" : "Off",
+
+    "commands_leave_message" : "Okay I will stop the music for you and I will leave from the channel!",
+    "commands_leave_member_join_voice" : "You need to join a voice channel first!",
+
+    "commands_play_error_voice" : "Please join a voice channel first!",
+    "commands_play_error_link" : "Please provide a search query!",
+
+    "commands_queue_title" : "Current queue:",
+
+    "commands_skip_error_voice" : "Please join a voice channel first!",
+    "commands_skip_succes" : "Okay I will skip the music for you!",
+
+    "commands_disconnect_kick_reason" : "Optional reason that will display in the audit logs",
+    "commands_disconnect_kick_succes" : "Successfully kicked from the voice",
+    "commands_disconnect_kick_error" : "I was unable to kick the member :(",
+    "commands_disconnect_kick_member_find_error" : "That user isn't in this guild!",
+    "commands_disconnect_kick_member_mention_error" : "You didn't mention the user to kick!",
+
+    "commands_playrec_voice_error" : "Please join a voice channel!",
+    "commands_playrec_rec_error" : "Your audio is not recorded!",
+    "commands_playrec_finish" : "finished playing audio",
+
+    "commands_rec_voice_error" : "Please join a voice channel!",
+    "commands_rec_finish" : "finished playing audio",
+
+    "commands_resetnick_member_error" : "Please specify a member!",
+    "commands_resetnick_permission_1" : "I do not have permission to reset ",
+    "commands_resetnick_permission_2" : " nickname!",
+
+    "commands_setnick_member_error" : "Please specify a member!",
+    "commands_setnick_nickname_error" : "Please specify a nickname!",
+    "commands_setnick_permission_1" : "I do not have permission to set ",
+    "commands_setnick_permission_2" : " nickname!",
+
+    "commands_uptime_bot_title" : "has this specs.",
+    "commands_uptime_bot_status" : "__**Stats:**__",
+    "commands_uptime_bot_memory" : "`⏳` Mem Usage",
+    "commands_uptime_bot_uptime" : "`⌚️` Uptime",
+    "commands_uptime_bot_users" : "`📁` Users",
+    "commands_uptime_bot_servers" : "`📁` Servers",
+    "commands_uptime_bot_channels" : "`📁` Channels",
+    "commands_uptime_bot_discord_js" : "`👾` Discord.js",
+    "commands_uptime_bot_node" : "`🤖` Node",
+    "commands_uptime_bot_cpu" : "`🤖` CPU",
+    "commands_uptime_bot_cpu_usage" : "`🤖` CPU usage",
+    "commands_uptime_bot_arch" : "`🤖` Arch",
+    "commands_uptime_bot_platform" : "`💻` Platform",
+    "commands_uptime_bot_api_latency" : "API Latency",
 
     "commands_serverinfo" : "Server Info",
     "commands_serverinfo_name" : "Name:",
@@ -63,5 +195,8 @@
     "commands_serverinfo_idle" : "Idle:",
     "commands_serverinfo_do_not_disturb" : "Do Not Disturb:",
     "commands_serverinfo_offline" : "Offline:",
-    "commands_serverinfo_roles" : "Roles"
+    "commands_serverinfo_roles" : "Roles",
+
+    "commands_help_title" : "**How can I help!**",
+    "commands_help_description" : "For more help please visit our website. Here you can find all the commands of the bot and all the information about it. Here you can also find the bot invitation link and the official link from the skypixel projects server!"
 }

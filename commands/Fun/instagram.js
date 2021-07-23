@@ -1,14 +1,13 @@
 const Discord = require("discord.js");
-
 const { stripIndents } = require("common-tags");
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
     if (!args[0]) {
-        return message.lineReply(`Please Enter a Channel Name`)
+        return message.lineReply(lang_en.commands_instagram_channel_name)
     }
     let url, response, account, details;
     try {
@@ -17,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
         account = response.data
         details = account.graphql.user
     } catch (error) {
-        return message.lineReply(`Not A Account`)
+        return message.lineReply(lang_en.commands_instagram_not_account)
     }
 
     const embed = new MessageEmbed()
@@ -26,17 +25,17 @@ module.exports.run = async (bot, message, args) => {
         .setThumbnail(details.profile_pic_url)
         .addFields(
             {
-                name: "Total Posts:",
+                name: lang_en.commands_instagram_profile_total_posts,
                 value: details.edge_owner_to_timeline_media.count.toLocaleString(),
                 inline: true
             },
             {
-                name: "Followers:",
+                name: lang_en.commands_instagram_profile_followers,
                 value: details.edge_followed_by.count.toLocaleString(),
                 inline: true
             },
             {
-                name: "Following:",
+                name: lang_en.commands_instagram_profile_following,
                 value: details.edge_follow.count.toLocaleString(),
                 inline: true
             }

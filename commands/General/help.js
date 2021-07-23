@@ -7,13 +7,12 @@ module.exports.run = async (bot, message, args) => {
 
     let helpArray = message.content.split(" ");
     let helpArgs = helpArray.slice(1);
-
     var embed = new Discord.MessageEmbed()
         .setTitle(lang_en.commands_help_title)
         .setDescription(lang_en.commands_help_description + `\n \n https://skypixel-projects.github.io/SK-DISCORDBOTS/`)
         .setColor(botsettings.embed_color_message_discord_bot)
         .setThumbnail(bot.user.displayAvatarURL())
-        .setFooter(lang_en.commands_help_asked + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
+        .setFooter(`${lang_en.embed_asked} ` + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
     message.lineReply(embed);
 }
 

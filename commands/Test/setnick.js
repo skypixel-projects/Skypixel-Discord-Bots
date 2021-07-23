@@ -1,29 +1,27 @@
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
-    const member = message.mentions.members.first();
+  const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
 
-    if (!member) return message.lineReply("Please specify a member!");
-
-    const arguments = args.slice(22);
-
-    if (!arguments) return message.lineReply("Please specify a nickname!");
-
-    try {
-      member.setNickname(arguments);
-    } catch (err) {
-      console.log(err);
-      message.lineReply(
-        "I do not have permission to set " + member.toString() + " nickname!"
-      );
-    }
+  const member = message.mentions.members.first();
+  if (!member) return message.lineReply(lang_en.commands_setnick_member_error);
+  const arguments = args.slice(22);
+  if (!arguments) return message.lineReply(lang_en.commands_setnick_nickname_error);
+  try {
+    member.setNickname(arguments);
+  } catch (err) {
+    console.log(err);
+    message.lineReply(
+      lang_en.commands_setnick_permission_1 + member.toString() + lang_en.commands_setnick_permission_2
+    );
+  }
 }
 
 module.exports.config = {
-    name: "setnick",
-    description: "",
-    usage: "",
-    accessableby: "Admin",
-    aliases: ["set-nickname"]
+  name: "setnick",
+  description: "",
+  usage: "",
+  accessableby: "Admin",
+  aliases: ["set-nickname"]
 }

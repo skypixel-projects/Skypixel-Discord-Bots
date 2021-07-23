@@ -1,42 +1,174 @@
 {
-    "maintenance": "Ez a parancs fejlesztés alatt áll!",
+    "maintenance" : "This command is under development!",
 
-    "console_ready": "A bot működik és működik! Kérjük, vegye figyelembe, hogy ez a bot még nem stabil!",
-    "console_ready_webhook": "A bot működik és működik! Kérjük, vegye figyelembe, hogy ez a bot még nem stabil!",
+    "console_ready" : "The bot is up and running! Please note that this bot is not stable yet!",
+    "console_ready_webhook" : "The bot is up and running! Please note that this bot is not stable yet!",
 
-    "commands_help_title": "** Hogyan segíthetek! **",
-    "commands_help_description": "További segítségért kérjük, látogasson el weboldalunkra. Itt megtalálja a bot összes parancsát és az ezzel kapcsolatos összes információt. Itt megtalálhatja a bot meghívó linkjét és a skypixel projekt szerver hivatalos linkjét is!" ,
-    "commands_help_asked" : "Kérdezte ",
+    "embed_asked": "Kérdezte",
 
-    "commands_kick_permission": "Nincs engedélye a parancs futtatására.",
-    "commands_kick_successfully": "A tagot elrúgták.",
-
-    "commands_cooldown_unsuccessfully": "A hűtés miatt nem használhatja a parancsot.",
-    "commands_cooldown_successfully": "A letöltés lefutott.",
-
-    "commands_avatar_title": "Itt van a tag avatar!",
-
-    "commands_addrole_added": "Szerep hozzáadva",
-    "commands_addrole_removed": "A szerepkör eltávolítva",
+    "commands_addrole_permission": "Nincs engedélye.",
+    "commands_addrole_member": "Nincs tag megadva.",
+    "commands_addrole_role": "szerepet kapott.",
+    "commands_addrole_succes": "szerepet kapott.",
 
     "commands_announcement_reply": "Ok, elküldöm az üzenetet a bejelentési csatornának!",
 
-    "commands_clear_permission": "Hiányoznak az engedélyek!",
-    "commands_clear_number": "Ez nem szám",
+    "commands_ban_reason": "Rosszak voltak!",
+    "commands_ban_succes": "Sikeresen kitiltva!",
+    "commands_ban_member_unable": "Nem sikerült kitiltani a tagot!",
+    "commands_ban_guild_member": "Ez a felhasználó nincs ebben a céhben!",
+    "commands_ban_member_mention": "Nem említette a betiltandó felhasználót!",
 
-    "commands_music_url_error": "Meg kell adnia a zene URL-jét!",
-    "commands_music_error_soundcloud": "Sajnálom, hogy a soundcloud zene még nem működik!",
-    "commands_music_error_soptify": "Sajnálom, hogy a spotify zene még nem működik!",
-    "commands_music_member_join_voice": "Először csatlakoznod kell egy hangcsatornához!",
-    "commands_music_skip_execute": "A kihagyás parancs végrehajtásra került!",
-    "commands_music_leave_execute": "A Leave parancs végrehajtásra került!",
-    "commands_music_pause_execute": "A Szünet parancs végrehajtásra került!",
-    "commands_music_volume_execute": "A kötet parancs végrehajtásra került!",
+    "commands_clear_reply": "én töröltem :)",
 
-    "commands_nickname_added": "Az add parancs végrehajtásra került!",
-    "commands_nickname_removed": "Az eltávolítás parancs végrehajtásra került!",
+    "commands_kick_reason": "Rosszak voltak!",
+    "commands_kick_succes": "Sikeresen rúgott!",
+    "commands_kick_member_unable": "Nem tudtam rúgni a tagot!",
+    "commands_kick_guild_member": "Ez a felhasználó nincs ebben a céhben!",
+    "commands_kick_member_mention": "Nem említette a felhasználót, hogy rúgjon!",
 
-    "commands_uptime": "A bot üzemideje:",
+    "commands_mute_specify": "Meg kell adnia egy tagot!",
+    "commands_mute_member_muted": "Elnémítva!",
+
+    "commands_removerole_permission": "Nincs engedélye.",
+    "commands_removerole_member": "Nincs tag megadva.",
+    "commands_removerole_role": "szerepet kapott.",
+    "commands_removerole_succes": "szerepkörök eltávolítva.",
+
+    "commands_slowmode_set": "Állítsa a lassú módot:",
+
+    "commands_together_youtube_voice_error": "Hangcsatornában kell lennie!",
+    "commands_together_youtube_start_error": "Sajnos nem tudom együtt elindítani a youtube-ot!",
+    "commands_together_fishing_voice_error": "Hangcsatornában kell lennie!",
+    "commands_together_fishing_start_error": "Sajnos nem tudom együtt elindítani a youtube-ot!",
+    "commands_together_poker_voice_error": "Hangcsatornában kell lennie!",
+    "commands_together_poker_start_error": "Sajnos nem tudom együtt elindítani a youtube-ot!",
+    "commands_together_betrayal_voice_error": "Hangcsatornában kell lennie!",
+    "commands_together_betrayal_start_error": "Sajnos nem tudom együtt elindítani a youtube-ot!",
+
+    "commands_unmute_specify": "Meg kell adnia egy tagot!",
+    "commands_unmute_member_unmuted": "Némítás feloldva!",
+
+    "commands_8ball_question": "Kérem, tegyen fel egy teljes kérdést!",
+    "commands_8ball_embed_question": "Kérdés",
+    "commands_8ball_embed_answer": "Válasz",
+
+    "commands_instagram_channel_name": "Kérjük, adja meg a csatorna nevét",
+    "commands_instagram_not_account": "Nem fiók",
+    "commands_instagram_profile_total_posts": "Összes hozzászólás:",
+    "commands_instagram_profile_followers": "Követők:",
+    "commands_instagram_profile_following": "Követés:",
+
+    "commands_nsfw_images": "Nsfw kép",
+    
+    "commands_rps_title": "RPS",
+    "commands_rps_description": "Reagálj a játékra!",
+    "commands_rps_result": "Eredmény",
+    "commands_rps_member_choice": "Az Ön választása",
+    "commands_rps_bot_choice": "Botok választása",
+    "commands_rps_lose": "Elveszett!",
+    "commands_rps_tie": "Ez a döntetlen!",
+    "commands_rps_win": "Nyertél!",
+
+    "commands_ttt_error_member": "Nem engedhetsz magaddal játszani!",
+    "commands_ttt_member_game": "Kérjük, adja meg a felhasználónak a kihívást!",
+    "commands_ttt_turn": "turn",
+    "commands_ttt_win_message": "nyert egy banánt!",
+    "commands_ttt_tie_message": "Ez döntetlen! És nem nyertél banánt!",
+    "commands_ttt_time_end": "nem reagált időben! (30s)",
+
+    "commands_dellang_message": "A nyelv visszaállt az alapértelmezett nyelvre!",
+
+    "commands_feedback_rate_message_1": ":x: Kérjük, értékelje azt a botot 1 - 5 skálán azzal az okkal, hogy",
+    "commands_feedback_rate_message_2": ":x: Kérjük, 1-5 skálán értékelje a botot azzal az okkal, hogy Például ^ az 5. visszajelzés félelmetes segédprogramokkal rendelkezik ",
+    "commands_feedback_new_review": "Új vélemény",
+    "commands_feedback_stars": "Csillagok:",
+    "commands_feedback_comment": "Megjegyzés:",
+    "commands_feedback_from": "Feladó:",
+
+    "commands_memberinfo_id": "Tag azonosítója",
+    "commands_memberinfo_roles": "Szerepek",
+    "commands_memberinfo_created": "Fiók létrehozva:",
+    "commands_memberinfo_join_guild_time": "Csatlakozott a szerverhez At",
+    "commands_memberinfo_status": "Állapot",
+
+    "commands_ping_message": " 'ms. Ez a bot ping! ",
+
+    "commands_setlang_error_message": "Kérjük, adjon meg egy nyelvet! (Romana, English, Magyar)",
+
+    "commands_avatar_title": "Itt van a tag avatar!",
+
+    "commands_tweet_wait": "** Kérjük, várjon ... **",
+    "commands_tweet_enter_message": "Üzenetet kell beírnia!",
+    "commands_tweet_new_tweet": "** Új tweet írta **",
+
+    "commands_github_error_username": "** Kérjük, adjon nekem egy Github felhasználónevet! **",
+    "commands_github_not_found_username": "** A felhasználó nem található | Kérjük, adjon meg egy érvényes felhasználónévet! **",
+    "commands_github_username_information": "Információ!",
+    "commands_github_username": "Felhasználónév",
+    "commands_github_id": "ID",
+    "commands_github_bio": "Bio",
+    "commands_github_no_bio": "Nincs életrajz",
+    "commands_github_public_repositories": "Nyilvános tárak",
+    "commands_github_followers": "Követők",
+    "commands_github_following": "Követés",
+    "commands_github_location": "Hely",
+    "commands_github_account_created": "Fiók létrehozva",
+
+    "commands_restart_permission": "Nem használhatja ezt a parancsot!",
+    "commands_restart_succes": "A bot újraindítása ...",
+
+    "commands_filter_title": "Aktuális sor:",
+    "commands_filter_description": "Aktuális sorszűrő:",
+    "commands_filter_description_off": "Ki",
+
+    "commands_leave_message": "Oké, leállítom a zenét neked, és elmegyek a csatornáról!",
+    "commands_leave_member_join_voice": "Először csatlakoznod kell egy hangcsatornához!",
+
+    "commands_play_error_voice": "Kérjük, először csatlakozzon egy hangcsatornához!",
+    "commands_play_error_link": "Adjon meg egy keresési lekérdezést!",
+
+    "commands_queue_title": "Aktuális sor:",
+
+    "commands_skip_error_voice": "Kérjük, először csatlakozzon egy hangcsatornához!",
+    "commands_skip_succes": "Oké, kihagyom neked a zenét!",
+
+    "commands_disconnect_kick_reason": "Opcionális ok, amely megjelenik az ellenőrzési naplókban",
+    "commands_disconnect_kick_succes": "Sikeresen kirúgták a hangról",
+    "commands_disconnect_kick_error": "Nem sikerült rúgni a tagot :(",
+    "commands_disconnect_kick_member_find_error": "Ez a felhasználó nincs ebben a céhben!",
+    "commands_disconnect_kick_member_mention_error": "Nem említette a felhasználót, hogy rúgjon!",
+
+    "commands_playrec_voice_error": "Kérjük, csatlakozzon egy hangcsatornához!",
+    "commands_playrec_rec_error": "Az Ön hangja nincs rögzítve!",
+    "commands_playrec_finish": "befejezte az audio lejátszását",
+
+    "commands_rec_voice_error": "Kérjük, csatlakozzon egy hangcsatornához!",
+    "commands_rec_finish": "befejezte az audio lejátszását",
+
+    "commands_resetnick_member_error": "Kérjük, adjon meg egy tagot!",
+    "commands_resetnick_permission_1": "Nincs engedélyem a visszaállításra",
+    "commands_resetnick_permission_2": "becenév!",
+
+    "commands_setnick_member_error": "Kérjük, adjon meg egy tagot!",
+    "commands_setnick_nickname_error": "Kérjük, adjon meg egy becenevet!",
+    "commands_setnick_permission_1": "Nincs engedélyem a beállításra",
+    "commands_setnick_permission_2": "becenév!",
+
+    "commands_uptime_bot_title": "rendelkezik ezzel a specifikációval.",
+    "commands_uptime_bot_status": "__ ** Statisztika: ** __",
+    "commands_uptime_bot_memory": "`⏳` Mem Usage",
+    "commands_uptime_bot_uptime": "`⌚️` Uptime",
+    "commands_uptime_bot_users": "`📁` Felhasználók",
+    "commands_uptime_bot_servers": "`📁` Szerverek",
+    "commands_uptime_bot_channels": "`📁` Csatornák",
+    "commands_uptime_bot_discord_js": "`👾` Discord.js",
+    "commands_uptime_bot_node": "`🤖` Csomópont",
+    "commands_uptime_bot_cpu": "`🤖` CPU",
+    "commands_uptime_bot_cpu_usage": "`🤖` CPU-használat",
+    "commands_uptime_bot_arch": "`🤖` Arch",
+    "commands_uptime_bot_platform": "`💻` Platform",
+    "commands_uptime_bot_api_latency": "API késleltetés",
 
     "commands_serverinfo": "Szerver információ",
     "commands_serverinfo_name": "Név:",
@@ -50,7 +182,7 @@
     "commands_serverinfo_statistics": "Statisztika",
     "commands_serverinfo_role_count": "Szerepszám:",
     "commands_serverinfo_emoji_count": "Emoji Count:",
-    "commands_serverinfo_regular_emoji_count": "Normál Emoji Count:",
+    "commands_serverinfo_ regular_emoji_count": "Normál Emoji Count:",
     "commands_serverinfo_animated_emoji_count": "Animált hangulatjelek száma:",
     "commands_serverinfo_member_count": "Tagok száma:",
     "commands_serverinfo_humans": "Emberek:",
@@ -63,5 +195,8 @@
     "commands_serverinfo_idle": "Tétlen:",
     "commands_serverinfo_do_not_disturb": "Ne zavarjanak:",
     "commands_serverinfo_offline": "Offline:",
-    "commands_serverinfo_roles": "Szerepek"
+    "commands_serverinfo_roles": "Szerepek",
+
+    "commands_help_title": "** Hogyan segíthetek! **",
+    "commands_help_description": "További segítségért kérjük, látogasson el weboldalunkra. Itt megtalálja a bot összes parancsát és az ezzel kapcsolatos összes információt. Itt megtalálhatja a bot meghívó linkjét és a skypixel projekt szerver hivatalos linkjét is!"
 }

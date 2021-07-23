@@ -1,15 +1,15 @@
 const Discord = require("discord.js");
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
     const user = message.mentions.users.first().id;
-    if(!user) return message.lineReply(`You need to specify a member!`)
+    if(!user) return message.lineReply(lang_en.commands_unmute_specify)
 
     message.channel.permissionOverwrites.get(user).delete();
-    message.lineReply(`Unmuted!`)
+    message.lineReply(lang_en.commands_unmute_member_unmuted)
 } 
 
 module.exports.config = {

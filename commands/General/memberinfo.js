@@ -1,11 +1,10 @@
 const Discord = require('discord.js');
 const moment = require('moment');
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
-    
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
 
     let userArray = message.content.split(" ");
     let userArgs = userArray.slice(1);
@@ -28,12 +27,12 @@ module.exports.run = async (bot, message, args) => {
     .setTimestamp()
     .setColor(botsettings.embed_color_message_discord_bot)
     .setImage(member.user.displayAvatarURL())
-    .addField("Member ID", member.id)
-    .addField('Roles', `<@&${member._roles.join('> <@&')}>`)
-    .addField("Account Created On:", ` ${moment.utc(member.user.createdAt).format("dddd, MMMM Do YYYY")}`, true) 
-    .addField('Joined the server At', `${joineddate} \n> ${joined} day(S) Ago`)
-    .addField("Status", status)
-    .setFooter('Asked by ' + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
+    .addField(lang_en.commands_memberinfo_id, member.id)
+    .addField(lang_en.commands_memberinfo_roles, `<@&${member._roles.join('> <@&')}>`)
+    .addField(lang_en.commands_memberinfo_created, ` ${moment.utc(member.user.createdAt).format("dddd, MMMM Do YYYY")}`, true) 
+    .addField(lang_en.commands_memberinfo_join_guild_time, `${joineddate} \n> ${joined} day(S) Ago`)
+    .addField(lang_en.commands_memberinfo_status, status)
+    .setFooter(`${lang_en.embed_asked} ` + message.author.username, message.author.displayAvatarURL({ size: 256, format: 'png', dynamic: true }))
 
     message.lineReply(userEmbed);
 }

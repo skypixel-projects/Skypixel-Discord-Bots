@@ -1,15 +1,15 @@
 const Discord = require("discord.js");
-
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-
 const fs = require("fs");
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
-    const voicechannel = message.member.voice.channel;
-    if (!voicechannel) return message.lineReply("Please join a voice channel!");
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
 
-    if (!fs.existsSync(`./recorded-${message.author.id}.pcm`)) return message.lineReply("Your audio is not recorded!");
+    const voicechannel = message.member.voice.channel;
+    if (!voicechannel) return message.lineReply(lang_en.commands_playrec_voice_error);
+
+    if (!fs.existsSync(`./recorded-${message.author.id}.pcm`)) return message.lineReply(lang_en.commands_playrec_rec_error);
 
     const connection = await message.member.voice.channel.join();
     const stream = fs.createReadStream(`./recorded-${message.author.id}.pcm`);
@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
 
     dispatcher.on("finish", () => {
         message.member.voice.channel.leave();
-        return message.lineReply("finished playing audio");
+        return message.lineReply(lang_en.commands_playrec_finish);
     })
 }
 

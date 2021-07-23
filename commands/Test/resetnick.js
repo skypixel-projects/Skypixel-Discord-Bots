@@ -1,16 +1,18 @@
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
+  const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
   const member = message.mentions.members.first();
 
-  if (!member) return message.lineReply("Please specify a member!");
+  if (!member) return message.lineReply(lang_en.commands_resetnick_member_error);
 
   try {
     member.setNickname(null);
   } catch (err) {
     message.lineReply(
-      "I do not have permission to reset " + member.toString() + " nickname!"
+      lang_en.commands_resetnick_permission_1 + member.toString() + lang_en.commands_resetnick_permission_2
     );
   }
 }

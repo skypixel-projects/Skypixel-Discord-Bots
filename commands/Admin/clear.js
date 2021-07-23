@@ -1,11 +1,13 @@
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+
     if(args > 100) return
 
     await message.channel.bulkDelete(parseInt(args), true).then((_message) => {
-        message.lineReply(`**${args}** has been deleted by me :)`)
+        message.channel.send(`**${args}** ${lang_en.commands_clear_reply}`)
             .then(msg => {
                 msg.delete({ timeout: 12500 });
             });

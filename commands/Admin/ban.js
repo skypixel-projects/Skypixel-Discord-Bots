@@ -1,8 +1,8 @@
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
+const languages = require('quick.db');
 
 module.exports.run = async (bot, message, args) => {
-    
+    const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
 
     if(!message.guild) return;
     if(!message.member.hasPermission('BAN_MEMBERS', 'ADMINISTRATOR')) return;
@@ -16,20 +16,20 @@ module.exports.run = async (bot, message, args) => {
             member
 
             .ban({
-                reason: 'They were bad!',
+                reason: lang_en.commands_ban_reason,
             })
             .then(() => {
-                message.lineReply('Successfully banned!');
+                message.lineReply(lang_en.commands_ban_succes);
             })
             .catch(err => {
-                message.lineReply('I was unable to ban the member');
+                message.lineReply(lang_en.commands_ban_member_unable);
                 console.error(err);
             });
         } else {
-            message.lineReply(`That user isn't in this guild`)
+            message.lineReply(lang_en.commands_ban_guild_member)
         }
     } else {
-        message.lineReply(`You didn't mention the user to ban!`)
+        message.lineReply(lang_en.commands_ban_member_mention)
     }
 }
 
