@@ -50,6 +50,7 @@ bot.on("message", async (message, guild) => {
         fetch.default(`https://api.monkedev.com/fun/chat?msg=${message.content}&uid=${message.author.id}`)
         .then(res => res.json())
         .then(data => {
+            if(!data.response) return console.log("Error the API is empty!")
             message.lineReply(data.response)
         });
     }
