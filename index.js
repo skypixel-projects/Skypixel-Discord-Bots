@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const botsettings = require('./botsettings.json');
-const lang_en = require(`./languages/${botsettings.default_lang_for_discord_bot}.json`);
 const bot = new Discord.Client();
 const fs = require("fs");
 const { error, time } = require('console');
@@ -21,6 +20,7 @@ bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 bot.distube = new distube(bot, { searchSongs: false, emitNewSongOnly: true, leaveOnFinish: true, leaveOnEmpty: true })
 
+// CommandsHandler event.
 bot.on("message", async message => {
     if(message.author.bot || message.channel.type === "dm") return;
 
@@ -33,13 +33,16 @@ bot.on("message", async message => {
     if(commandfile) commandfile.run(bot,message,args)
 })
 
+// Message in DM, GUILDS debug in console.
 bot.on('message', async message => {
-    if(message.bot) return;
+    if(message.author.bot || message.author.bot) return;
+    
     if (message.channel.type === 'dm'){ 
         console.log("[" + message.author.username + "]: " + message.content)
     }
 });
 
+// A.I. for the bot in DM messages.
 bot.on("message", async (message, guild) => {
     if(message.author.bot || message.author.bot) return;
 
@@ -52,6 +55,7 @@ bot.on("message", async (message, guild) => {
     }
 });
 
+// Swear filter for GUILDS.
 bot.on('message', (msg) => {
     if(msg.author.bot || msg.author.bot) return;
     if(msg.channel.type === 'dm') return;
@@ -135,51 +139,5 @@ bot.distube
         console.error(e)
         message.lineReply("An error encountered: " + e);
     });
-
-// bot.on('ready', () => {
-//     bot.api.applications(bot.user.id).commands.post({
-//         data: {
-//             name: "echo",
-//             description: "Echos your text as an embed!",
-
-//             options: [
-//                 {
-//                     name: "content",
-//                     description: "Content of the embed",
-//                     type: 3,
-//                     required: true
-//                 }
-//             ]
-//         }
-//     });
-
-//     bot.ws.on('INTERACTION_CREATE', async interaction => {
-//         const command = interaction.data.name.toLowerCase();
-//         const args = interaction.data.options;
-//         if(command == "echo") {
-//             const description = args.find(arg => arg.name.toLowerCase() == "content").value;
-
-//             // bot.channels.cache.get('852084741645533234').send('Hello here!');
-
-//             const embed = new Discord.MessageEmbed()
-//                 .setFooter("This command is in development!")
-//                 .setTitle(description)
-
-//                 bot.api.interactions(interaction.id, interaction.token).callback.post({
-//                 data: {
-//                     type: 4,
-//                     data: await createAPIMessage(interaction, embed)
-//                 }
-//             });
-//         }
-//     });
-// });
-
-// async function createAPIMessage(interaction, content) {
-//     const apiMessage = await Discord.APIMessage.create(bot.channels.resolve(interaction.channel_id), content)
-//         .resolveData()
-//         .resolveFiles();
-//     return { ...apiMessage.data, files: apiMessage.files };
-// }
 
 bot.login(process.env.DISCORD_TOKEN);

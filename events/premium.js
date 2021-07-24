@@ -1,12 +1,9 @@
-const Discord = require("discord.js")
-const botsettings = require('../botsettings.json');
-const lang_en = require('../languages/lang_en.json');
 const { bot } = require('../index');
 
 // MineXx premium mode.
 bot.on('ready', () => {    
 
-    const botRole = "Skypixel Projects"
+    const botRole = "SK-4aX467MsY7DhtPdW"
 
     if (bot.guilds.cache.get("786144853754904587")) {
         if (!bot.guilds.cache.get("786144853754904587").roles.cache.find(r => r.name === botRole)) return
@@ -21,7 +18,7 @@ bot.on('ready', () => {
 // Max premium mode.
 bot.on('ready', () => {    
 
-    const botRole = "Skypixel Projects"
+    const botRole = "SK-4aX467MsY7DhtPdW"
 
     if (bot.guilds.cache.get("672018546125045760")) {
         if (!bot.guilds.cache.get("672018546125045760").roles.cache.find(r => r.name === botRole)) return
