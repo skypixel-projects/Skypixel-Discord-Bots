@@ -27,10 +27,10 @@ bot.on('ready', () => {
     });
 
     bot.ws.on('INTERACTION_CREATE', async interaction => {
-        const command = interaction.data.name.toLowerCase();
+        const command = interaction.data.name;
         const args = interaction.data.options;
         if(command == "echo") {
-            const description = args.find(arg => arg.name.toLowerCase() == "content").value;
+            const description = args.find(arg => arg.name == "content").value;
 
             // bot.channels.cache.get('852084741645533234').send('Hello here!');
 

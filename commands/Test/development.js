@@ -1,43 +1,91 @@
 const discord = require('discord.js');
-const bot = new discord.Client();
-const fetch = require('node-fetch');
-const fs = require('fs');
 const botsettings = require('../../botsettings.json');
-const lang_en = require(`../../languages/${botsettings.default_lang_for_discord_bot}.json`);
-const { MessageMenu, MessageMenuOption, MessageActionRow } = require("discord-buttons");
 const languages = require('quick.db');
 require('discord-reply');
 
+const { MessageEmbed } = require('discord.js')
+const { MessageMenuOption, MessageMenu, MessageActionRow } = require('discord-buttons')
+
 module.exports.run = async (bot, message, args) => {
 
-    // if(args === 'dropdown') {
-    //     const Option1 = new MessageMenuOption()
-    //         .setLabel('Testing1')
-    //         .setDescription('This is a testing command!')
-    //         .setEmoji(':joy:')
-    //         .setValue('Testing1')
+    if(args === 'dropdown') {
+        const Role1 = new MessageMenuOption()
+            .setLabel('WikiPedia') // Label
+            .setDescription('Get WikiPedia Role') // Description, Limit Is 50
+            .setEmoji('811297151069323274') // Emoji ID
+            .setValue('wiki') // To Make Its Funtion When Use Click It
 
-    //     const Option2 = new MessageMenuOption()
-    //         .setLabel('Testing2')
-    //         .setDescription('This is a testing command!')
-    //         .setEmoji(':joy:')
-    //         .setValue('Testing2')
+            // Second Option In Menu
+            const Role2 = new MessageMenuOption()
+            .setLabel('YouTube') // Label
+            .setDescription('Get YouTube Role') // Description, Limit Is 50
+            .setEmoji('806408246733832232') // Emoji ID
+            .setValue('yt') // To Make Its Funtion When Use Click It
 
-    //     const Option3 = new MessageMenuOption()
-    //         .setLabel('Testing3')
-    //         .setDescription('This is a testing command!')
-    //         .setEmoji(':joy:')
-    //         .setValue('Testing3')
+            // Third Option In Menu
+            const Role3 = new MessageMenuOption()
+            .setLabel('Visual Studio Code') // Label
+            .setDescription('Get Visual Studio Code Role') // Description, Limit Is 50
+            .setEmoji('811297141669888040') // Emoji ID
+            .setValue('vscode') // To Make Its Funtion When Use Click It
 
-    //     const Menu = new MessageMenu()
-    //         .setID('menu1')
-    //         .setPlaceholder('Choose you ideeas')
-    //         .addOption(Option1)
-    //         .addOption(Option2)
-    //         .addOption(Option3)
+            // Fourth Option In Menu
+            const Role4 = new MessageMenuOption()
+            .setLabel('GitHub') // Label
+            .setDescription('Get GitHub Role') // Description, Limit Is 50
+            .setEmoji('811297109953347595') // Emoji ID
+            .setValue('git') // To Make Its Funtion When Use Click It
 
-    //     await message.channel.send(Menu)
-    // }
+            const Menu = new MessageMenu()
+            .setID('menu') // To Make Its Funtion When Use Click It
+            .setPlaceholder('Choose Roles')
+            .addOption(Role1)
+            .addOption(Role2)
+            .addOption(Role3)
+            .addOption(Role4)
+            // .setMaxValues(4) // How Many Roles They Can Select // How Many Selection They Can Make // Maximum
+            // .setMinValues(1) // How Many Roles They Can Select // How Many Selection They Can Make // Minimum
+
+            const RoleMenu = new MessageActionRow()
+            .addComponent(Menu)
+
+            message.channel.send(`Select Roles By Choosing Options Below In Menu`, {
+                component: RoleMenu
+            })
+
+            // Making Its Function
+            bot.on('clickMenu', async m => {
+                if(m.values[0] === 'wiki') { // If User Click WikiPedia Then This Will Happen
+                    m.reply.defer()
+                    // m.clicker.member.roles.add('811328887120199720') // Add WikiPedia Role
+                    m.channel.send(`<@${m.clicker.id}> Added WikiPedia Role`).then(msg => { // Send A Message In That Channel
+                        msg.delete({ timeout: 4000 }) // Delete After 4 Seconds
+                    })
+                    // m.clicker.member.send(`Added WikiPedia Role`) // Send A DM Also
+                } else if(m.values[0] === 'yt') { // If User Click YouTube Then This Will Happen
+                    m.reply.defer()
+                    // m.clicker.member.roles.add('811328860414541884') // Add YouTube Role
+                    m.channel.send(`<@${m.clicker.id}> Added YouTube Role`).then(msg => { // Send A Message In That Channel
+                        msg.delete({ timeout: 4000 }) // Delete After 4 Seconds
+                    })
+                    // m.clicker.member.send(`Added YouTube Role`) // Send A DM Also
+                } else if(m.values[0] === 'vscode') { // If User Click VS Code Then This Will Happen
+                    m.reply.defer()
+                    // m.clicker.member.roles.add('811328908468420628') // Add VS Code Role
+                    m.channel.send(`<@${m.clicker.id}> Added VS Code Role`).then(msg => { // Send A Message In That Channel
+                        msg.delete({ timeout: 4000 }) // Delete After 4 Seconds
+                    })
+                    // m.clicker.member.send(`Added VS Code Role`) // Send A DM Also
+                } else if(m.values[0] === 'git') { // If User Click GitHub Then This Will Happen
+                    m.reply.defer()
+                    // m.clicker.member.roles.add('811328963049553931') // Add GitHub Role
+                    m.channel.send(`<@${m.clicker.id}> Added GitHub Role`).then(msg => { // Send A Message In That Channel
+                        msg.delete({ timeout: 4000 }) // Delete After 4 Seconds
+                    })
+                    // m.clicker.member.send(`Added GitHub Role`) // Send A DM Also
+                }
+            })
+    }
 
     // Aici este commanda pentru a juca un voice recorder!
     if(args === 'voice') {
