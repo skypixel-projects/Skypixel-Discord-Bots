@@ -23,4 +23,15 @@ module.exports = bot => {
             bot.on(event.name, (...args) => event.execute(...args, Discord, bot));
         }
     }
+
+    const eventFiles_Security = fs.readdirSync('././events/Security/').filter(file => file.endsWith('.js'));
+
+    for (const file of eventFiles_Security) {
+        const event = require(`../events/Security/${file}`);
+        if (event.once) {
+            bot.once(event.name, (...args) => event.execute(...args, Discord, bot));
+        } else {
+            bot.on(event.name, (...args) => event.execute(...args, Discord, bot));
+        }
+    }
 }

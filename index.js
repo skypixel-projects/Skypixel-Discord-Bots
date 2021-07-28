@@ -1,13 +1,8 @@
 const Discord = require('discord.js');
-const botsettings = require('./botsettings.json');
 const bot = new Discord.Client();
-const fs = require("fs");
-const { error, time } = require('console');
-const { badwords } = require('./swearing/blacklist.json');
-const { MessageButton, MessageActionRow } = require('discord-buttons');
 const { default: fetch } = require('node-fetch');
-const { AsyncResource } = require('async_hooks');
-const distube = require("distube")
+const distube = require("distube");
+const botsettings = require('./botsettings.json');
 
 module.exports.bot = bot;
 
@@ -20,7 +15,6 @@ bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 bot.distube = new distube(bot, { searchSongs: false, emitNewSongOnly: true, leaveOnFinish: true, leaveOnEmpty: true })
 
-// CommandsHandler event.
 bot.on("message", async message => {
     if(message.author.bot || message.channel.type === "dm") return;
 
@@ -31,18 +25,8 @@ bot.on("message", async message => {
     if(!message.content.startsWith(prefix)) return;
     let commandfile = bot.commands.get(cmd.slice(prefix.length)) || bot.commands.get(bot.aliases.get(cmd.slice(prefix.length)))
     if(commandfile) commandfile.run(bot,message,args)
-})
-
-// Message in DM, GUILDS debug in console.
-bot.on('message', async message => {
-    if(message.author.bot || message.author.bot) return;
-    
-    if (message.channel.type === 'dm'){ 
-        console.log("[" + message.author.username + "]: " + message.content)
-    }
 });
 
-// A.I. for the bot in DM messages.
 bot.on("message", async (message, guild) => {
     if(message.author.bot || message.author.bot) return;
 
@@ -54,30 +38,6 @@ bot.on("message", async (message, guild) => {
             message.lineReply(data.response)
         });
     }
-});
-
-// Swear filter for GUILDS.
-bot.on('message', (msg) => {
-    if(msg.author.bot || msg.author.bot) return;
-    if(msg.channel.type === 'dm') return;
-    let confirm = false;
-   
-    var i;
-    for (i = 0;i < badwords.length; i++) {
-        if (msg.content.toLowerCase().includes(badwords[i].toLowerCase()))
-            confirm = true;
-            if (confirm) {
-                return msg.lineReplyNoMention("You are not allowed to swear!");
-            }   
-    } 
-});
-
-bot.on("message", function(message){
-    var logger = fs.createWriteStream('message.txt', {
-        flags: 'a'
-    });
-
-    logger.write(` [${message.guild}] - ` + message.author.username + ` => ${message}` + '\n')
 });
 
 bot.on('clickButton', async (button) => {
