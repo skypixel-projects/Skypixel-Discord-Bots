@@ -1,46 +1,81 @@
-const Discord = require("discord.js");
+const Discord = require("Discord.js");
 const botsettings = require('../../botsettings.json');
 const languages = require('quick.db');
 
+const hands = ['rock', 'paper', 'scissors'];
+
 module.exports = {
     async run (bot, message, args) {
-        const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
+        if (message.channel instanceof Discord.DMChannel) {
+        if (message.author === game.players[0]) {
+            if (
+            isNaN(args['choice']) ||
+            (!isNaN(args['choice']) && (args['choice'] < 1 || args['choice'] > 3))
+            ) {
+            game.players[0].send('Please choose a valid number');
+            } else {
+            game.hand1 = args['choice'];
+            }
 
-        let embed = new Discord.MessageEmbed()
-            .setTitle(lang_en.commands_rps_title)
-            .setDescription(lang_en.commands_rps_description)
-            .setTimestamp()
-            
-        let msg = await message.channel.send(embed)
-            await msg.react("🗻")
-            await msg.react("✂")
-            await msg.react("📰")
-
-        const filter = (reaction, user) => {
-            return ['🗻', '✂', '📰'].includes(reaction.emoji.name) && user.id === message.author.id;
+            //reads the message of players[1] to determine their hand
+        } else if (message.author === game.players[1]) {
+            if (
+            isNaN(args['choice']) ||
+            (!isNaN(args['choice']) && args['choice'] < 1 && args['choice'] > 3)
+            ) {
+            game.players[1].send('Please choose a valid number');
+            } else {
+            game.hand2 = args['choice'];
+            }
         }
 
-        const choices = ['🗻', '✂', '📰']
-        const me = choices[Math.floor(Math.random() * choices.length)]
-        msg.awaitReactions(filter, {max: 1, time: 60000, error: ["time"]}).then(
-            async(collected) => {
-                const reaction = collected.first()
-                let result = new Discord.MessageEmbed()
-                    .setTitle(lang_en.commands_rps_result)
-                    .addField(lang_en.commands_rps_member_choice, `${reaction.emoji.name}`)
-                    .addField(lang_en.commands_rps_bot_choice, `${me}`)
-                await msg.edit(result)
+        if (game.hand1 !== '' && game.hand2 !== '') {
+            //determines the winner by comparing the two messages using the helper function
+            game.channel.send(
+            determineWinner(
+                hands[parseInt(game.hand1) - 1],
+                hands[parseInt(game.hand2) - 1],
+                game
+            )
+            );
 
-                if ((me === "🗻" && reaction.emoji.name === "✂") || (me === "✂" && reaction.emoji.name === "📰") || (me === "📰" && reaction.emoji.name === "🗻")) {
-                    message.reply(lang_en.commands_rps_lose);
-                } else if (me === reaction.emoji.name) {
-                    return message.reply(lang_en.commands_rps_tie);
-                } else {
-                    return message.reply(lang_en.commands_rps_win);
-                }
-            }
-        )
+            //deleting the game as it has ended
+            games.splice(game);
+        }
+        }
+    },
+    };
+
+    //compares the two hands and determines the winner
+    function determineWinner(hand1, hand2, game) {
+    if (hand1 === hand2) {
+        return 'tie!';
     }
+    if (hand1 === 'paper') {
+        if (hand2 === 'rock') {
+        return `Congratulations! Player ${game.players[0].username} won the game!`;
+        }
+        if (hand2 === 'scissors') {
+        return `Congratulations! Player ${game.players[1].username} won the game!`;
+        }
+    }
+    if (hand1 === 'rock') {
+        if (hand2 === 'paper') {
+        return `Congratulations! Player ${game.players[1].username} won the game!`;
+        }
+        if (hand2 === 'scissors') {
+        return `Congratulations! Player ${game.players[0].username} won the game!`;
+        }
+    }
+    if (hand1 === 'scissors') {
+        if (hand2 === 'rock') {
+        return `Congratulations! Player ${game.players[1].username} won the game!`;
+        }
+        if (hand2 === 'paper') {
+        return `Congratulations! Player ${game.players[0].username} won the game!`;
+        }
+    }
+    return 'error lmao';
 }
 
 module.exports.config = {

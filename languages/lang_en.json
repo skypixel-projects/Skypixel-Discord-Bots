@@ -60,15 +60,6 @@
     "commands_instagram_profile_following" : "Following:",
 
     "commands_nsfw_images" : "Nsfw Image",
-    
-    "commands_rps_title" : "RPS",
-    "commands_rps_description" : "React to play!",
-    "commands_rps_result" : "Result",
-    "commands_rps_member_choice" : "Your Choice",
-    "commands_rps_bot_choice" : "Bots choice",
-    "commands_rps_lose" : "You Lost!",
-    "commands_rps_tie" : "Its a tie!",
-    "commands_rps_win" : "You Won!",
 
     "commands_ttt_error_member" : "You are not allow to play with your self!",
     "commands_ttt_member_game" : "Please provide the user to challenge!",
