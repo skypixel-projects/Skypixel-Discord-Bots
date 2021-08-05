@@ -26,7 +26,10 @@ module.exports.run = async (bot, message, args) => {
         }))
         .setTimestamp()
         .setFooter(`${message.guild.name}`);
-    await message.lineReply(embed)
+
+    await message.lineReply('Okay. I sended to the official Skypixel Discord Server!')
+    channel = bot.channels.cache.get('860658021160058891');
+    channel.send(embed);
 }
 
 module.exports.config = {
@@ -34,5 +37,5 @@ module.exports.config = {
     description: "",
     usage: "",
     accessableby: "Members",
-    aliases: ["feedback"]
+    aliases: ["feedback", "fbdev"]
 }
