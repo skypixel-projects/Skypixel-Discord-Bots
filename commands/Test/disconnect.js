@@ -5,6 +5,8 @@ const languages = require('quick.db');
 module.exports.run = async (bot, message, args) => {
     const lang_en = require(`../../languages/${languages.get(message.guild.id)}.json`);
 
+    if(!message.guild.me.hasPermission()) return;
+
     const user = message.mentions.users.first();
     if (user) {
         const member = message.guild.member(user);

@@ -61,13 +61,6 @@
 
     "commands_nsfw_images" : "Nsfw Image",
 
-    "commands_ttt_error_member" : "You are not allow to play with your self!",
-    "commands_ttt_member_game" : "Please provide the user to challenge!",
-    "commands_ttt_turn" : "turn",
-    "commands_ttt_win_message" : "won a banana!",
-    "commands_ttt_tie_message" : "It's a tie! And you don't won a banana!",
-    "commands_ttt_time_end" : "didn't react in time! (30s)",
-
     "commands_dellang_message" : "The language has been reset to the default language!",
 
     "commands_feedback_rate_message_1" : ":x: Please rate that bot on a scale of 1 - 5 with a reason `E.g ^feedback 5 has awesome utilities`",
@@ -138,10 +131,12 @@
     "commands_rec_finish" : "finished playing audio",
 
     "commands_resetnick_member_error" : "Please specify a member!",
+    "commands_resetnick_success" : "The member nickname has been reset successfully!",
     "commands_resetnick_permission_1" : "I do not have permission to reset ",
     "commands_resetnick_permission_2" : " nickname!",
 
     "commands_setnick_member_error" : "Please specify a member!",
+    "commands_setnick_success" : "The member nickname has been set successfully!",
     "commands_setnick_nickname_error" : "Please specify a nickname!",
     "commands_setnick_permission_1" : "I do not have permission to set ",
     "commands_setnick_permission_2" : " nickname!",

@@ -70,13 +70,6 @@
     "commands_rps_tie": "Este o cravată!",
     "commands_rps_win": "Ai câștigat!",
 
-    "commands_ttt_error_member": "Nu ai voie să te joci cu tine!",
-    "commands_ttt_member_game": "Vă rugăm să oferiți utilizatorului provocarea!",
-    "commands_ttt_turn": "întoarce",
-    "commands_ttt_win_message": "a câștigat o banană!",
-    "commands_ttt_tie_message": "Este o cravată! Și nu ai câștigat o banană!",
-    "commands_ttt_time_end": "nu a reacționat la timp! (30 de ani)",
-
     "commands_dellang_message": "Limba a fost resetată la limba implicită!",
 
     "commands_feedback_rate_message_1": ": x: Vă rugăm să evaluați acel bot pe o scară de la 1 la 5 cu un motiv` De exemplu, feedback-ul 5 are utilități minunate` ",
@@ -147,10 +140,12 @@
     "commands_rec_finish": "a terminat redarea audio",
 
     "commands_resetnick_member_error": "Vă rugăm să specificați un membru!",
+    "commands_resetnick_success" : "Porecla de membru a fost resetată cu succes!",
     "commands_resetnick_permission_1": "Nu am permisiunea de resetare",
     "commands_resetnick_permission_2": "poreclă!",
 
     "commands_setnick_member_error": "Vă rugăm să specificați un membru!",
+    "commands_setnick_success" : "Porecla de membru a fost setată cu succes!",
     "commands_setnick_nickname_error": "Vă rugăm să specificați o poreclă!",
     "commands_setnick_permission_1": "Nu am permisiunea de a seta",
     "commands_setnick_permission_2": "poreclă!",

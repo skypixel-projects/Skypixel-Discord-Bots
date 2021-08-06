@@ -70,13 +70,6 @@
     "commands_rps_tie": "Ez a döntetlen!",
     "commands_rps_win": "Nyertél!",
 
-    "commands_ttt_error_member": "Nem engedhetsz magaddal játszani!",
-    "commands_ttt_member_game": "Kérjük, adja meg a felhasználónak a kihívást!",
-    "commands_ttt_turn": "turn",
-    "commands_ttt_win_message": "nyert egy banánt!",
-    "commands_ttt_tie_message": "Ez döntetlen! És nem nyertél banánt!",
-    "commands_ttt_time_end": "nem reagált időben! (30s)",
-
     "commands_dellang_message": "A nyelv visszaállt az alapértelmezett nyelvre!",
 
     "commands_feedback_rate_message_1": ":x: Kérjük, értékelje azt a botot 1 - 5 skálán azzal az okkal, hogy",
@@ -147,10 +140,12 @@
     "commands_rec_finish": "befejezte az audio lejátszását",
 
     "commands_resetnick_member_error": "Kérjük, adjon meg egy tagot!",
+    "commands_resetnick_success" : "A tag beceneve sikeresen vissza lett állítva!",
     "commands_resetnick_permission_1": "Nincs engedélyem a visszaállításra",
     "commands_resetnick_permission_2": "becenév!",
 
     "commands_setnick_member_error": "Kérjük, adjon meg egy tagot!",
+    "commands_setnick_success" : "A tag beceneve sikeresen beállítva!",
     "commands_setnick_nickname_error": "Kérjük, adjon meg egy becenevet!",
     "commands_setnick_permission_1": "Nincs engedélyem a beállításra",
     "commands_setnick_permission_2": "becenév!",
