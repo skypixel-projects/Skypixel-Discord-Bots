@@ -15,17 +15,17 @@
 
     "commands_ban_reason": "Au fost răi!",
     "commands_ban_succes": "Interzis cu succes!",
-    "commands_ban_member_unable": "Nu am putut interzice membrul!",
+    "commands_ban_member_unable": "Nu am putut bana membrul!",
     "commands_ban_guild_member": "Acest utilizator nu se află în această breaslă!",
-    "commands_ban_member_mention": "Nu ați menționat utilizatorul să îl interzică!",
+    "commands_ban_member_mention": "Nu ați menționat utilizatorul pe care să îl interzică!",
 
     "commands_clear_reply": "a fost șters de mine :)",
 
     "commands_kick_reason": "Au fost răi!",
-    "commands_kick_succes": "Lovit cu succes!",
-    "commands_kick_member_unable": "Nu am putut lovi cu piciorul membrul!",
+    "commands_kick_succes": "Eliminat cu succes!",
+    "commands_kick_member_unable": "Nu am putut elimina membrul!",
     "commands_kick_guild_member": "Acest utilizator nu se află în această breaslă!",
-    "commands_kick_member_mention": "Nu ați menționat utilizatorul pentru a lovi cu piciorul!",
+    "commands_kick_member_mention": "Nu ați menționat utilizatorul pentru a-l elimina!",
 
     "commands_mute_specify": "Trebuie să specificați un membru!",
     "commands_mute_member_muted": "Dezactivat!",
@@ -38,13 +38,13 @@
     "commands_slowmode_set": "Setați slowmode la:",
 
     "commands_together_youtube_voice_error": "Trebuie să fii într-un canal vocal!",
-    "commands_together_youtube_start_error": "Din păcate, nu pot începe împreună un youtube!",
+    "commands_together_youtube_start_error": "Din păcate, nu pot începe o sesiune de youtube together!",
     "commands_together_fishing_voice_error": "Trebuie să fii într-un canal vocal!",
-    "commands_together_fishing_start_error": "Din păcate, nu pot începe împreună un youtube!",
+    "commands_together_fishing_start_error": "Din păcate, nu pot începe un meci de Fishing!",
     "commands_together_poker_voice_error": "Trebuie să fii într-un canal vocal!",
-    "commands_together_poker_start_error": "Din păcate, nu pot începe împreună un youtube!",
+    "commands_together_poker_start_error": "Din păcate, nu pot începe un meci de poker!",
     "commands_together_betrayal_voice_error": "Trebuie să fii într-un canal vocal!",
-    "commands_together_betrayal_start_error": "Din păcate nu pot începe împreună un youtube!",
+    "commands_together_betrayal_start_error": "Din păcate nu pot începe un meci de Betrayal!",
 
     "commands_unmute_specify": "Trebuie să specificați un membru!",
     "commands_unmute_member_unmuted": "Anulat!",
@@ -67,12 +67,12 @@
     "commands_rps_member_choice": "Alegerea ta",
     "commands_rps_bot_choice": "Alegerea roboților",
     "commands_rps_lose": "Ai pierdut!",
-    "commands_rps_tie": "Este o cravată!",
+    "commands_rps_tie": "Egalitate!",
     "commands_rps_win": "Ai câștigat!",
 
     "commands_dellang_message": "Limba a fost resetată la limba implicită!",
 
-    "commands_feedback_rate_message_1": ": x: Vă rugăm să evaluați acel bot pe o scară de la 1 la 5 cu un motiv` De exemplu, feedback-ul 5 are utilități minunate` ",
+    "commands_feedback_rate_message_1": ": x: Vă rugăm să evaluați acest bot pe o scară de la 1 la 5 cu un motiv` De exemplu, feedback-ul 5 are utilități minunate` ",
     "commands_feedback_rate_message_2": ": x: Vă rugăm să evaluați botul pe o scară de 1 - 5 cu un motiv` De exemplu, feedback-ul 5 are utilități minunate` ",
     "commands_feedback_new_review": "Revizuire nouă",
     "commands_feedback_stars": "Stele:",
@@ -115,7 +115,7 @@
     "commands_filter_description": "Filtru de coadă curent:",
     "commands_filter_description_off": "Dezactivat",
 
-    "commands_leave_message": "Bine, voi opri muzica pentru tine și voi pleca de pe canal!",
+    "commands_leave_message": "Bine, voi opri muzica pentru tine și voi parasi canalul!",
     "commands_leave_member_join_voice": "Mai întâi trebuie să vă alăturați unui canal vocal!",
 
     "commands_play_error_voice": "Vă rugăm să vă alăturați mai întâi unui canal vocal!",
@@ -127,10 +127,10 @@
     "commands_skip_succes": "Bine, voi omite muzica pentru tine!",
 
     "commands_disconnect_kick_reason": "Motiv opțional care va fi afișat în jurnalele de audit",
-    "commands_disconnect_kick_succes": "Lansat cu succes din voce",
-    "commands_disconnect_kick_error": "Nu am reușit să lovesc membru :(",
+    "commands_disconnect_kick_succes": "Eliminat cu succes din voce",
+    "commands_disconnect_kick_error": "Nu am reușit să elimin membrul :(",
     "commands_disconnect_kick_member_find_error": "Acest utilizator nu se află în această breaslă!",
-    "commands_disconnect_kick_member_mention_error": "Nu ați menționat utilizatorul pentru a lovi cu piciorul!",
+    "commands_disconnect_kick_member_mention_error": "Nu ați menționat utilizatorul pe care sa-l elimin!",
 
     "commands_playrec_voice_error": "Vă rugăm să vă alăturați unui canal vocal!",
     "commands_playrec_rec_error": "Sunetul dvs. nu este înregistrat!",
@@ -193,5 +193,5 @@
     "commands_serverinfo_roles": "Roluri",
 
     "commands_help_title": "** Cum vă pot ajuta! **",
-    "commands_help_description": "Pentru mai mult ajutor, vă rugăm să vizitați site-ul nostru web. Aici puteți găsi toate comenzile botului și toate informațiile despre acesta. Aici puteți găsi, de asemenea, linkul de invitație bot și linkul oficial de pe serverul de proiecte skypixel!"
+    "commands_help_description": "Pentru mai multe informatii, vă rugăm să vizitați site-ul nostru web. Aici puteți găsi toate comenzile botului și toate informațiile despre acesta. Aici puteți găsi, de asemenea, linkul de invitație bot și linkul oficial de pe serverul de proiecte skypixel!"
 }

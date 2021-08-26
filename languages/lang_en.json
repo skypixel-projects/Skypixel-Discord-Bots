@@ -11,7 +11,7 @@
     "commands_addrole_role" : "has obtained a role.",
     "commands_addrole_succes" : "has obtained a role.",
 
-    "commands_announcement_reply" : "Ok i will send the message to the announcement channel!",
+    "commands_announcement_reply" : "Ok I will send the message to the announcement channel!",
 
     "commands_ban_reason" : "They were bad!",
     "commands_ban_succes" : "Successfully banned!",
@@ -38,13 +38,13 @@
     "commands_slowmode_set" : "Set the slowmode to :",
 
     "commands_together_youtube_voice_error" : "You have to be in a voice channel!",
-    "commands_together_youtube_start_error" : "Sadly i cant start a youtube together!",
+    "commands_together_youtube_start_error" : "Sadly I cant start a youtube together!",
     "commands_together_fishing_voice_error" : "You have to be in a voice channel!",
-    "commands_together_fishing_start_error" : "Sadly i cant start a youtube together!",
+    "commands_together_fishing_start_error" : "Sadly I cant start a youtube together!",
     "commands_together_poker_voice_error" : "You have to be in a voice channel!",
-    "commands_together_poker_start_error" : "Sadly i cant start a youtube together!",
+    "commands_together_poker_start_error" : "Sadly I cant start a youtube together!",
     "commands_together_betrayal_voice_error" : "You have to be in a voice channel!",
-    "commands_together_betrayal_start_error" : "Sadly i cant start a youtube together!",
+    "commands_together_betrayal_start_error" : "Sadly I cant start a youtube together!",
 
     "commands_unmute_specify" : "You need to specify a member!", 
     "commands_unmute_member_unmuted" : "Unmuted!", 
@@ -54,7 +54,7 @@
     "commands_8ball_embed_answer" : "Answer",
 
     "commands_instagram_channel_name" : "Please Enter a Channel Name",
-    "commands_instagram_not_account" : "Not A Account",
+    "commands_instagram_not_account" : "Not an Account",
     "commands_instagram_profile_total_posts" : "Total Posts:",
     "commands_instagram_profile_followers" : "Followers:",
     "commands_instagram_profile_following" : "Following:",
@@ -78,7 +78,7 @@
 
     "commands_ping_message" : "`ms. This is the bot ping!",
 
-    "commands_setlang_error_message" : "Please specify an language! (Romana, English, Magyar)",
+    "commands_setlang_error_message" : "Please specify a language! (Romana, English, Magyar)",
 
     "commands_avatar_title" : "Here's the member avatar!",
 
@@ -106,7 +106,7 @@
     "commands_filter_description" : "Current queue filter: ",
     "commands_filter_description_off" : "Off",
 
-    "commands_leave_message" : "Okay I will stop the music for you and I will leave from the channel!",
+    "commands_leave_message" : "Okay I will stop the music for you and I will leave the channel!",
     "commands_leave_member_join_voice" : "You need to join a voice channel first!",
 
     "commands_play_error_voice" : "Please join a voice channel first!",
@@ -183,6 +183,6 @@
     "commands_serverinfo_offline" : "Offline:",
     "commands_serverinfo_roles" : "Roles",
 
-    "commands_help_title" : "**How can I help!**",
-    "commands_help_description" : "For more help please visit our website. Here you can find all the commands of the bot and all the information about it. Here you can also find the bot invitation link and the official link from the skypixel projects server!"
+    "commands_help_title" : "**How may I help!**",
+    "commands_help_description" : "For more help please visit our website. Here you can find all the commands of the bot and all the information about it. Here you can also find the bot invitation link and the official link from the Skypixel projects server!"
 }
